@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D7B970701B81895A007583EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B9706F1B81895A007583EC /* AppDelegate.swift */; };
+		D7B970721B81895A007583EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B970711B81895A007583EC /* ViewController.swift */; };
+		D7B970751B81895A007583EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7B970731B81895A007583EC /* Main.storyboard */; };
+		D7B970771B81895A007583EC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7B970761B81895A007583EC /* Images.xcassets */; };
+		D7B9707A1B81895A007583EC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7B970781B81895A007583EC /* LaunchScreen.xib */; };
+		D7B970861B81895A007583EC /* Tarotvn_Ver1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B970851B81895A007583EC /* Tarotvn_Ver1Tests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D7B970801B81895A007583EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7B970621B81895A007583EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7B970691B81895A007583EC;
+			remoteInfo = Tarotvn_Ver1;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D7B9706A1B81895A007583EC /* Tarotvn_Ver1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tarotvn_Ver1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7B9706E1B81895A007583EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7B9706F1B81895A007583EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D7B970711B81895A007583EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D7B970741B81895A007583EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D7B970761B81895A007583EC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D7B970791B81895A007583EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D7B9707F1B81895A007583EC /* Tarotvn_Ver1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tarotvn_Ver1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7B970841B81895A007583EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7B970851B81895A007583EC /* Tarotvn_Ver1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tarotvn_Ver1Tests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D7B970671B81895A007583EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7B9707C1B81895A007583EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D7B970611B81895A007583EC = {
+			isa = PBXGroup;
+			children = (
+				D7B9706C1B81895A007583EC /* Tarotvn_Ver1 */,
+				D7B970821B81895A007583EC /* Tarotvn_Ver1Tests */,
+				D7B9706B1B81895A007583EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D7B9706B1B81895A007583EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7B9706A1B81895A007583EC /* Tarotvn_Ver1.app */,
+				D7B9707F1B81895A007583EC /* Tarotvn_Ver1Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7B9706C1B81895A007583EC /* Tarotvn_Ver1 */ = {
+			isa = PBXGroup;
+			children = (
+				D7B9706F1B81895A007583EC /* AppDelegate.swift */,
+				D7B970711B81895A007583EC /* ViewController.swift */,
+				D7B970731B81895A007583EC /* Main.storyboard */,
+				D7B970761B81895A007583EC /* Images.xcassets */,
+				D7B970781B81895A007583EC /* LaunchScreen.xib */,
+				D7B9706D1B81895A007583EC /* Supporting Files */,
+			);
+			path = Tarotvn_Ver1;
+			sourceTree = "<group>";
+		};
+		D7B9706D1B81895A007583EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D7B9706E1B81895A007583EC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D7B970821B81895A007583EC /* Tarotvn_Ver1Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D7B970851B81895A007583EC /* Tarotvn_Ver1Tests.swift */,
+				D7B970831B81895A007583EC /* Supporting Files */,
+			);
+			path = Tarotvn_Ver1Tests;
+			sourceTree = "<group>";
+		};
+		D7B970831B81895A007583EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D7B970841B81895A007583EC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D7B970691B81895A007583EC /* Tarotvn_Ver1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7B970891B81895A007583EC /* Build configuration list for PBXNativeTarget "Tarotvn_Ver1" */;
+			buildPhases = (
+				D7B970661B81895A007583EC /* Sources */,
+				D7B970671B81895A007583EC /* Frameworks */,
+				D7B970681B81895A007583EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tarotvn_Ver1;
+			productName = Tarotvn_Ver1;
+			productReference = D7B9706A1B81895A007583EC /* Tarotvn_Ver1.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D7B9707E1B81895A007583EC /* Tarotvn_Ver1Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7B9708C1B81895A007583EC /* Build configuration list for PBXNativeTarget "Tarotvn_Ver1Tests" */;
+			buildPhases = (
+				D7B9707B1B81895A007583EC /* Sources */,
+				D7B9707C1B81895A007583EC /* Frameworks */,
+				D7B9707D1B81895A007583EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D7B970811B81895A007583EC /* PBXTargetDependency */,
+			);
+			name = Tarotvn_Ver1Tests;
+			productName = Tarotvn_Ver1Tests;
+			productReference = D7B9707F1B81895A007583EC /* Tarotvn_Ver1Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D7B970621B81895A007583EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Nhan Nguyen";
+				TargetAttributes = {
+					D7B970691B81895A007583EC = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					D7B9707E1B81895A007583EC = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = D7B970691B81895A007583EC;
+					};
+				};
+			};
+			buildConfigurationList = D7B970651B81895A007583EC /* Build configuration list for PBXProject "Tarotvn_Ver1" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D7B970611B81895A007583EC;
+			productRefGroup = D7B9706B1B81895A007583EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D7B970691B81895A007583EC /* Tarotvn_Ver1 */,
+				D7B9707E1B81895A007583EC /* Tarotvn_Ver1Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D7B970681B81895A007583EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7B970751B81895A007583EC /* Main.storyboard in Resources */,
+				D7B9707A1B81895A007583EC /* LaunchScreen.xib in Resources */,
+				D7B970771B81895A007583EC /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7B9707D1B81895A007583EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D7B970661B81895A007583EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7B970721B81895A007583EC /* ViewController.swift in Sources */,
+				D7B970701B81895A007583EC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7B9707B1B81895A007583EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7B970861B81895A007583EC /* Tarotvn_Ver1Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D7B970811B81895A007583EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7B970691B81895A007583EC /* Tarotvn_Ver1 */;
+			targetProxy = D7B970801B81895A007583EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D7B970731B81895A007583EC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7B970741B81895A007583EC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D7B970781B81895A007583EC /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7B970791B81895A007583EC /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D7B970871B81895A007583EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D7B970881B81895A007583EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D7B9708A1B81895A007583EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Tarotvn_Ver1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D7B9708B1B81895A007583EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Tarotvn_Ver1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D7B9708D1B81895A007583EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Tarotvn_Ver1Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tarotvn_Ver1.app/Tarotvn_Ver1";
+			};
+			name = Debug;
+		};
+		D7B9708E1B81895A007583EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Tarotvn_Ver1Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tarotvn_Ver1.app/Tarotvn_Ver1";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D7B970651B81895A007583EC /* Build configuration list for PBXProject "Tarotvn_Ver1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7B970871B81895A007583EC /* Debug */,
+				D7B970881B81895A007583EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7B970891B81895A007583EC /* Build configuration list for PBXNativeTarget "Tarotvn_Ver1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7B9708A1B81895A007583EC /* Debug */,
+				D7B9708B1B81895A007583EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D7B9708C1B81895A007583EC /* Build configuration list for PBXNativeTarget "Tarotvn_Ver1Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7B9708D1B81895A007583EC /* Debug */,
+				D7B9708E1B81895A007583EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D7B970621B81895A007583EC /* Project object */;
+}
