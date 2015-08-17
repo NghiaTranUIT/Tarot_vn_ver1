@@ -13,6 +13,7 @@ class FeaturedBooksTableViewController: UITableViewController {
     var arrFeaturedBook: [String] = ["Rider Waite Tarot","Lenormand Card","Runes","The Clow Card"]
     var arrFeatureBookFullName: [String] = ["RiderWaiteTarot.sqlite3", "Lenormand.sqlite3", "RunesChart.sqlite3", "TheClowCard.sqlite3"]
     
+    var fixBooks: [String] = ["RiderWaiteTarot", "Lenormand", "RunesChart", "TheClowCard"]
     var selectedFile: String!
     var indexPathOfDownloadedList: Int!
 
@@ -25,15 +26,44 @@ class FeaturedBooksTableViewController: UITableViewController {
             menuButton.target = self.revealViewController()
             menuButton.action = "revealToggle:"
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+            
         }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        var book: String = ""
+        
+        for book in fixBooks {
+            
+            let theFileManager = NSFileManager.defaultManager()
+            
+            let pathToBundledDB: String? = NSBundle.mainBundle().pathForResource(book, ofType: "sqlite3")
+            let pathToDevice = pathToDocsFolder(book)
+            
+            var error: NSError?
+            
+            // Here is where I get the error:
+            if (theFileManager.copyItemAtPath(pathToBundledDB!, toPath:pathToDevice, error: &error)) {
+                // success
+                NSLog(pathToDocsFolder(book))
+            }
+            else {
+                // failure
+            }
+            
+        }
         
         self.revealViewController().rearViewRevealWidth =  180
     }
+    func pathToDocsFolder(bookTarot: String) -> String {
+        let pathToDocumentsFolder = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as! String
+        var bookTarot = NSString(format: "/%@.sqlite3", bookTarot)
+        
+        return pathToDocumentsFolder.stringByAppendingPathComponent(bookTarot as String)
+    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -65,7 +95,7 @@ class FeaturedBooksTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
-        let name:String = arrFeaturedBook[indexPath.row] as String;
+        let name:String = arrFeaturedBook[indexPath.row] as String
         let fullName: String = arrFeatureBookFullName[indexPath.row] as String
         
         selectedFile = fullName
