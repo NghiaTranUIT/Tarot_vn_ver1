@@ -13,6 +13,62 @@
 		D7B970771B81895A007583EC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7B970761B81895A007583EC /* Images.xcassets */; };
 		D7B9707A1B81895A007583EC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7B970781B81895A007583EC /* LaunchScreen.xib */; };
 		D7B970861B81895A007583EC /* Tarotvn_Ver1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B970851B81895A007583EC /* Tarotvn_Ver1Tests.swift */; };
+		D7B970931B818DA8007583EC /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B970921B818DA8007583EC /* SWRevealViewController.m */; };
+		D7B970951B818E8F007583EC /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B970941B818E8F007583EC /* MenuController.swift */; };
+		D7B970971B819688007583EC /* FeaturedBooksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B970961B819688007583EC /* FeaturedBooksTableViewController.swift */; };
+		D7B970991B8196B3007583EC /* StoredBooksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B970981B8196B3007583EC /* StoredBooksTableViewController.swift */; };
+		D7B9709B1B8196D1007583EC /* DownloadedBooksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B9709A1B8196D1007583EC /* DownloadedBooksTableViewController.swift */; };
+		D7B9709D1B819A13007583EC /* AboutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B9709C1B819A13007583EC /* AboutTableViewController.swift */; };
+		D7B970A21B81A1CB007583EC /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B970A11B81A1CB007583EC /* MBProgressHUD.m */; };
+		D7B970CA1B81A1EB007583EC /* ANSUZ.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B970AB1B81A1EB007583EC /* ANSUZ.png */; };
+		D7B970CB1B81A1EB007583EC /* BEORC.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B970AC1B81A1EB007583EC /* BEORC.png */; };
+		D7B970CC1B81A1EB007583EC /* DAEG.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B970AD1B81A1EB007583EC /* DAEG.png */; };
+		D7B970CD1B81A1EB007583EC /* EHWAZ.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B970AE1B81A1EB007583EC /* EHWAZ.png */; };
+		D7B970CE1B81A1EB007583EC /* EIHWAZ.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B970AF1B81A1EB007583EC /* EIHWAZ.png */; };
+		D7B970CF1B81A1EB007583EC /* EOLH.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B970B01B81A1EB007583EC /* EOLH.png */; };
+		D7B970D01B81A1EB007583EC /* FEHU.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B970B11B81A1EB007583EC /* FEHU.png */; };
+		D7B970D11B81A1EB007583EC /* GIFU.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B970B21B81A1EB007583EC /* GIFU.png */; };
+		D7B970D21B81A1EB007583EC /* HAGALL.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B970B31B81A1EB007583EC /* HAGALL.png */; };
+		D7B970D31B81A1EB007583EC /* ING.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B970B41B81A1EB007583EC /* ING.png */; };
+		D7B970D41B81A1EB007583EC /* ISA.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B970B51B81A1EB007583EC /* ISA.png */; };
+		D7B970D51B81A1EB007583EC /* JERA.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B970B61B81A1EB007583EC /* JERA.png */; };
+		D7B970D61B81A1EB007583EC /* KENAZ.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B970B71B81A1EB007583EC /* KENAZ.png */; };
+		D7B970D71B81A1EB007583EC /* LAGAZ.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B970B81B81A1EB007583EC /* LAGAZ.png */; };
+		D7B970D81B81A1EB007583EC /* MANNAZ.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B970B91B81A1EB007583EC /* MANNAZ.png */; };
+		D7B970D91B81A1EB007583EC /* NIED.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B970BA1B81A1EB007583EC /* NIED.png */; };
+		D7B970DA1B81A1EB007583EC /* OTHEL.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B970BB1B81A1EB007583EC /* OTHEL.png */; };
+		D7B970DB1B81A1EB007583EC /* PERDHRO.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B970BC1B81A1EB007583EC /* PERDHRO.png */; };
+		D7B970DC1B81A1EB007583EC /* RAIDHO.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B970BD1B81A1EB007583EC /* RAIDHO.png */; };
+		D7B970DD1B81A1EB007583EC /* SIGEL.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B970BE1B81A1EB007583EC /* SIGEL.png */; };
+		D7B970DE1B81A1EB007583EC /* THURISAZ.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B970BF1B81A1EB007583EC /* THURISAZ.png */; };
+		D7B970DF1B81A1EB007583EC /* TIR.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B970C01B81A1EB007583EC /* TIR.png */; };
+		D7B970E01B81A1EB007583EC /* URUZ.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B970C11B81A1EB007583EC /* URUZ.png */; };
+		D7B970E11B81A1EB007583EC /* WUNJO.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B970C21B81A1EB007583EC /* WUNJO.png */; };
+		D7B970E21B81A1EB007583EC /* WYRD.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B970C31B81A1EB007583EC /* WYRD.png */; };
+		D7B970E81B81A230007583EC /* Lenormand.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = D7B970E41B81A230007583EC /* Lenormand.sqlite3 */; };
+		D7B970E91B81A230007583EC /* RiderWaiteTarot.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = D7B970E51B81A230007583EC /* RiderWaiteTarot.sqlite3 */; };
+		D7B970EA1B81A230007583EC /* RunesChart.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = D7B970E61B81A230007583EC /* RunesChart.sqlite3 */; };
+		D7B970EB1B81A230007583EC /* TheClowCard.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = D7B970E71B81A230007583EC /* TheClowCard.sqlite3 */; };
+		D7B970ED1B81A2A6007583EC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B970EC1B81A2A6007583EC /* AudioToolbox.framework */; };
+		D7B970EF1B81A2B1007583EC /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B970EE1B81A2B1007583EC /* CFNetwork.framework */; };
+		D7B970F11B81A2BE007583EC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B970F01B81A2BE007583EC /* CoreGraphics.framework */; };
+		D7B970F31B81A2C9007583EC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B970F21B81A2C9007583EC /* CoreLocation.framework */; };
+		D7B970F51B81A2D5007583EC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B970F41B81A2D5007583EC /* QuartzCore.framework */; };
+		D7B970F71B81A2E1007583EC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B970F61B81A2E1007583EC /* Security.framework */; };
+		D7B970F91B81A2EB007583EC /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B970F81B81A2EB007583EC /* StoreKit.framework */; };
+		D7B970FB1B81A2F6007583EC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B970FA1B81A2F6007583EC /* SystemConfiguration.framework */; };
+		D7B970FD1B81A311007583EC /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B970FC1B81A311007583EC /* libz.dylib */; };
+		D7B970FF1B81A327007583EC /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B970FE1B81A327007583EC /* libsqlite3.dylib */; };
+		D7B971031B81A713007583EC /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B971011B81A713007583EC /* Bolts.framework */; };
+		D7B971041B81A713007583EC /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B971021B81A713007583EC /* Parse.framework */; };
+		D7B971061B81A8B5007583EC /* BookTarot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B971051B81A8B5007583EC /* BookTarot.swift */; };
+		D7B971081B81A8CF007583EC /* TarotCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B971071B81A8CF007583EC /* TarotCard.swift */; };
+		D7B971161B81AB4A007583EC /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B971121B81AB4A007583EC /* DatabaseManager.swift */; };
+		D7B9711A1B81F235007583EC /* ListTarotCardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B971191B81F235007583EC /* ListTarotCardTableViewController.swift */; };
+		D7B9711C1B81F24E007583EC /* ListRunesStoneTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B9711B1B81F24E007583EC /* ListRunesStoneTableViewController.swift */; };
+		D7B9711E1B81F284007583EC /* DetailRiderCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B9711D1B81F284007583EC /* DetailRiderCardViewController.swift */; };
+		D7B971201B81F29C007583EC /* DeatailGeneralCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B9711F1B81F29C007583EC /* DeatailGeneralCardViewController.swift */; };
+		D7B971221B81FC5A007583EC /* RunesStoneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B971211B81FC5A007583EC /* RunesStoneTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +92,65 @@
 		D7B9707F1B81895A007583EC /* Tarotvn_Ver1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tarotvn_Ver1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7B970841B81895A007583EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7B970851B81895A007583EC /* Tarotvn_Ver1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tarotvn_Ver1Tests.swift; sourceTree = "<group>"; };
+		D7B970901B818DA7007583EC /* Tarotvn_Ver1-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tarotvn_Ver1-Bridging-Header.h"; sourceTree = "<group>"; };
+		D7B970911B818DA8007583EC /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		D7B970921B818DA8007583EC /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		D7B970941B818E8F007583EC /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuController.swift; path = ../MenuController.swift; sourceTree = "<group>"; };
+		D7B970961B819688007583EC /* FeaturedBooksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeaturedBooksTableViewController.swift; path = ../FeaturedBooksTableViewController.swift; sourceTree = "<group>"; };
+		D7B970981B8196B3007583EC /* StoredBooksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoredBooksTableViewController.swift; path = ../StoredBooksTableViewController.swift; sourceTree = "<group>"; };
+		D7B9709A1B8196D1007583EC /* DownloadedBooksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DownloadedBooksTableViewController.swift; path = ../DownloadedBooksTableViewController.swift; sourceTree = "<group>"; };
+		D7B9709C1B819A13007583EC /* AboutTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutTableViewController.swift; path = ../AboutTableViewController.swift; sourceTree = "<group>"; };
+		D7B970A01B81A1CB007583EC /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		D7B970A11B81A1CB007583EC /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		D7B970AB1B81A1EB007583EC /* ANSUZ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ANSUZ.png; sourceTree = "<group>"; };
+		D7B970AC1B81A1EB007583EC /* BEORC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BEORC.png; sourceTree = "<group>"; };
+		D7B970AD1B81A1EB007583EC /* DAEG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DAEG.png; sourceTree = "<group>"; };
+		D7B970AE1B81A1EB007583EC /* EHWAZ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EHWAZ.png; sourceTree = "<group>"; };
+		D7B970AF1B81A1EB007583EC /* EIHWAZ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EIHWAZ.png; sourceTree = "<group>"; };
+		D7B970B01B81A1EB007583EC /* EOLH.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EOLH.png; sourceTree = "<group>"; };
+		D7B970B11B81A1EB007583EC /* FEHU.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FEHU.png; sourceTree = "<group>"; };
+		D7B970B21B81A1EB007583EC /* GIFU.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GIFU.png; sourceTree = "<group>"; };
+		D7B970B31B81A1EB007583EC /* HAGALL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HAGALL.png; sourceTree = "<group>"; };
+		D7B970B41B81A1EB007583EC /* ING.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ING.png; sourceTree = "<group>"; };
+		D7B970B51B81A1EB007583EC /* ISA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ISA.png; sourceTree = "<group>"; };
+		D7B970B61B81A1EB007583EC /* JERA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = JERA.png; sourceTree = "<group>"; };
+		D7B970B71B81A1EB007583EC /* KENAZ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KENAZ.png; sourceTree = "<group>"; };
+		D7B970B81B81A1EB007583EC /* LAGAZ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LAGAZ.png; sourceTree = "<group>"; };
+		D7B970B91B81A1EB007583EC /* MANNAZ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MANNAZ.png; sourceTree = "<group>"; };
+		D7B970BA1B81A1EB007583EC /* NIED.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NIED.png; sourceTree = "<group>"; };
+		D7B970BB1B81A1EB007583EC /* OTHEL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OTHEL.png; sourceTree = "<group>"; };
+		D7B970BC1B81A1EB007583EC /* PERDHRO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PERDHRO.png; sourceTree = "<group>"; };
+		D7B970BD1B81A1EB007583EC /* RAIDHO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RAIDHO.png; sourceTree = "<group>"; };
+		D7B970BE1B81A1EB007583EC /* SIGEL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SIGEL.png; sourceTree = "<group>"; };
+		D7B970BF1B81A1EB007583EC /* THURISAZ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = THURISAZ.png; sourceTree = "<group>"; };
+		D7B970C01B81A1EB007583EC /* TIR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TIR.png; sourceTree = "<group>"; };
+		D7B970C11B81A1EB007583EC /* URUZ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = URUZ.png; sourceTree = "<group>"; };
+		D7B970C21B81A1EB007583EC /* WUNJO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WUNJO.png; sourceTree = "<group>"; };
+		D7B970C31B81A1EB007583EC /* WYRD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WYRD.png; sourceTree = "<group>"; };
+		D7B970E41B81A230007583EC /* Lenormand.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lenormand.sqlite3; sourceTree = "<group>"; };
+		D7B970E51B81A230007583EC /* RiderWaiteTarot.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = RiderWaiteTarot.sqlite3; sourceTree = "<group>"; };
+		D7B970E61B81A230007583EC /* RunesChart.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = RunesChart.sqlite3; sourceTree = "<group>"; };
+		D7B970E71B81A230007583EC /* TheClowCard.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = TheClowCard.sqlite3; sourceTree = "<group>"; };
+		D7B970EC1B81A2A6007583EC /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D7B970EE1B81A2B1007583EC /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		D7B970F01B81A2BE007583EC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D7B970F21B81A2C9007583EC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D7B970F41B81A2D5007583EC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D7B970F61B81A2E1007583EC /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D7B970F81B81A2EB007583EC /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		D7B970FA1B81A2F6007583EC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D7B970FC1B81A311007583EC /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		D7B970FE1B81A327007583EC /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		D7B971011B81A713007583EC /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		D7B971021B81A713007583EC /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		D7B971051B81A8B5007583EC /* BookTarot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BookTarot.swift; path = Tarotvn_Ver1/BookTarot.swift; sourceTree = "<group>"; };
+		D7B971071B81A8CF007583EC /* TarotCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TarotCard.swift; path = Tarotvn_Ver1/TarotCard.swift; sourceTree = "<group>"; };
+		D7B971121B81AB4A007583EC /* DatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		D7B971191B81F235007583EC /* ListTarotCardTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListTarotCardTableViewController.swift; path = ../ListTarotCardTableViewController.swift; sourceTree = "<group>"; };
+		D7B9711B1B81F24E007583EC /* ListRunesStoneTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListRunesStoneTableViewController.swift; path = ../ListRunesStoneTableViewController.swift; sourceTree = "<group>"; };
+		D7B9711D1B81F284007583EC /* DetailRiderCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailRiderCardViewController.swift; path = ../DetailRiderCardViewController.swift; sourceTree = "<group>"; };
+		D7B9711F1B81F29C007583EC /* DeatailGeneralCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeatailGeneralCardViewController.swift; path = ../DeatailGeneralCardViewController.swift; sourceTree = "<group>"; };
+		D7B971211B81FC5A007583EC /* RunesStoneTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RunesStoneTableViewCell.swift; path = ../RunesStoneTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +158,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7B970FF1B81A327007583EC /* libsqlite3.dylib in Frameworks */,
+				D7B970FD1B81A311007583EC /* libz.dylib in Frameworks */,
+				D7B970FB1B81A2F6007583EC /* SystemConfiguration.framework in Frameworks */,
+				D7B970F91B81A2EB007583EC /* StoreKit.framework in Frameworks */,
+				D7B970F71B81A2E1007583EC /* Security.framework in Frameworks */,
+				D7B970F51B81A2D5007583EC /* QuartzCore.framework in Frameworks */,
+				D7B970F31B81A2C9007583EC /* CoreLocation.framework in Frameworks */,
+				D7B970F11B81A2BE007583EC /* CoreGraphics.framework in Frameworks */,
+				D7B971031B81A713007583EC /* Bolts.framework in Frameworks */,
+				D7B970EF1B81A2B1007583EC /* CFNetwork.framework in Frameworks */,
+				D7B971041B81A713007583EC /* Parse.framework in Frameworks */,
+				D7B970ED1B81A2A6007583EC /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,7 +204,21 @@
 		D7B9706C1B81895A007583EC /* Tarotvn_Ver1 */ = {
 			isa = PBXGroup;
 			children = (
+				D7B970901B818DA7007583EC /* Tarotvn_Ver1-Bridging-Header.h */,
+				D7B971001B81A370007583EC /* Framework */,
+				D7B9709E1B819F0A007583EC /* Tarotvn */,
+				D7B9708F1B818D45007583EC /* SWRevealViewController */,
 				D7B9706F1B81895A007583EC /* AppDelegate.swift */,
+				D7B971211B81FC5A007583EC /* RunesStoneTableViewCell.swift */,
+				D7B970941B818E8F007583EC /* MenuController.swift */,
+				D7B9709C1B819A13007583EC /* AboutTableViewController.swift */,
+				D7B970961B819688007583EC /* FeaturedBooksTableViewController.swift */,
+				D7B970981B8196B3007583EC /* StoredBooksTableViewController.swift */,
+				D7B9709A1B8196D1007583EC /* DownloadedBooksTableViewController.swift */,
+				D7B9711F1B81F29C007583EC /* DeatailGeneralCardViewController.swift */,
+				D7B9711D1B81F284007583EC /* DetailRiderCardViewController.swift */,
+				D7B9711B1B81F24E007583EC /* ListRunesStoneTableViewController.swift */,
+				D7B971191B81F235007583EC /* ListTarotCardTableViewController.swift */,
 				D7B970711B81895A007583EC /* ViewController.swift */,
 				D7B970731B81895A007583EC /* Main.storyboard */,
 				D7B970761B81895A007583EC /* Images.xcassets */,
@@ -110,6 +251,101 @@
 				D7B970841B81895A007583EC /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D7B9708F1B818D45007583EC /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D7B970911B818DA8007583EC /* SWRevealViewController.h */,
+				D7B970921B818DA8007583EC /* SWRevealViewController.m */,
+			);
+			name = SWRevealViewController;
+			sourceTree = "<group>";
+		};
+		D7B9709E1B819F0A007583EC /* Tarotvn */ = {
+			isa = PBXGroup;
+			children = (
+				D7B971051B81A8B5007583EC /* BookTarot.swift */,
+				D7B971071B81A8CF007583EC /* TarotCard.swift */,
+				D7B971121B81AB4A007583EC /* DatabaseManager.swift */,
+				D7B970E31B81A219007583EC /* FeaturedBooks */,
+				D7B970AA1B81A1EB007583EC /* Rune PNG */,
+				D7B9709F1B81A183007583EC /* ProgressHUB */,
+			);
+			name = Tarotvn;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		D7B9709F1B81A183007583EC /* ProgressHUB */ = {
+			isa = PBXGroup;
+			children = (
+				D7B970A01B81A1CB007583EC /* MBProgressHUD.h */,
+				D7B970A11B81A1CB007583EC /* MBProgressHUD.m */,
+			);
+			name = ProgressHUB;
+			sourceTree = "<group>";
+		};
+		D7B970AA1B81A1EB007583EC /* Rune PNG */ = {
+			isa = PBXGroup;
+			children = (
+				D7B970AB1B81A1EB007583EC /* ANSUZ.png */,
+				D7B970AC1B81A1EB007583EC /* BEORC.png */,
+				D7B970AD1B81A1EB007583EC /* DAEG.png */,
+				D7B970AE1B81A1EB007583EC /* EHWAZ.png */,
+				D7B970AF1B81A1EB007583EC /* EIHWAZ.png */,
+				D7B970B01B81A1EB007583EC /* EOLH.png */,
+				D7B970B11B81A1EB007583EC /* FEHU.png */,
+				D7B970B21B81A1EB007583EC /* GIFU.png */,
+				D7B970B31B81A1EB007583EC /* HAGALL.png */,
+				D7B970B41B81A1EB007583EC /* ING.png */,
+				D7B970B51B81A1EB007583EC /* ISA.png */,
+				D7B970B61B81A1EB007583EC /* JERA.png */,
+				D7B970B71B81A1EB007583EC /* KENAZ.png */,
+				D7B970B81B81A1EB007583EC /* LAGAZ.png */,
+				D7B970B91B81A1EB007583EC /* MANNAZ.png */,
+				D7B970BA1B81A1EB007583EC /* NIED.png */,
+				D7B970BB1B81A1EB007583EC /* OTHEL.png */,
+				D7B970BC1B81A1EB007583EC /* PERDHRO.png */,
+				D7B970BD1B81A1EB007583EC /* RAIDHO.png */,
+				D7B970BE1B81A1EB007583EC /* SIGEL.png */,
+				D7B970BF1B81A1EB007583EC /* THURISAZ.png */,
+				D7B970C01B81A1EB007583EC /* TIR.png */,
+				D7B970C11B81A1EB007583EC /* URUZ.png */,
+				D7B970C21B81A1EB007583EC /* WUNJO.png */,
+				D7B970C31B81A1EB007583EC /* WYRD.png */,
+			);
+			path = "Rune PNG";
+			sourceTree = "<group>";
+		};
+		D7B970E31B81A219007583EC /* FeaturedBooks */ = {
+			isa = PBXGroup;
+			children = (
+				D7B970E41B81A230007583EC /* Lenormand.sqlite3 */,
+				D7B970E51B81A230007583EC /* RiderWaiteTarot.sqlite3 */,
+				D7B970E61B81A230007583EC /* RunesChart.sqlite3 */,
+				D7B970E71B81A230007583EC /* TheClowCard.sqlite3 */,
+			);
+			name = FeaturedBooks;
+			sourceTree = "<group>";
+		};
+		D7B971001B81A370007583EC /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				D7B971011B81A713007583EC /* Bolts.framework */,
+				D7B971021B81A713007583EC /* Parse.framework */,
+				D7B970FE1B81A327007583EC /* libsqlite3.dylib */,
+				D7B970FC1B81A311007583EC /* libz.dylib */,
+				D7B970FA1B81A2F6007583EC /* SystemConfiguration.framework */,
+				D7B970F81B81A2EB007583EC /* StoreKit.framework */,
+				D7B970F61B81A2E1007583EC /* Security.framework */,
+				D7B970F41B81A2D5007583EC /* QuartzCore.framework */,
+				D7B970F21B81A2C9007583EC /* CoreLocation.framework */,
+				D7B970F01B81A2BE007583EC /* CoreGraphics.framework */,
+				D7B970EE1B81A2B1007583EC /* CFNetwork.framework */,
+				D7B970EC1B81A2A6007583EC /* AudioToolbox.framework */,
+			);
+			name = Framework;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,9 +428,38 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7B970CF1B81A1EB007583EC /* EOLH.png in Resources */,
+				D7B970D71B81A1EB007583EC /* LAGAZ.png in Resources */,
+				D7B970CC1B81A1EB007583EC /* DAEG.png in Resources */,
 				D7B970751B81895A007583EC /* Main.storyboard in Resources */,
+				D7B970D31B81A1EB007583EC /* ING.png in Resources */,
+				D7B970E01B81A1EB007583EC /* URUZ.png in Resources */,
+				D7B970D11B81A1EB007583EC /* GIFU.png in Resources */,
+				D7B970DD1B81A1EB007583EC /* SIGEL.png in Resources */,
+				D7B970D81B81A1EB007583EC /* MANNAZ.png in Resources */,
+				D7B970D61B81A1EB007583EC /* KENAZ.png in Resources */,
+				D7B970DE1B81A1EB007583EC /* THURISAZ.png in Resources */,
+				D7B970DA1B81A1EB007583EC /* OTHEL.png in Resources */,
+				D7B970CD1B81A1EB007583EC /* EHWAZ.png in Resources */,
+				D7B970DF1B81A1EB007583EC /* TIR.png in Resources */,
+				D7B970CA1B81A1EB007583EC /* ANSUZ.png in Resources */,
+				D7B970D91B81A1EB007583EC /* NIED.png in Resources */,
+				D7B970DC1B81A1EB007583EC /* RAIDHO.png in Resources */,
 				D7B9707A1B81895A007583EC /* LaunchScreen.xib in Resources */,
+				D7B970E91B81A230007583EC /* RiderWaiteTarot.sqlite3 in Resources */,
+				D7B970E11B81A1EB007583EC /* WUNJO.png in Resources */,
+				D7B970E81B81A230007583EC /* Lenormand.sqlite3 in Resources */,
+				D7B970CE1B81A1EB007583EC /* EIHWAZ.png in Resources */,
+				D7B970EB1B81A230007583EC /* TheClowCard.sqlite3 in Resources */,
+				D7B970EA1B81A230007583EC /* RunesChart.sqlite3 in Resources */,
+				D7B970DB1B81A1EB007583EC /* PERDHRO.png in Resources */,
+				D7B970E21B81A1EB007583EC /* WYRD.png in Resources */,
+				D7B970D01B81A1EB007583EC /* FEHU.png in Resources */,
+				D7B970CB1B81A1EB007583EC /* BEORC.png in Resources */,
+				D7B970D21B81A1EB007583EC /* HAGALL.png in Resources */,
+				D7B970D51B81A1EB007583EC /* JERA.png in Resources */,
 				D7B970771B81895A007583EC /* Images.xcassets in Resources */,
+				D7B970D41B81A1EB007583EC /* ISA.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +477,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7B9711E1B81F284007583EC /* DetailRiderCardViewController.swift in Sources */,
+				D7B970971B819688007583EC /* FeaturedBooksTableViewController.swift in Sources */,
+				D7B9711C1B81F24E007583EC /* ListRunesStoneTableViewController.swift in Sources */,
+				D7B970951B818E8F007583EC /* MenuController.swift in Sources */,
+				D7B9711A1B81F235007583EC /* ListTarotCardTableViewController.swift in Sources */,
 				D7B970721B81895A007583EC /* ViewController.swift in Sources */,
+				D7B971161B81AB4A007583EC /* DatabaseManager.swift in Sources */,
+				D7B971061B81A8B5007583EC /* BookTarot.swift in Sources */,
+				D7B9709D1B819A13007583EC /* AboutTableViewController.swift in Sources */,
+				D7B970A21B81A1CB007583EC /* MBProgressHUD.m in Sources */,
+				D7B970991B8196B3007583EC /* StoredBooksTableViewController.swift in Sources */,
 				D7B970701B81895A007583EC /* AppDelegate.swift in Sources */,
+				D7B971201B81F29C007583EC /* DeatailGeneralCardViewController.swift in Sources */,
+				D7B9709B1B8196D1007583EC /* DownloadedBooksTableViewController.swift in Sources */,
+				D7B971081B81A8CF007583EC /* TarotCard.swift in Sources */,
+				D7B970931B818DA8007583EC /* SWRevealViewController.m in Sources */,
+				D7B971221B81FC5A007583EC /* RunesStoneTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,9 +620,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/parse-library-1-2",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Tarotvn_Ver1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tarotvn_Ver1/Tarotvn_Ver1-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -350,9 +638,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/parse-library-1-2",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Tarotvn_Ver1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tarotvn_Ver1/Tarotvn_Ver1-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -409,6 +704,7 @@
 				D7B9708B1B81895A007583EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D7B9708C1B81895A007583EC /* Build configuration list for PBXNativeTarget "Tarotvn_Ver1Tests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +713,7 @@
 				D7B9708E1B81895A007583EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
