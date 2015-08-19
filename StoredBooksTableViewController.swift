@@ -89,7 +89,7 @@ class StoredBooksTableViewController: UITableViewController {
             var readArrayDislay: [NSString] = arrFileNameDownloadedDislay as! [NSString]
             query.whereKey("name", notContainedIn: readArrayDislay)
         }
-        ////
+        
         
         query.findObjectsInBackgroundWithBlock {(objects: [AnyObject]?, error: NSError?) -> Void in
             if error == nil {

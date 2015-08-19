@@ -141,11 +141,15 @@ class ListTarotCardTableViewController: UITableViewController, UISearchBarDelega
             [self .performSegueWithIdentifier("SelectedRider", sender: nil)]
             
         }
-        else {
             
-            [self.performSegueWithIdentifier("SelectedTarot", sender: nil)]
+        else{
+            
+                [self.performSegueWithIdentifier("SelectedTarot", sender: nil)]
+            }
+
         }
-    }
+
+    
 
 
     

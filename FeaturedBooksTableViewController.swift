@@ -11,13 +11,14 @@ import UIKit
 class FeaturedBooksTableViewController: UITableViewController {
     
     var arrFeaturedBook: [String] = ["Rider Waite Tarot","Lenormand Card","Runes","The Clow Card"]
-    var arrFeatureBookFullName: [String] = ["RiderWaiteTarot.sqlite3", "Lenormand.sqlite3", "RunesChart.sqlite3", "TheClowCard.sqlite3"]
+    var arrFeaturedBookFullName: [String] = ["RiderWaiteTarot.sqlite3", "Lenormand.sqlite3", "RunesChart.sqlite3", "TheClowCard.sqlite3"]
     
     var fixBooks: [String] = ["RiderWaiteTarot", "Lenormand", "RunesChart", "TheClowCard"]
     var selectedFile: String!
     var indexPathOfDownloadedList: Int!
 
     @IBOutlet weak var menuButton: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -96,13 +97,13 @@ class FeaturedBooksTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
         let name:String = arrFeaturedBook[indexPath.row] as String
-        let fullName: String = arrFeatureBookFullName[indexPath.row] as String
+        let fullName: String = arrFeaturedBookFullName[indexPath.row] as String
         
         selectedFile = fullName
         indexPathOfDownloadedList = indexPath.row;
     
         
-        if arrFeaturedBook[indexPath.row] == "Runes"{
+        if name == "Runes" {
             
             self.performSegueWithIdentifier("pushFeaturedRunes", sender: nil)
             
@@ -115,7 +116,7 @@ class FeaturedBooksTableViewController: UITableViewController {
     
  override func  prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
 {
-    if segue.identifier == "pushFeaturedTarot"{
+    if segue.identifier == "pushFeaturedTarot" {
         var destination:ListTarotCardTableViewController = segue.destinationViewController as! ListTarotCardTableViewController
         
         destination.nameFileDatabase = selectedFile

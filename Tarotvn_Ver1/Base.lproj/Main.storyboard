@@ -580,9 +580,9 @@
         <image name="wishlist" width="1024" height="1024"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="Dme-Gf-VaD"/>
         <segue reference="V1e-9t-Uxb"/>
         <segue reference="LAd-RN-aOM"/>
-        <segue reference="Dme-Gf-VaD"/>
         <segue reference="6Il-YU-CgJ"/>
     </inferredMetricsTieBreakers>
 </document>
