@@ -98,15 +98,15 @@ class DownloadedBooksTableViewController: UITableViewController {
         indexPathOfDownloadedList = indexPath.row;
         
         selectedFile = name;
-        
-        if arrDownloadedFileDislay[indexPath.row] == "Runes"{
-            
-            self.performSegueWithIdentifier("pushDetailRunes", sender: nil)
-            
-        }else{
+//        
+//        if arrDownloadedFileDislay[indexPath.row] == "Runes"{
+//            
+//            self.performSegueWithIdentifier("pushDetailRunes", sender: nil)
+//            
+//        }else{
         
             self.performSegueWithIdentifier("pushDetailCard", sender: nil);
-        }
+//        }
     }
     
     override func  prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
