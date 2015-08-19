@@ -12,6 +12,7 @@ class DownloadedBooksTableViewController: UITableViewController {
     
     var arrDownloadedFile: [NSString] = []
     var arrDownloadedFileDislay: [NSString] = []
+    var arrFileNameDownloadedShowUp: [NSString] = []
     var selectedFile:String!
     var indexPathOfDownloadedList: Int!
 
@@ -50,7 +51,7 @@ class DownloadedBooksTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return arrDownloadedFile.count
+        return arrDownloadedFileDislay.count
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -71,6 +72,13 @@ class DownloadedBooksTableViewController: UITableViewController {
             
             arrDownloadedFileDislay = readArrayDislay
         }
+        
+//        if let arrFileNameDownloadedFileShowUp: AnyObject = userDefault.objectForKey("fileDownloadShowUp")
+//        {
+//            var readArrayShowUp: [NSString] = arrFileNameDownloadedFileShowUp as! [NSString]
+//            arrFileNameDownloadedShowUp = readArrayShowUp
+//            
+//        }
         
         self.tableView .reloadData()
     }
@@ -96,7 +104,7 @@ class DownloadedBooksTableViewController: UITableViewController {
             self.performSegueWithIdentifier("pushDetailRunes", sender: nil)
             
         }else{
-            
+        
             self.performSegueWithIdentifier("pushDetailCard", sender: nil);
         }
     }
@@ -108,8 +116,10 @@ class DownloadedBooksTableViewController: UITableViewController {
             
             destination.nameFileDatabase = selectedFile
             destination.nameFileDatabaseIndexPaths = indexPathOfDownloadedList
+            destination.indexPathOfFeaturedList = 0
             
-        }else{
+        }
+        else{
             
             var destinationRunes:ListRunesStoneTableViewController = segue.destinationViewController as! ListRunesStoneTableViewController
             

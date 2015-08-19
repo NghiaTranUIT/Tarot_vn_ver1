@@ -278,7 +278,6 @@
                     <connections>
                         <outlet property="menuButton" destination="CcQ-7I-OEU" id="ipm-QY-lqQ"/>
                         <segue destination="m1j-5m-7Ix" kind="push" identifier="pushDetailCard" id="qtn-d6-k3d"/>
-                        <segue destination="RwD-W2-hvt" kind="push" identifier="pushDetailRunes" id="zoG-7V-Kia"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HgQ-Ct-IpL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -343,7 +342,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HFi-R9-kmz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2612" y="1548"/>
+            <point key="canvasLocation" x="2612" y="1722"/>
         </scene>
         <!--Deatail General Card View Controller-->
         <scene sceneID="BUD-Dh-sj4">
@@ -386,7 +385,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CcS-Qy-gEX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3494" y="1548"/>
+            <point key="canvasLocation" x="3510" y="1716"/>
         </scene>
         <!--List Tarot Card Table View Controller-->
         <scene sceneID="C3f-Zn-wxM">
@@ -580,9 +579,8 @@
         <image name="wishlist" width="1024" height="1024"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Dme-Gf-VaD"/>
+        <segue reference="qtn-d6-k3d"/>
         <segue reference="V1e-9t-Uxb"/>
-        <segue reference="LAd-RN-aOM"/>
-        <segue reference="6Il-YU-CgJ"/>
+        <segue reference="c9t-va-Sfw"/>
     </inferredMetricsTieBreakers>
 </document>

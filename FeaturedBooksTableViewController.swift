@@ -16,6 +16,7 @@ class FeaturedBooksTableViewController: UITableViewController {
     var fixBooks: [String] = ["RiderWaiteTarot", "Lenormand", "RunesChart", "TheClowCard"]
     var selectedFile: String!
     var indexPathOfDownloadedList: Int!
+    var indexPathOfFeaturedList: Int!
 
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
@@ -96,11 +97,12 @@ class FeaturedBooksTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+        
         let name:String = arrFeaturedBook[indexPath.row] as String
         let fullName: String = arrFeaturedBookFullName[indexPath.row] as String
         
         selectedFile = fullName
-        indexPathOfDownloadedList = indexPath.row;
+        indexPathOfFeaturedList = indexPath.row
     
         
         if name == "Runes" {
@@ -109,25 +111,29 @@ class FeaturedBooksTableViewController: UITableViewController {
             
         }else{
             
-            self.performSegueWithIdentifier("pushFeaturedTarot", sender: nil);
+            self.performSegueWithIdentifier("pushFeaturedTarot", sender: nil)
         }
     }
     
     
  override func  prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
 {
-    if segue.identifier == "pushFeaturedTarot" {
-        var destination:ListTarotCardTableViewController = segue.destinationViewController as! ListTarotCardTableViewController
-        
-        destination.nameFileDatabase = selectedFile
-        destination.nameFileDatabaseIndexPaths = indexPathOfDownloadedList
-        
-    }else{
+    if segue.identifier == "pushFeaturedRunes" {
         
         var destinationRunes:ListRunesStoneTableViewController = segue.destinationViewController as! ListRunesStoneTableViewController
         
         destinationRunes.nameFileDatabase = selectedFile
-        destinationRunes.nameFileDatabaseIndexPaths = indexPathOfDownloadedList
+        destinationRunes.indexPathOfFeaturedList = indexPathOfFeaturedList
+        destinationRunes.nameFileDatabaseIndexPaths = 0
+        
+    }else{
+        
+        var destination:ListTarotCardTableViewController = segue.destinationViewController as! ListTarotCardTableViewController
+        
+        destination.nameFileDatabase = selectedFile
+        destination.indexPathOfFeaturedList = indexPathOfFeaturedList
+        destination.nameFileDatabaseIndexPaths = 0
+
         
     }
 }

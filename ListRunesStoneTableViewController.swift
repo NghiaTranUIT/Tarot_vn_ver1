@@ -9,10 +9,8 @@
 import UIKit
 
 class ListRunesStoneTableViewController: UITableViewController, UISearchBarDelegate {
-    @IBOutlet weak var mySearch: UISearchBar!
-
-   
     
+    @IBOutlet weak var mySearch: UISearchBar!
     @IBOutlet var myTableView: UITableView!
  
     var arrCard:[TarotCard]!
@@ -28,6 +26,7 @@ class ListRunesStoneTableViewController: UITableViewController, UISearchBarDeleg
     
     var nameFileDatabase:String!
     var nameFileDatabaseIndexPaths:Int!
+    var indexPathOfFeaturedList: Int!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,7 +44,7 @@ class ListRunesStoneTableViewController: UITableViewController, UISearchBarDeleg
         database = DatabaseManager();
         
         // Connect
-        database .confirgureDatabaseWithName(nameFileDatabase)
+        database .confirgureDatabaseWithName(nameFileDatabase!)
         
         arrCard =  database.getAllOfTarotCaseInDatabase()
         
@@ -93,7 +92,47 @@ class ListRunesStoneTableViewController: UITableViewController, UISearchBarDeleg
         }
     }
     
-   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+    // MARK: - Table view data source
+
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        // #warning Potentially incomplete method implementation.
+        // Return the number of sections.
+        return 1
+    }
+
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete method implementation.
+        // Return the number of rows in the section.
+        return arrCard.count
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        selectedCard = arrCard[indexPath.row]
+        var indexCombined: Int = nameFileDatabaseIndexPaths + indexPathOfFeaturedList
+        println(nameFileDatabaseIndexPaths)
+        println(indexPathOfFeaturedList)
+        
+        var  defaultName: String = arrDownloadedFileDislay[indexCombined] as String
+        
+//        if defaultName == "Runes"{
+        
+            [self.performSegueWithIdentifier("SelectedRunes", sender: nil)]
+            
+//        }else{
+//            
+//            self.performSegueWithIdentifier("SelectedTaRot", sender: nil)
+//        }
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         
         if (segue.identifier == "SelectedRider")
@@ -121,47 +160,8 @@ class ListRunesStoneTableViewController: UITableViewController, UISearchBarDeleg
             
             detailScreen1.card = selectedCard;
             
-        }  
-    }
-    
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    // MARK: - Table view data source
-
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Potentially incomplete method implementation.
-        // Return the number of sections.
-        return 1
-    }
-
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete method implementation.
-        // Return the number of rows in the section.
-        return arrCard.count
-    }
-    
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
-        selectedCard = arrCard[indexPath.row];
-        
-        var  defaultName: String = arrDownloadedFileDislay[nameFileDatabaseIndexPaths] as String
-        
-        if defaultName == "Rider Waite Tarot"
-        {
-            
-            [self .performSegueWithIdentifier("SelectedRider", sender: nil)]
-            
-        }
-        else {
-            
-            [self.performSegueWithIdentifier("SelectedRunes", sender: nil)]
         }
     }
-    
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> RunesStoneTableViewCell {
@@ -206,49 +206,5 @@ class ListRunesStoneTableViewController: UITableViewController, UISearchBarDeleg
     }
 
 
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return NO if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return NO if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

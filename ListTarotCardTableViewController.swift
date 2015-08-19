@@ -23,6 +23,7 @@ class ListTarotCardTableViewController: UITableViewController, UISearchBarDelega
     
     var nameFileDatabase:String!
     var nameFileDatabaseIndexPaths:Int!
+    var indexPathOfFeaturedList: Int!
 
 
     @IBOutlet var myTableView: UITableView!
@@ -84,6 +85,49 @@ class ListTarotCardTableViewController: UITableViewController, UISearchBarDelega
         }
     }
     
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+    // MARK: - Table view data source
+
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        // #warning Potentially incomplete method implementation.
+        // Return the number of sections.
+        return 1
+    }
+
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete method implementation.
+        // Return the number of rows in the section.
+        if(searchActive) {
+            return filtered.count
+        }
+        return arrCard.count;
+    }
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        selectedCard = arrCard[indexPath.row]
+        
+        var indexConbined: Int? = nameFileDatabaseIndexPaths + indexPathOfFeaturedList
+        
+        var  defaultName: String = arrDownloadedFileDislay[indexConbined!] as String
+        
+        if defaultName == "Rider Waite Tarot"
+        {
+            
+            [self .performSegueWithIdentifier("SelectedRider", sender: nil)]
+            
+        }
+            
+        else{
+            
+                [self.performSegueWithIdentifier("SelectedTarot", sender: nil)]
+            }
+
+        }
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         
@@ -108,50 +152,7 @@ class ListTarotCardTableViewController: UITableViewController, UISearchBarDelega
         
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    // MARK: - Table view data source
-
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Potentially incomplete method implementation.
-        // Return the number of sections.
-        return 1
-    }
-
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete method implementation.
-        // Return the number of rows in the section.
-        if(searchActive) {
-            return filtered.count
-        }
-        return arrCard.count;
-    }
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
-        selectedCard = arrCard[indexPath.row];
-        
-        var  defaultName: String = arrDownloadedFileDislay[nameFileDatabaseIndexPaths] as String
-        
-        if defaultName == "Rider Waite Tarot"
-        {
-            
-            [self .performSegueWithIdentifier("SelectedRider", sender: nil)]
-            
-        }
-            
-        else{
-            
-                [self.performSegueWithIdentifier("SelectedTarot", sender: nil)]
-            }
-
-        }
-
-    
-
-
+   
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("TarotCard", forIndexPath: indexPath) as! UITableViewCell

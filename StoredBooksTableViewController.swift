@@ -15,6 +15,8 @@ class StoredBooksTableViewController: UITableViewController {
     
     var arrlist: [AnyObject]!
     var selected: PFObject!
+    var arrFeaturedBook: [String] = ["Rider Waite Tarot","Lenormand Card","Runes","The Clow Card"]
+    var arrFeaturedBookFullName: [String] = ["RiderWaiteTarot.sqlite3", "Lenormand.sqlite3", "RunesChart.sqlite3", "TheClowCard.sqlite3"]
     
     override func viewDidLoad() {
        
@@ -37,6 +39,8 @@ class StoredBooksTableViewController: UITableViewController {
         
         var query = PFQuery(className: "DataBook")
         let userDefault = NSUserDefaults.standardUserDefaults()
+        userDefault.setObject(arrFeaturedBookFullName, forKey: "fileDownload")
+        userDefault.setObject(arrFeaturedBook, forKey: "fileDownloadDislay")
         
         if let arrFileNameDownloaded: AnyObject = userDefault.objectForKey("fileDownload")
         {
@@ -50,6 +54,12 @@ class StoredBooksTableViewController: UITableViewController {
             query.whereKey("name", notContainedIn: readArrayDislay)
         }
         ////
+//        if let arrFileNameDownloadedShowUp: AnyObject = userDefault.objectForKey("fileDownloadShowUp")
+//        {
+//            var readArrayDislay: [NSString] = arrFileNameDownloadedShowUp as! [NSString]
+//            query.whereKey("name", notContainedIn: readArrayDislay)
+//        }
+//
         
         query.findObjectsInBackgroundWithBlock {(objects: [AnyObject]?, error: NSError?) -> Void in
             if error == nil {
@@ -217,6 +227,23 @@ class StoredBooksTableViewController: UITableViewController {
                             userDefault.setObject(readArrayDislay, forKey: "fileDownloadDislay")
                         }
                         
+//                        if let arrFileNameDownloadedShowUp: AnyObject = userDefault.objectForKey("fileDownloadShowUp")
+//                        {
+//                            var readArrayShowUp:[NSString] = arrFileNameDownloadedShowUp as! [NSString]
+//                            
+//                            readArrayShowUp.append(daBookNameDislay)
+//                            
+//                            userDefault.setObject(readArrayShowUp, forKey: "fileDownloadShowUp")
+//                        }
+//                        else
+//                        {
+//                            // NIl
+//                            var readArrayShowUp:[NSString]  = []
+//                            readArrayShowUp.append(daBookNameDislay)
+//                            
+//                            userDefault.setObject(readArrayShowUp, forKey: "fileDownloadShowUp")
+//                        }
+
                         
                     }else {
                         println("file already exitence")
