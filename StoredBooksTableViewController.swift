@@ -17,49 +17,61 @@ class StoredBooksTableViewController: UITableViewController {
     var selected: PFObject!
     var arrFeaturedBook: [String] = ["Rider Waite Tarot","Lenormand Card","Runes","The Clow Card"]
     var arrFeaturedBookFullName: [String] = ["RiderWaiteTarot.sqlite3", "Lenormand.sqlite3", "RunesChart.sqlite3", "TheClowCard.sqlite3"]
+    let userDefault = NSUserDefaults.standardUserDefaults()
     
+    
+
     override func viewDidLoad() {
        
         super.viewDidLoad()
+        
+        self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+        self.navigationController?.navigationBar.barTintColor = UIColor.blackColor()
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+        self.navigationController?.navigationBar.barStyle = UIBarStyle.Black
+
         
         if self.revealViewController() != nil {
             
             menuButton.target = self.revealViewController()
             menuButton.action = "revealToggle:"
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+            self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
         }
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+               
+        if userDefault.stringForKey("isFirst") != nil {
+            
+        userDefault.setObject(arrFeaturedBookFullName, forKey: "fileDownload")
+        userDefault.setObject(arrFeaturedBook, forKey: "fileDownloadDislay")
+        userDefault.setObject(nil, forKey: "isFirst")
+            
+        }
         
         arrlist = []
         MBProgressHUD.showHUDAddedTo(self.view, animated: true)
         
-        var query = PFQuery(className: "DataBook")
-        let userDefault = NSUserDefaults.standardUserDefaults()
-        userDefault.setObject(arrFeaturedBookFullName, forKey: "fileDownload")
-        userDefault.setObject(arrFeaturedBook, forKey: "fileDownloadDislay")
-        
-        if let arrFileNameDownloaded: AnyObject = userDefault.objectForKey("fileDownload")
+       var query = PFQuery(className: "DataBook")
+            if let arrFileNameDownloaded: AnyObject = userDefault.objectForKey("fileDownload")
         {
             var readArray: [NSString] = arrFileNameDownloaded as! [NSString]
             query.whereKey("fullName", notContainedIn: readArray)
+            
         }
         ///add to dislay
         if let arrFileNameDownloadedDislay: AnyObject = userDefault.objectForKey("fileDownloadDislay")
         {
             var readArrayDislay: [NSString] = arrFileNameDownloadedDislay as! [NSString]
             query.whereKey("name", notContainedIn: readArrayDislay)
+           
         }
-        ////
+        //
 //        if let arrFileNameDownloadedShowUp: AnyObject = userDefault.objectForKey("fileDownloadShowUp")
 //        {
 //            var readArrayDislay: [NSString] = arrFileNameDownloadedShowUp as! [NSString]
 //            query.whereKey("name", notContainedIn: readArrayDislay)
 //        }
-//
+
         
         query.findObjectsInBackgroundWithBlock {(objects: [AnyObject]?, error: NSError?) -> Void in
             if error == nil {
@@ -150,12 +162,12 @@ class StoredBooksTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        let alert = UIAlertController(title: "Alert", message: "Please say OK if you're Ok :)", preferredStyle: UIAlertControllerStyle.Alert)
+        let alert = UIAlertController(title: "Thông Báo", message: "Bạn Có Muốn Tải Sách Không?", preferredStyle: UIAlertControllerStyle.Alert)
         //alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.Default, handler: nil))
         
         
         
-        alert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: { action in
+        alert.addAction(UIAlertAction(title: "Có", style: .Default, handler: { action in
             switch action.style{
             case .Default:
                 println("default")
@@ -169,7 +181,7 @@ class StoredBooksTableViewController: UITableViewController {
                 
                 ///
                 var myHUb:MBProgressHUD =  MBProgressHUD.showHUDAddedTo(UIApplication.sharedApplication().keyWindow, animated: true)
-                myHUb.labelText = "Downloading";
+                myHUb.labelText = "Đang Tải..."
                 myHUb.dimBackground = true;
                 
                 ///
@@ -227,29 +239,12 @@ class StoredBooksTableViewController: UITableViewController {
                             userDefault.setObject(readArrayDislay, forKey: "fileDownloadDislay")
                         }
                         
-//                        if let arrFileNameDownloadedShowUp: AnyObject = userDefault.objectForKey("fileDownloadShowUp")
-//                        {
-//                            var readArrayShowUp:[NSString] = arrFileNameDownloadedShowUp as! [NSString]
-//                            
-//                            readArrayShowUp.append(daBookNameDislay)
-//                            
-//                            userDefault.setObject(readArrayShowUp, forKey: "fileDownloadShowUp")
-//                        }
-//                        else
-//                        {
-//                            // NIl
-//                            var readArrayShowUp:[NSString]  = []
-//                            readArrayShowUp.append(daBookNameDislay)
-//                            
-//                            userDefault.setObject(readArrayShowUp, forKey: "fileDownloadShowUp")
-//                        }
-
                         
                     }else {
                         println("file already exitence")
                     }
                   
-                    myHUb.hide(true, afterDelay: 1)
+                    myHUb.hide(true, afterDelay: 0)
                     
                 }
                 
@@ -262,7 +257,7 @@ class StoredBooksTableViewController: UITableViewController {
             
         }))
         
-        let cancel = UIAlertAction(title: "cancel", style: .Cancel, handler: {
+        let cancel = UIAlertAction(title: "Không", style: .Cancel, handler: {
             action in
             
             self.tableView.reloadData()

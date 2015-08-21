@@ -21,11 +21,18 @@ class DownloadedBooksTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+        self.navigationController?.navigationBar.barTintColor = UIColor.blackColor()
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+        self.navigationController?.navigationBar.barStyle = UIBarStyle.Black
+
+        
         if self.revealViewController() != nil{
             
             menuButton.target = self.revealViewController()
             menuButton.action = "revealToggle:"
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+            self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
         }
 
         // Uncomment the following line to preserve selection between presentations
@@ -95,18 +102,19 @@ class DownloadedBooksTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
         let name:String = arrDownloadedFile[indexPath.row] as String;
+        
         indexPathOfDownloadedList = indexPath.row;
         
         selectedFile = name;
-//        
-//        if arrDownloadedFileDislay[indexPath.row] == "Runes"{
-//            
-//            self.performSegueWithIdentifier("pushDetailRunes", sender: nil)
-//            
-//        }else{
+        
+        if arrDownloadedFileDislay[indexPathOfDownloadedList] == "Runes"{
+            
+            self.performSegueWithIdentifier("pushDetailRunes", sender: nil)
+            
+        }else{
         
             self.performSegueWithIdentifier("pushDetailCard", sender: nil);
-//        }
+       }
     }
     
     override func  prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
@@ -125,6 +133,7 @@ class DownloadedBooksTableViewController: UITableViewController {
             
             destinationRunes.nameFileDatabase = selectedFile
             destinationRunes.nameFileDatabaseIndexPaths = indexPathOfDownloadedList
+            destinationRunes.indexPathOfFeaturedList = 0
             
         }
     }

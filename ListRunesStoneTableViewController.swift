@@ -27,6 +27,7 @@ class ListRunesStoneTableViewController: UITableViewController, UISearchBarDeleg
     var nameFileDatabase:String!
     var nameFileDatabaseIndexPaths:Int!
     var indexPathOfFeaturedList: Int!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -122,14 +123,14 @@ class ListRunesStoneTableViewController: UITableViewController, UISearchBarDeleg
         
         var  defaultName: String = arrDownloadedFileDislay[indexCombined] as String
         
-//        if defaultName == "Runes"{
+        if defaultName == "Runes" {
         
             [self.performSegueWithIdentifier("SelectedRunes", sender: nil)]
             
-//        }else{
-//            
-//            self.performSegueWithIdentifier("SelectedTaRot", sender: nil)
-//        }
+        }else{
+        
+            self.performSegueWithIdentifier("SelectedTarot", sender: nil)
+        }
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

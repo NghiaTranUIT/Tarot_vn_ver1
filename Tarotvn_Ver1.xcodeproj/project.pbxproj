@@ -69,6 +69,9 @@
 		D7B9711E1B81F284007583EC /* DetailRiderCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B9711D1B81F284007583EC /* DetailRiderCardViewController.swift */; };
 		D7B971201B81F29C007583EC /* DeatailGeneralCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B9711F1B81F29C007583EC /* DeatailGeneralCardViewController.swift */; };
 		D7B971221B81FC5A007583EC /* RunesStoneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B971211B81FC5A007583EC /* RunesStoneTableViewCell.swift */; };
+		D7C9CC451B864C9E00C90985 /* DetailHelpingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C9CC441B864C9E00C90985 /* DetailHelpingScreenViewController.swift */; };
+		D7C9CC471B86F91100C90985 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C9CC461B86F91100C90985 /* HomeViewController.swift */; };
+		D7C9CC491B87262500C90985 /* AboutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C9CC481B87262500C90985 /* AboutTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,6 +154,9 @@
 		D7B9711D1B81F284007583EC /* DetailRiderCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailRiderCardViewController.swift; path = ../DetailRiderCardViewController.swift; sourceTree = "<group>"; };
 		D7B9711F1B81F29C007583EC /* DeatailGeneralCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeatailGeneralCardViewController.swift; path = ../DeatailGeneralCardViewController.swift; sourceTree = "<group>"; };
 		D7B971211B81FC5A007583EC /* RunesStoneTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RunesStoneTableViewCell.swift; path = ../RunesStoneTableViewCell.swift; sourceTree = "<group>"; };
+		D7C9CC441B864C9E00C90985 /* DetailHelpingScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailHelpingScreenViewController.swift; path = ../DetailHelpingScreenViewController.swift; sourceTree = "<group>"; };
+		D7C9CC461B86F91100C90985 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ../HomeViewController.swift; sourceTree = "<group>"; };
+		D7C9CC481B87262500C90985 /* AboutTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutTableViewCell.swift; path = ../AboutTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,12 +217,15 @@
 				D7B9706F1B81895A007583EC /* AppDelegate.swift */,
 				D7B971211B81FC5A007583EC /* RunesStoneTableViewCell.swift */,
 				D7B970941B818E8F007583EC /* MenuController.swift */,
+				D7C9CC481B87262500C90985 /* AboutTableViewCell.swift */,
 				D7B9709C1B819A13007583EC /* AboutTableViewController.swift */,
+				D7C9CC461B86F91100C90985 /* HomeViewController.swift */,
 				D7B970961B819688007583EC /* FeaturedBooksTableViewController.swift */,
 				D7B970981B8196B3007583EC /* StoredBooksTableViewController.swift */,
 				D7B9709A1B8196D1007583EC /* DownloadedBooksTableViewController.swift */,
 				D7B9711F1B81F29C007583EC /* DeatailGeneralCardViewController.swift */,
 				D7B9711D1B81F284007583EC /* DetailRiderCardViewController.swift */,
+				D7C9CC441B864C9E00C90985 /* DetailHelpingScreenViewController.swift */,
 				D7B9711B1B81F24E007583EC /* ListRunesStoneTableViewController.swift */,
 				D7B971191B81F235007583EC /* ListTarotCardTableViewController.swift */,
 				D7B970711B81895A007583EC /* ViewController.swift */,
@@ -478,7 +487,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7B9711E1B81F284007583EC /* DetailRiderCardViewController.swift in Sources */,
+				D7C9CC491B87262500C90985 /* AboutTableViewCell.swift in Sources */,
 				D7B970971B819688007583EC /* FeaturedBooksTableViewController.swift in Sources */,
+				D7C9CC471B86F91100C90985 /* HomeViewController.swift in Sources */,
 				D7B9711C1B81F24E007583EC /* ListRunesStoneTableViewController.swift in Sources */,
 				D7B970951B818E8F007583EC /* MenuController.swift in Sources */,
 				D7B9711A1B81F235007583EC /* ListTarotCardTableViewController.swift in Sources */,
@@ -494,6 +505,7 @@
 				D7B971081B81A8CF007583EC /* TarotCard.swift in Sources */,
 				D7B970931B818DA8007583EC /* SWRevealViewController.m in Sources */,
 				D7B971221B81FC5A007583EC /* RunesStoneTableViewCell.swift in Sources */,
+				D7C9CC451B864C9E00C90985 /* DetailHelpingScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

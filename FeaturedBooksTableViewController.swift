@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class FeaturedBooksTableViewController: UITableViewController {
     
@@ -17,17 +18,39 @@ class FeaturedBooksTableViewController: UITableViewController {
     var selectedFile: String!
     var indexPathOfDownloadedList: Int!
     var indexPathOfFeaturedList: Int!
+    var isFirstTouch: Bool = true
+    
 
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
+    @IBOutlet var myTableView: UITableView!
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        var query = PFQuery(className: "DataBook")
+        let userDefault = NSUserDefaults.standardUserDefaults()
+//        
+        self.revealViewController().rearViewRevealWidth = 220
+        self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+        self.navigationController?.navigationBar.barTintColor = UIColor.blackColor()
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+        self.navigationController?.navigationBar.barStyle = UIBarStyle.Black
         
         if self.revealViewController() != nil{
             
             menuButton.target = self.revealViewController()
             menuButton.action = "revealToggle:"
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+            self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
+            
+            if isFirstTouch == true{
+                
+                userDefault.setObject("notTouch", forKey: "isFirst")
+                isFirstTouch = false
+                
+            }
+            
             
         }
         // Uncomment the following line to preserve selection between presentations
@@ -56,8 +79,32 @@ class FeaturedBooksTableViewController: UITableViewController {
             }
             
         }
+       
         
-        self.revealViewController().rearViewRevealWidth =  180
+        
+        if userDefault.stringForKey("isFirst") != nil {
+        userDefault.setObject(arrFeaturedBookFullName, forKey: "fileDownload")
+        userDefault.setObject(arrFeaturedBook, forKey: "fileDownloadDislay")
+            
+        userDefault.setObject(nil, forKey: "isFirst")
+        }
+        
+        if let arrFileNameDownloaded: AnyObject = userDefault.objectForKey("fileDownload")
+        {
+            var readArray: [NSString] = arrFileNameDownloaded as! [NSString]
+            query.whereKey("fullName", notContainedIn: readArray)
+        }
+        ///add to dislay
+        if let arrFileNameDownloadedDislay: AnyObject = userDefault.objectForKey("fileDownloadDislay")
+        {
+            var readArrayDislay: [NSString] = arrFileNameDownloadedDislay as! [NSString]
+            query.whereKey("name", notContainedIn: readArrayDislay)
+        }
+        
+        
+
+        
+        
     }
     func pathToDocsFolder(bookTarot: String) -> String {
         let pathToDocumentsFolder = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as! String
@@ -92,18 +139,21 @@ class FeaturedBooksTableViewController: UITableViewController {
 
         // Configure the cell...
         cell.textLabel?.text = arrFeaturedBook[indexPath.row]
+        cell.textLabel?.font = UIFont(name: "System", size: 17)
+        //cell.selectionStyle = .None
 
         return cell
     }
     
-    override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
         let name:String = arrFeaturedBook[indexPath.row] as String
         let fullName: String = arrFeaturedBookFullName[indexPath.row] as String
         
         selectedFile = fullName
         indexPathOfFeaturedList = indexPath.row
-    
+        
+        
         
         if name == "Runes" {
             
@@ -115,9 +165,26 @@ class FeaturedBooksTableViewController: UITableViewController {
         }
     }
     
+//    override func tableView(tableView: UITableView, didHighlightRowAtIndexPath indexPath: NSIndexPath) {
+//        let cell = tableView.cellForRowAtIndexPath(indexPath)
+//        cell?.contentView.backgroundColor = UIColor.blackColor()
+//        cell?.textLabel?.backgroundColor = UIColor.blackColor()
+//        cell?.textLabel?.textColor = UIColor.whiteColor()
+//        
+//    }
+//    
+//    override func tableView(tableView: UITableView, didUnhighlightRowAtIndexPath indexPath: NSIndexPath) {
+//        let cell = tableView.cellForRowAtIndexPath(indexPath)
+//        cell?.contentView.backgroundColor = UIColor.whiteColor()
+//        cell?.textLabel?.backgroundColor = UIColor.whiteColor()
+//        cell?.textLabel?.textColor = UIColor.blackColor()
+//
+//
+//    }
     
  override func  prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
-{
+
+ {
     if segue.identifier == "pushFeaturedRunes" {
         
         var destinationRunes:ListRunesStoneTableViewController = segue.destinationViewController as! ListRunesStoneTableViewController
@@ -137,7 +204,10 @@ class FeaturedBooksTableViewController: UITableViewController {
         
     }
 }
-
+    
+   
+        
+    
 }
 
 

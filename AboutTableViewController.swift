@@ -9,10 +9,20 @@
 import UIKit
 
 class AboutTableViewController: UITableViewController {
-
+    
+    var arrAboutList: [String] = ["Tarot.vn", "Mystic House", "Witchita Coffee", "Liên Hệ"]
+    var selectedName: String!
+    var arrAboutListImange : [String] = ["Tarotvn icon 100.png","Mystichouse icon 100.png", "Wichita icon 100.png", "Customer Support Filled-100.png"]
+    
+    
     @IBOutlet weak var menuButton: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+        self.navigationController?.navigationBar.barTintColor = UIColor.blackColor()
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+        self.navigationController?.navigationBar.barStyle = UIBarStyle.Black
+
         
         if self.revealViewController() != nil {
             
@@ -38,25 +48,46 @@ class AboutTableViewController: UITableViewController {
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return 0
+        return arrAboutList.count
     }
 
-    /*
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as! UITableViewCell
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> AboutTableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("AboutCell", forIndexPath: indexPath) as! AboutTableViewCell
 
         // Configure the cell...
+        cell.lblAbout.text = arrAboutList[indexPath.row]
+        cell.imgAbout.image = UIImage(named: arrAboutListImange[indexPath.row])
+        
 
         return cell
     }
-    */
-
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        selectedName = arrAboutList[indexPath.row]
+       self.performSegueWithIdentifier("pushDetailHelping", sender: nil)
+    }
+   
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using [segue destinationViewController].
+        // Pass the selected object to the new view controller.
+        if segue.identifier == "pushDetailHelping" {
+           
+            var destinationHelping: DetailHelpingScreenViewController = segue.destinationViewController as! DetailHelpingScreenViewController
+            
+            destinationHelping.nameOfHelping = selectedName
+            
+     }
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
@@ -92,14 +123,10 @@ class AboutTableViewController: UITableViewController {
     }
     */
 
-    /*
+  
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 
 }
