@@ -75,15 +75,7 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Rz9-uD-653" id="aAS-BL-tbj">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Home-50" translatesAutoresizingMaskIntoConstraints="NO" id="dNB-RX-CRY">
-                                                    <rect key="frame" x="18" y="4" width="35" height="35"/>
-                                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="35" id="Jaf-FW-XvK"/>
-                                                        <constraint firstAttribute="height" constant="35" id="mpF-gf-mRW"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trang Chủ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GgK-gm-3ce">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Trang Chủ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GgK-gm-3ce">
                                                     <rect key="frame" x="61" y="10" width="175" height="27"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="27" id="NBg-w7-LcT"/>
@@ -92,13 +84,21 @@
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Home-50" translatesAutoresizingMaskIntoConstraints="NO" id="7gF-bK-M7x">
+                                                    <rect key="frame" x="18" y="4" width="35" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="35" id="3NW-dD-XFS"/>
+                                                        <constraint firstAttribute="height" constant="35" id="BoW-OK-9J1"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="Moy-o7-mch"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="35" id="cz9-dw-Ngw"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="backgroundColor" red="0.94117647058823528" green="0.94901960784313721" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
+                                                <constraint firstItem="7gF-bK-M7x" firstAttribute="leading" secondItem="aAS-BL-tbj" secondAttribute="leading" constant="18" id="SZ8-Om-EjZ"/>
+                                                <constraint firstItem="7gF-bK-M7x" firstAttribute="top" secondItem="aAS-BL-tbj" secondAttribute="top" constant="4" id="jF7-Uc-ED4"/>
                                                 <constraint firstItem="GgK-gm-3ce" firstAttribute="top" secondItem="aAS-BL-tbj" secondAttribute="top" constant="10" id="lVk-UC-kpY"/>
-                                                <constraint firstItem="dNB-RX-CRY" firstAttribute="leading" secondItem="aAS-BL-tbj" secondAttribute="leading" constant="18" id="lo3-e0-pKP"/>
-                                                <constraint firstItem="GgK-gm-3ce" firstAttribute="leading" secondItem="dNB-RX-CRY" secondAttribute="trailing" constant="8" id="mor-T3-fdT"/>
-                                                <constraint firstItem="dNB-RX-CRY" firstAttribute="top" secondItem="aAS-BL-tbj" secondAttribute="top" constant="4" id="rL6-Sp-vdE"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.94117647058823528" green="0.94901960784313721" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
@@ -236,6 +236,8 @@
                             <outlet property="delegate" destination="uc4-4q-eL1" id="ruV-rs-X4x"/>
                         </connections>
                     </tableView>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BbI-6n-tpC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -419,6 +421,7 @@
                         <searchBar key="tableHeaderView" contentMode="redraw" translucent="NO" id="Lg8-lK-9Wo">
                             <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             <textInputTraits key="textInputTraits"/>
@@ -594,6 +597,8 @@
                         <searchBar key="tableHeaderView" contentMode="redraw" translucent="NO" id="hG3-MM-Phw">
                             <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             <textInputTraits key="textInputTraits"/>
                         </searchBar>
@@ -844,6 +849,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="Dme-Gf-VaD"/>
         <segue reference="LAd-RN-aOM"/>
-        <segue reference="6Il-YU-CgJ"/>
+        <segue reference="c9t-va-Sfw"/>
     </inferredMetricsTieBreakers>
 </document>

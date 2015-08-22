@@ -18,7 +18,7 @@ class FeaturedBooksTableViewController: UITableViewController {
     var selectedFile: String!
     var indexPathOfDownloadedList: Int!
     var indexPathOfFeaturedList: Int!
-    var isFirstLauch : Bool!
+    //var isFirstLauch : Bool!
     
 
     @IBOutlet weak var menuButton: UIBarButtonItem!
@@ -76,11 +76,12 @@ class FeaturedBooksTableViewController: UITableViewController {
        
         
         
-        if isFirstLauch == nil {
+        if userDefault.objectForKey("isFirstLaunch") == nil {
             
             userDefault.setObject(arrFeaturedBookFullName, forKey: "fileDownload")
             userDefault.setObject(arrFeaturedBook, forKey: "fileDownloadDislay")
-            isFirstLauch = true
+            
+            userDefault.setBool(true, forKey: "isFirstLaunch")
             
         }
         
