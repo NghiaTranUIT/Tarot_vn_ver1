@@ -35,11 +35,28 @@ class HomeViewController: UIViewController, UIWebViewDelegate {
         self.navigationController?.navigationBar.barStyle = UIBarStyle.Black
 
          containerView.delegate = self
+        
+        if Reachability.isConnectedToNetwork() == true {
+            
+            myHUb =  MBProgressHUD.showHUDAddedTo(UIApplication.sharedApplication().keyWindow, animated: true)
+            myHUb.labelText = "Đang Tải..."
+            myHUb.dimBackground = true
+            
+            // Do any additional setup after loading the view.
+            var url = NSURL(string: "http://tarot.vn")
+            var req = NSURLRequest(URL:url!)
+            
+            self.containerView!.loadRequest(req)
+
+            
+            println("Internet connection OK")
+        } else {
+            println("Internet connection FAILED")
+            var alert = UIAlertView(title: "No Internet Connection", message: "Make sure your device is connected to the internet.", delegate: nil, cancelButtonTitle: "OK")
+            alert.show()
+        }
       
-        ///
-         myHUb =  MBProgressHUD.showHUDAddedTo(UIApplication.sharedApplication().keyWindow, animated: true)
-        myHUb.labelText = "Đang Tải..."
-        myHUb.dimBackground = true;
+       
         
 
         
@@ -53,7 +70,7 @@ class HomeViewController: UIViewController, UIWebViewDelegate {
             self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
         }
 
-        
+//        
         // Do any additional setup after loading the view.
         var url = NSURL(string: "http://tarot.vn")
         var req = NSURLRequest(URL:url!)

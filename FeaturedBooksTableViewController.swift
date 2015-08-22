@@ -18,7 +18,7 @@ class FeaturedBooksTableViewController: UITableViewController {
     var selectedFile: String!
     var indexPathOfDownloadedList: Int!
     var indexPathOfFeaturedList: Int!
-    var isFirstTouch: Bool = true
+    var isFirstLauch : Bool!
     
 
     @IBOutlet weak var menuButton: UIBarButtonItem!
@@ -44,15 +44,8 @@ class FeaturedBooksTableViewController: UITableViewController {
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
             self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
             
-            if isFirstTouch == true{
-                
-                userDefault.setObject("notTouch", forKey: "isFirst")
-                isFirstTouch = false
-                
+            
             }
-            
-            
-        }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -82,12 +75,15 @@ class FeaturedBooksTableViewController: UITableViewController {
        
         
         
-        if userDefault.stringForKey("isFirst") != nil {
-        userDefault.setObject(arrFeaturedBookFullName, forKey: "fileDownload")
-        userDefault.setObject(arrFeaturedBook, forKey: "fileDownloadDislay")
+        if isFirstLauch == nil {
             
-        userDefault.setObject(nil, forKey: "isFirst")
+            userDefault.setObject(arrFeaturedBookFullName, forKey: "fileDownload")
+            userDefault.setObject(arrFeaturedBook, forKey: "fileDownloadDislay")
+            isFirstLauch = true
+            
         }
+        
+     
         
         if let arrFileNameDownloaded: AnyObject = userDefault.objectForKey("fileDownload")
         {

@@ -39,17 +39,19 @@ class StoredBooksTableViewController: UITableViewController {
             self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
         }
         
-               
-        if userDefault.stringForKey("isFirst") != nil {
+        
             
-        userDefault.setObject(arrFeaturedBookFullName, forKey: "fileDownload")
-        userDefault.setObject(arrFeaturedBook, forKey: "fileDownloadDislay")
-        userDefault.setObject(nil, forKey: "isFirst")
-            
-        }
+//        userDefault.setObject(arrFeaturedBookFullName, forKey: "fileDownload")
+//        userDefault.setObject(arrFeaturedBook, forKey: "fileDownloadDislay")
+        
         
         arrlist = []
-        MBProgressHUD.showHUDAddedTo(self.view, animated: true)
+        
+        
+        if Reachability.isConnectedToNetwork() == true {
+            println("Internet connection OK")
+            
+            MBProgressHUD.showHUDAddedTo(self.view, animated: true)
         
        var query = PFQuery(className: "DataBook")
             if let arrFileNameDownloaded: AnyObject = userDefault.objectForKey("fileDownload")
@@ -64,7 +66,36 @@ class StoredBooksTableViewController: UITableViewController {
             var readArrayDislay: [NSString] = arrFileNameDownloadedDislay as! [NSString]
             query.whereKey("name", notContainedIn: readArrayDislay)
            
+
         }
+            
+            query.findObjectsInBackgroundWithBlock {(objects: [AnyObject]?, error: NSError?) -> Void in
+                if error == nil {
+                    
+                    self.arrlist = objects
+                }
+                
+                self.tableView.reloadData()
+                
+                
+                MBProgressHUD.hideHUDForView(self.view, animated: true)
+            }
+            
+            
+            NSNotificationCenter.defaultCenter().addObserver(self, selector: "onCreatedNotification", name: "reloadListBooks" , object: nil)
+            
+            
+        }
+
+        
+        else {
+            println("Internet connection FAILED")
+            var alert = UIAlertView(title: "No Internet Connection", message: "Make sure your device is connected to the internet.", delegate: nil, cancelButtonTitle: "OK")
+            alert.show()
+        }
+        
+        
+                }
         //
 //        if let arrFileNameDownloadedShowUp: AnyObject = userDefault.objectForKey("fileDownloadShowUp")
 //        {
@@ -73,23 +104,6 @@ class StoredBooksTableViewController: UITableViewController {
 //        }
 
         
-        query.findObjectsInBackgroundWithBlock {(objects: [AnyObject]?, error: NSError?) -> Void in
-            if error == nil {
-                
-                self.arrlist = objects
-            }
-            
-            self.tableView.reloadData()
-            
-            
-            MBProgressHUD.hideHUDForView(self.view, animated: true)
-        }
-        
-        
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "onCreatedNotification", name: "reloadListBooks" , object: nil)
-        
-
-    }
     
     func onCreatedNotification()
     {
