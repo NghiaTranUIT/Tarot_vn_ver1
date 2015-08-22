@@ -5,10 +5,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Reveal View Controller-->
+        <!--Root View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="SWRevealViewController" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="RootViewController" customModule="Tarotvn_Ver1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -18,10 +18,6 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <connections>
-                        <segue destination="uc4-4q-eL1" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="S3K-iL-dyE"/>
-                        <segue destination="yIc-05-uMF" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="fHd-Ji-jL8"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
@@ -30,16 +26,16 @@
         <!--Menu Controller-->
         <scene sceneID="izO-hI-O24">
             <objects>
-                <tableViewController id="uc4-4q-eL1" customClass="MenuController" customModule="Tarotvn_Ver1" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="leftScreen" id="uc4-4q-eL1" customClass="MenuController" customModule="Tarotvn_Ver1" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" sectionIndexMinimumDisplayRowCount="4" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ArX-Hf-k9b">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.94117647059999998" green="0.94901960780000005" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="sectionIndexBackgroundColor" red="0.94117647059999998" green="0.94901960780000005" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                         <sections>
                             <tableViewSection id="AbC-iZ-IUL">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="XAK-F9-Ud9">
+                                    <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="XAK-F9-Ud9">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XAK-F9-Ud9" id="Cw5-Ua-1TK">
@@ -81,6 +77,7 @@
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Home-50" translatesAutoresizingMaskIntoConstraints="NO" id="dNB-RX-CRY">
                                                     <rect key="frame" x="18" y="4" width="35" height="35"/>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="35" id="Jaf-FW-XvK"/>
                                                         <constraint firstAttribute="height" constant="35" id="mpF-gf-mRW"/>
@@ -93,10 +90,10 @@
                                                         <constraint firstAttribute="width" constant="175" id="QVy-Yz-1wQ"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstItem="GgK-gm-3ce" firstAttribute="top" secondItem="aAS-BL-tbj" secondAttribute="top" constant="10" id="lVk-UC-kpY"/>
                                                 <constraint firstItem="dNB-RX-CRY" firstAttribute="leading" secondItem="aAS-BL-tbj" secondAttribute="leading" constant="18" id="lo3-e0-pKP"/>
@@ -105,9 +102,6 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.94117647058823528" green="0.94901960784313721" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
-                                        <connections>
-                                            <segue destination="KC9-tg-elZ" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="ybT-iQ-eY2"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FeturedCell" id="mHc-dq-HZw">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -128,7 +122,6 @@
                                                         <constraint firstAttribute="height" constant="27" id="wrD-zw-bF6"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -140,9 +133,6 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.94117647058823528" green="0.94901960784313721" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
-                                        <connections>
-                                            <segue destination="yIc-05-uMF" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="yAa-bl-oUl"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StoreCell" id="qfK-Cl-XRn">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -163,7 +153,6 @@
                                                         <constraint firstAttribute="width" constant="175" id="N6b-mM-2mM"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -175,9 +164,6 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.94117647058823528" green="0.94901960784313721" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
-                                        <connections>
-                                            <segue destination="1gS-l5-if5" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="EPO-F1-FJz"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DownloadedCell" id="yxx-di-5eR">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -198,7 +184,6 @@
                                                         <constraint firstAttribute="height" constant="27" id="kzm-qf-NiC"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -210,9 +195,6 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.94117647058823528" green="0.94901960784313721" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
-                                        <connections>
-                                            <segue destination="jVc-bj-9h4" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="IwK-MG-ijh"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AboutCell" id="Cy6-s0-vFm">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -234,7 +216,6 @@
                                                         <constraint firstAttribute="width" constant="175" id="t8a-P7-RfG"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -246,9 +227,6 @@
                                                 <constraint firstItem="yQJ-cP-iFo" firstAttribute="leading" secondItem="sKs-ON-5Td" secondAttribute="trailing" constant="8" id="ber-pn-VtU"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="TCL-1b-7lD" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="xdM-l9-88Q"/>
-                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -298,7 +276,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Moh-fU-cNM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1696" y="-138"/>
+            <point key="canvasLocation" x="1696" y="-184"/>
         </scene>
         <!--Sách Đang Có-->
         <scene sceneID="Zid-Wg-heI">
@@ -438,9 +416,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" id="Lg8-lK-9Wo">
+                        <searchBar key="tableHeaderView" contentMode="redraw" translucent="NO" id="Lg8-lK-9Wo">
                             <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             <textInputTraits key="textInputTraits"/>
                         </searchBar>
@@ -612,7 +591,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" id="hG3-MM-Phw">
+                        <searchBar key="tableHeaderView" contentMode="redraw" translucent="NO" id="hG3-MM-Phw">
                             <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -725,7 +704,7 @@
         <!--Navigation Controller-->
         <scene sceneID="Hoq-RU-ePS">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yIc-05-uMF" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="featureScreen" automaticallyAdjustsScrollViewInsets="NO" id="yIc-05-uMF" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="e4W-mB-2gS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -782,7 +761,7 @@
         <!--Navigation Controller-->
         <scene sceneID="SJb-Ed-SdV">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1gS-l5-if5" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="storedBooks" automaticallyAdjustsScrollViewInsets="NO" id="1gS-l5-if5" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="8Oh-v7-OvE">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -795,12 +774,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qun-eP-N3V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="884" y="534"/>
+            <point key="canvasLocation" x="1146" y="476"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="66W-Qv-0Ri">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jVc-bj-9h4" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="downloadedBooks" automaticallyAdjustsScrollViewInsets="NO" id="jVc-bj-9h4" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Bwn-cU-Atr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -813,12 +792,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mi8-8g-HxH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="884" y="1212"/>
+            <point key="canvasLocation" x="1108" y="1274"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="CCk-Ct-YgA">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TCL-1b-7lD" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="aboutBooks" automaticallyAdjustsScrollViewInsets="NO" id="TCL-1b-7lD" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="JUn-Xx-ZoW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -831,12 +810,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mhz-97-iIi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="884" y="1920"/>
+            <point key="canvasLocation" x="858" y="2232"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="uoq-eJ-mmE">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KC9-tg-elZ" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="homeScreen" automaticallyAdjustsScrollViewInsets="NO" id="KC9-tg-elZ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fIE-ez-cqn">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -863,7 +842,6 @@
         <image name="Save-50" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="yAa-bl-oUl"/>
         <segue reference="Dme-Gf-VaD"/>
         <segue reference="LAd-RN-aOM"/>
         <segue reference="6Il-YU-CgJ"/>

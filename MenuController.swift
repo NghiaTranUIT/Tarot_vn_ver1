@@ -8,9 +8,15 @@
 
 import UIKit
 
+protocol MenuControllerDelegate
+{
+    func didSelectedLeftMenuItem(sender:MenuController,atRow:NSInteger)
+}
 
 class MenuController: UITableViewController {
 
+   var delegate:MenuControllerDelegate! = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -19,6 +25,8 @@ class MenuController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+
         
     }
 
@@ -95,5 +103,9 @@ class MenuController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        NSLog("select row = %d",indexPath.row)
+        
+        delegate.didSelectedLeftMenuItem(self, atRow: indexPath.row)
+    }
 }

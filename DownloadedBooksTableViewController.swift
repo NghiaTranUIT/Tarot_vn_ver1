@@ -25,6 +25,7 @@ class DownloadedBooksTableViewController: UITableViewController {
         self.navigationController?.navigationBar.barTintColor = UIColor.blackColor()
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         self.navigationController?.navigationBar.barStyle = UIBarStyle.Black
+        self.navigationController?.navigationBar.translucent = false
 
         
         if self.revealViewController() != nil{
