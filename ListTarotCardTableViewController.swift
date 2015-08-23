@@ -115,17 +115,17 @@ class ListTarotCardTableViewController: UITableViewController, UISearchBarDelega
         
         var  defaultName: String = arrDownloadedFileDislay[indexConbined!] as String
         
-        if defaultName == "Rider Waite Tarot"
-        {
-            
-            [self .performSegueWithIdentifier("SelectedRider", sender: nil)]
-            
-        }
-            
-        else{
-            
+//        if defaultName == "Rider Waite Tarot"
+//        {
+//            
+//            [self .performSegueWithIdentifier("SelectedRider", sender: nil)]
+//            
+//        }
+//            
+//        else{
+        
                 [self.performSegueWithIdentifier("SelectedTarot", sender: nil)]
-            }
+            
 
         }
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

@@ -127,7 +127,12 @@ class ListRunesStoneTableViewController: UITableViewController, UISearchBarDeleg
         
             [self.performSegueWithIdentifier("SelectedRunes", sender: nil)]
             
-        }else{
+        }else if defaultName == "Rider Waite Tarot"{
+            
+            [self.performSegueWithIdentifier("SelectedRider", sender: nil)]
+        }
+        
+        else{
         
             self.performSegueWithIdentifier("SelectedTarot", sender: nil)
         }

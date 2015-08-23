@@ -154,11 +154,16 @@ class FeaturedBooksTableViewController: UITableViewController {
         
         
         
-        if name == "Runes" {
+        if name == "Runes"  {
             
             self.performSegueWithIdentifier("pushFeaturedRunes", sender: nil)
             
-        }else {
+        } else if  name == "Rider Waite Tarot" {
+            
+            self.performSegueWithIdentifier("pushFeaturedRunes", sender: nil)
+        }
+        
+        else {
             
             self.performSegueWithIdentifier("pushFeaturedTarot", sender: nil)
         }
