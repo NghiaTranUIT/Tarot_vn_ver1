@@ -31,6 +31,33 @@ class RootViewController: SWRevealViewController, MenuControllerDelegate {
             setFrontViewController(featureBookNavigationController, animated: false)
         }
         
+        if homeScreen == nil
+        {
+            homeScreen = storyboard?.instantiateViewControllerWithIdentifier("homeScreen") as? UINavigationController
+            
+            //setFrontViewController(homeScreen, animated: false)
+        }
+        if availableScreen == nil
+        {
+            availableScreen = storyboard?.instantiateViewControllerWithIdentifier("storedBooks") as? UINavigationController
+            
+           // setFrontViewController(availableScreen, animated: false)
+        }
+        if downloadedScreen == nil
+        {
+            downloadedScreen = storyboard?.instantiateViewControllerWithIdentifier("downloadedBooks") as? UINavigationController
+            
+           // setFrontViewController(downloadedScreen, animated: false)
+        }
+        
+        if infoScreen == nil
+        {
+            infoScreen = storyboard?.instantiateViewControllerWithIdentifier("aboutBooks") as? UINavigationController
+            
+            //setFrontViewController(infoScreen, animated: false)
+        }
+       
+        
         if menuController == nil
         {
             menuController = storyboard?.instantiateViewControllerWithIdentifier("leftScreen") as? MenuController
@@ -38,6 +65,7 @@ class RootViewController: SWRevealViewController, MenuControllerDelegate {
             
             setRearViewController(menuController, animated: false)
         }
+        
     
     }
 

@@ -31,7 +31,8 @@ class FeaturedBooksTableViewController: UITableViewController {
         var query = PFQuery(className: "DataBook")
         let userDefault = NSUserDefaults.standardUserDefaults()
 //        
-        self.revealViewController().rearViewRevealWidth = 220
+        self.revealViewController().rearViewRevealWidth = 238
+        
         self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
         self.navigationController?.navigationBar.barTintColor = UIColor.blackColor()
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
@@ -157,7 +158,7 @@ class FeaturedBooksTableViewController: UITableViewController {
             
             self.performSegueWithIdentifier("pushFeaturedRunes", sender: nil)
             
-        }else{
+        }else {
             
             self.performSegueWithIdentifier("pushFeaturedTarot", sender: nil)
         }

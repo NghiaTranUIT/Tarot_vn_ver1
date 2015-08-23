@@ -127,7 +127,7 @@ class DeatailGeneralCardViewController: UIViewController {
             
         } else{
             
-            myDescription.font = UIFont(name: myDescription.font.fontName, size: 14)
+          myDescription.font = UIFont(name: myDescription.font.fontName, size: 14)
             
             myDescription.textColor = UIColor.blackColor()
             myDescription.backgroundColor = UIColor.whiteColor()

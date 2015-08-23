@@ -8,11 +8,13 @@
 
 import UIKit
 import Parse
+import Refresher
 
 class StoredBooksTableViewController: UITableViewController {
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
+    @IBOutlet var myTableview: UITableView!
     var arrlist: [AnyObject]!
     var selected: PFObject!
     var arrFeaturedBook: [String] = ["Rider Waite Tarot","Lenormand Card","Runes","The Clow Card"]
@@ -30,8 +32,8 @@ class StoredBooksTableViewController: UITableViewController {
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         self.navigationController?.navigationBar.barStyle = UIBarStyle.Black
         self.navigationController?.navigationBar.translucent = false
-
-        
+        self.view.backgroundColor = UIColor.blackColor()
+        self.tableView.backgroundColor = UIColor.whiteColor()
         if self.revealViewController() != nil {
             
             menuButton.target = self.revealViewController()
@@ -40,8 +42,45 @@ class StoredBooksTableViewController: UITableViewController {
             self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
         }
         
+        if let customSubview = NSBundle.mainBundle().loadNibNamed("CustomSubview", owner: self, options: nil).first as? CustomSubview {
+            myTableview.addPullToRefreshWithAction({
+                NSOperationQueue().addOperationWithBlock {
+                    var query = PFQuery(className: "DataBook")
+                    if let arrFileNameDownloaded: AnyObject = self.userDefault.objectForKey("fileDownload")
+                    {
+                        var readArray: [NSString] = arrFileNameDownloaded as! [NSString]
+                        query.whereKey("fullName", notContainedIn: readArray)
+                        
+                    }
+                    ///add to dislay
+                    if let arrFileNameDownloadedDislay: AnyObject = self.userDefault.objectForKey("fileDownloadDislay")
+                    {
+                        var readArrayDislay: [NSString] = arrFileNameDownloadedDislay as! [NSString]
+                        query.whereKey("name", notContainedIn: readArrayDislay)
+                        
+                        
+                    }
+                    
+                    query.findObjectsInBackgroundWithBlock {(objects: [AnyObject]?, error: NSError?) -> Void in
+                        if error == nil {
+                            
+                            self.arrlist = objects
+                        }
+                        
+                        self.tableView.reloadData()
+                        
+                        
+                        MBProgressHUD.hideHUDForView(self.tableView, animated: true)
+                    }
+
+                    
+                    NSOperationQueue.mainQueue().addOperationWithBlock {
+                        self.tableView.stopPullToRefresh()
+                    }
+                }
+                }, withAnimator: customSubview)
+        }
         
-            
 //        userDefault.setObject(arrFeaturedBookFullName, forKey: "fileDownload")
 //        userDefault.setObject(arrFeaturedBook, forKey: "fileDownloadDislay")
         
@@ -52,7 +91,7 @@ class StoredBooksTableViewController: UITableViewController {
         if Reachability.isConnectedToNetwork() == true {
             println("Internet connection OK")
             
-            MBProgressHUD.showHUDAddedTo(self.view, animated: true)
+            MBProgressHUD.showHUDAddedTo(self.tableView, animated: true)
         
        var query = PFQuery(className: "DataBook")
             if let arrFileNameDownloaded: AnyObject = userDefault.objectForKey("fileDownload")
@@ -79,7 +118,7 @@ class StoredBooksTableViewController: UITableViewController {
                 self.tableView.reloadData()
                 
                 
-                MBProgressHUD.hideHUDForView(self.view, animated: true)
+                MBProgressHUD.hideHUDForView(self.tableView, animated: true)
             }
             
             

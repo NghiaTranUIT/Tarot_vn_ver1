@@ -14,6 +14,21 @@ class HomeViewController: UIViewController, UIWebViewDelegate {
     @IBOutlet weak var containerView: UIWebView!
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
+    
+    @IBAction func refreshButton(sender: AnyObject) {
+        
+        myHUb =  MBProgressHUD.showHUDAddedTo(self.containerView, animated: true)
+        myHUb.labelText = "Đang Tải..."
+        myHUb.dimBackground = true
+        
+        // Do any additional setup after loading the view.
+        var url = NSURL(string: "http://tarot.vn")
+        var req = NSURLRequest(URL:url!)
+        
+        self.containerView!.loadRequest(req)
+        
+        
+    }
     var myHUb: MBProgressHUD!
     
 //    var webView: WKWebView?
@@ -33,12 +48,13 @@ class HomeViewController: UIViewController, UIWebViewDelegate {
         self.navigationController?.navigationBar.barTintColor = UIColor.blackColor()
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         self.navigationController?.navigationBar.barStyle = UIBarStyle.Black
+        self.navigationController?.navigationBar.translucent = false
 
          containerView.delegate = self
         
         if Reachability.isConnectedToNetwork() == true {
             
-            myHUb =  MBProgressHUD.showHUDAddedTo(UIApplication.sharedApplication().keyWindow, animated: true)
+            myHUb =  MBProgressHUD.showHUDAddedTo(self.containerView, animated: true)
             myHUb.labelText = "Đang Tải..."
             myHUb.dimBackground = true
             

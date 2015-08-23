@@ -12,7 +12,7 @@ class AboutTableViewController: UITableViewController {
     
     var arrAboutList: [String] = ["Tarot.vn", "Mystic House", "Witchita Coffee", "Liên Hệ"]
     var selectedName: String!
-    var arrAboutListImange : [String] = ["Tarotvn icon 100.png","Mystichouse icon 100.png", "Wichita icon 100.png", "Customer Support Filled-100.png"]
+    var arrAboutListImange : [String] = ["Tarotvn icon 100 copy.png","Mystichouse icon 100 copy.png", "Wichita icon 100 copy.png", "Customer Support Filled-100.png"]
     
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
@@ -22,6 +22,7 @@ class AboutTableViewController: UITableViewController {
         self.navigationController?.navigationBar.barTintColor = UIColor.blackColor()
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         self.navigationController?.navigationBar.barStyle = UIBarStyle.Black
+        self.navigationController?.navigationBar.translucent = false
 
         
         if self.revealViewController() != nil {
