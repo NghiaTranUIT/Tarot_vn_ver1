@@ -9,6 +9,43 @@
 /* Begin PBXBuildFile section */
 		75545E27B43684F1F2572294 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02AAB82BE6D180135A45E768 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		D72ACB671B88907E000AFA2C /* CustomSubview.xib in Resources */ = {isa = PBXBuildFile; fileRef = D72ACB661B88907E000AFA2C /* CustomSubview.xib */; };
+		D7B8ACAF1B8AD03800037A41 /* Lenormand 1.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B8AC8B1B8AD03800037A41 /* Lenormand 1.png */; };
+		D7B8ACB01B8AD03800037A41 /* Lenormand 10.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B8AC8C1B8AD03800037A41 /* Lenormand 10.png */; };
+		D7B8ACB11B8AD03800037A41 /* Lenormand 11.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B8AC8D1B8AD03800037A41 /* Lenormand 11.png */; };
+		D7B8ACB21B8AD03800037A41 /* Lenormand 12.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B8AC8E1B8AD03800037A41 /* Lenormand 12.png */; };
+		D7B8ACB31B8AD03800037A41 /* Lenormand 13.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B8AC8F1B8AD03800037A41 /* Lenormand 13.png */; };
+		D7B8ACB41B8AD03800037A41 /* Lenormand 14.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B8AC901B8AD03800037A41 /* Lenormand 14.png */; };
+		D7B8ACB51B8AD03800037A41 /* Lenormand 15.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B8AC911B8AD03800037A41 /* Lenormand 15.png */; };
+		D7B8ACB61B8AD03800037A41 /* Lenormand 16.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B8AC921B8AD03800037A41 /* Lenormand 16.png */; };
+		D7B8ACB71B8AD03800037A41 /* Lenormand 17.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B8AC931B8AD03800037A41 /* Lenormand 17.png */; };
+		D7B8ACB81B8AD03800037A41 /* Lenormand 18.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B8AC941B8AD03800037A41 /* Lenormand 18.png */; };
+		D7B8ACB91B8AD03800037A41 /* Lenormand 19.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B8AC951B8AD03800037A41 /* Lenormand 19.png */; };
+		D7B8ACBA1B8AD03800037A41 /* Lenormand 2.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B8AC961B8AD03800037A41 /* Lenormand 2.png */; };
+		D7B8ACBB1B8AD03800037A41 /* Lenormand 20.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B8AC971B8AD03800037A41 /* Lenormand 20.png */; };
+		D7B8ACBC1B8AD03800037A41 /* Lenormand 21.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B8AC981B8AD03800037A41 /* Lenormand 21.png */; };
+		D7B8ACBD1B8AD03800037A41 /* Lenormand 22.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B8AC991B8AD03800037A41 /* Lenormand 22.png */; };
+		D7B8ACBE1B8AD03800037A41 /* Lenormand 23.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B8AC9A1B8AD03800037A41 /* Lenormand 23.png */; };
+		D7B8ACBF1B8AD03800037A41 /* Lenormand 24.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B8AC9B1B8AD03800037A41 /* Lenormand 24.png */; };
+		D7B8ACC01B8AD03800037A41 /* Lenormand 25.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B8AC9C1B8AD03800037A41 /* Lenormand 25.png */; };
+		D7B8ACC11B8AD03800037A41 /* Lenormand 26.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B8AC9D1B8AD03800037A41 /* Lenormand 26.png */; };
+		D7B8ACC21B8AD03800037A41 /* Lenormand 27.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B8AC9E1B8AD03800037A41 /* Lenormand 27.png */; };
+		D7B8ACC31B8AD03800037A41 /* Lenormand 28.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B8AC9F1B8AD03800037A41 /* Lenormand 28.png */; };
+		D7B8ACC41B8AD03800037A41 /* Lenormand 29.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B8ACA01B8AD03800037A41 /* Lenormand 29.png */; };
+		D7B8ACC51B8AD03800037A41 /* Lenormand 3.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B8ACA11B8AD03800037A41 /* Lenormand 3.png */; };
+		D7B8ACC61B8AD03800037A41 /* lenormand 30.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B8ACA21B8AD03800037A41 /* lenormand 30.png */; };
+		D7B8ACC71B8AD03800037A41 /* Lenormand 31.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B8ACA31B8AD03800037A41 /* Lenormand 31.png */; };
+		D7B8ACC81B8AD03800037A41 /* Lenormand 32.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B8ACA41B8AD03800037A41 /* Lenormand 32.png */; };
+		D7B8ACC91B8AD03800037A41 /* Lenormand 33.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B8ACA51B8AD03800037A41 /* Lenormand 33.png */; };
+		D7B8ACCA1B8AD03800037A41 /* Lenormand 34.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B8ACA61B8AD03800037A41 /* Lenormand 34.png */; };
+		D7B8ACCB1B8AD03800037A41 /* Lenormand 35.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B8ACA71B8AD03800037A41 /* Lenormand 35.png */; };
+		D7B8ACCC1B8AD03800037A41 /* Lenormand 36.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B8ACA81B8AD03800037A41 /* Lenormand 36.png */; };
+		D7B8ACCD1B8AD03800037A41 /* Lenormand 4.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B8ACA91B8AD03800037A41 /* Lenormand 4.png */; };
+		D7B8ACCE1B8AD03800037A41 /* Lenormand 5.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B8ACAA1B8AD03800037A41 /* Lenormand 5.png */; };
+		D7B8ACCF1B8AD03800037A41 /* Lenormand 6.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B8ACAB1B8AD03800037A41 /* Lenormand 6.png */; };
+		D7B8ACD01B8AD03800037A41 /* Lenormand 7.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B8ACAC1B8AD03800037A41 /* Lenormand 7.png */; };
+		D7B8ACD11B8AD03800037A41 /* Lenormand 8.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B8ACAD1B8AD03800037A41 /* Lenormand 8.png */; };
+		D7B8ACD21B8AD03800037A41 /* Lenormand 9.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B8ACAE1B8AD03800037A41 /* Lenormand 9.png */; };
+		D7B8ACD41B8AD07900037A41 /* Lenormand.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = D7B8ACD31B8AD07900037A41 /* Lenormand.sqlite3 */; };
 		D7B970701B81895A007583EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B9706F1B81895A007583EC /* AppDelegate.swift */; };
 		D7B970721B81895A007583EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B970711B81895A007583EC /* ViewController.swift */; };
 		D7B970751B81895A007583EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7B970731B81895A007583EC /* Main.storyboard */; };
@@ -47,7 +84,6 @@
 		D7B970E01B81A1EB007583EC /* URUZ.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B970C11B81A1EB007583EC /* URUZ.png */; };
 		D7B970E11B81A1EB007583EC /* WUNJO.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B970C21B81A1EB007583EC /* WUNJO.png */; };
 		D7B970E21B81A1EB007583EC /* WYRD.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B970C31B81A1EB007583EC /* WYRD.png */; };
-		D7B970E81B81A230007583EC /* Lenormand.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = D7B970E41B81A230007583EC /* Lenormand.sqlite3 */; };
 		D7B970E91B81A230007583EC /* RiderWaiteTarot.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = D7B970E51B81A230007583EC /* RiderWaiteTarot.sqlite3 */; };
 		D7B970EA1B81A230007583EC /* RunesChart.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = D7B970E61B81A230007583EC /* RunesChart.sqlite3 */; };
 		D7B970EB1B81A230007583EC /* TheClowCard.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = D7B970E71B81A230007583EC /* TheClowCard.sqlite3 */; };
@@ -96,6 +132,43 @@
 		69645DCF856037693864E26A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		6CE7A9D63106457C81250A86 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D72ACB661B88907E000AFA2C /* CustomSubview.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomSubview.xib; sourceTree = "<group>"; };
+		D7B8AC8B1B8AD03800037A41 /* Lenormand 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lenormand 1.png"; sourceTree = "<group>"; };
+		D7B8AC8C1B8AD03800037A41 /* Lenormand 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lenormand 10.png"; sourceTree = "<group>"; };
+		D7B8AC8D1B8AD03800037A41 /* Lenormand 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lenormand 11.png"; sourceTree = "<group>"; };
+		D7B8AC8E1B8AD03800037A41 /* Lenormand 12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lenormand 12.png"; sourceTree = "<group>"; };
+		D7B8AC8F1B8AD03800037A41 /* Lenormand 13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lenormand 13.png"; sourceTree = "<group>"; };
+		D7B8AC901B8AD03800037A41 /* Lenormand 14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lenormand 14.png"; sourceTree = "<group>"; };
+		D7B8AC911B8AD03800037A41 /* Lenormand 15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lenormand 15.png"; sourceTree = "<group>"; };
+		D7B8AC921B8AD03800037A41 /* Lenormand 16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lenormand 16.png"; sourceTree = "<group>"; };
+		D7B8AC931B8AD03800037A41 /* Lenormand 17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lenormand 17.png"; sourceTree = "<group>"; };
+		D7B8AC941B8AD03800037A41 /* Lenormand 18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lenormand 18.png"; sourceTree = "<group>"; };
+		D7B8AC951B8AD03800037A41 /* Lenormand 19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lenormand 19.png"; sourceTree = "<group>"; };
+		D7B8AC961B8AD03800037A41 /* Lenormand 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lenormand 2.png"; sourceTree = "<group>"; };
+		D7B8AC971B8AD03800037A41 /* Lenormand 20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lenormand 20.png"; sourceTree = "<group>"; };
+		D7B8AC981B8AD03800037A41 /* Lenormand 21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lenormand 21.png"; sourceTree = "<group>"; };
+		D7B8AC991B8AD03800037A41 /* Lenormand 22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lenormand 22.png"; sourceTree = "<group>"; };
+		D7B8AC9A1B8AD03800037A41 /* Lenormand 23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lenormand 23.png"; sourceTree = "<group>"; };
+		D7B8AC9B1B8AD03800037A41 /* Lenormand 24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lenormand 24.png"; sourceTree = "<group>"; };
+		D7B8AC9C1B8AD03800037A41 /* Lenormand 25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lenormand 25.png"; sourceTree = "<group>"; };
+		D7B8AC9D1B8AD03800037A41 /* Lenormand 26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lenormand 26.png"; sourceTree = "<group>"; };
+		D7B8AC9E1B8AD03800037A41 /* Lenormand 27.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lenormand 27.png"; sourceTree = "<group>"; };
+		D7B8AC9F1B8AD03800037A41 /* Lenormand 28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lenormand 28.png"; sourceTree = "<group>"; };
+		D7B8ACA01B8AD03800037A41 /* Lenormand 29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lenormand 29.png"; sourceTree = "<group>"; };
+		D7B8ACA11B8AD03800037A41 /* Lenormand 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lenormand 3.png"; sourceTree = "<group>"; };
+		D7B8ACA21B8AD03800037A41 /* lenormand 30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lenormand 30.png"; sourceTree = "<group>"; };
+		D7B8ACA31B8AD03800037A41 /* Lenormand 31.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lenormand 31.png"; sourceTree = "<group>"; };
+		D7B8ACA41B8AD03800037A41 /* Lenormand 32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lenormand 32.png"; sourceTree = "<group>"; };
+		D7B8ACA51B8AD03800037A41 /* Lenormand 33.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lenormand 33.png"; sourceTree = "<group>"; };
+		D7B8ACA61B8AD03800037A41 /* Lenormand 34.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lenormand 34.png"; sourceTree = "<group>"; };
+		D7B8ACA71B8AD03800037A41 /* Lenormand 35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lenormand 35.png"; sourceTree = "<group>"; };
+		D7B8ACA81B8AD03800037A41 /* Lenormand 36.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lenormand 36.png"; sourceTree = "<group>"; };
+		D7B8ACA91B8AD03800037A41 /* Lenormand 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lenormand 4.png"; sourceTree = "<group>"; };
+		D7B8ACAA1B8AD03800037A41 /* Lenormand 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lenormand 5.png"; sourceTree = "<group>"; };
+		D7B8ACAB1B8AD03800037A41 /* Lenormand 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lenormand 6.png"; sourceTree = "<group>"; };
+		D7B8ACAC1B8AD03800037A41 /* Lenormand 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lenormand 7.png"; sourceTree = "<group>"; };
+		D7B8ACAD1B8AD03800037A41 /* Lenormand 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lenormand 8.png"; sourceTree = "<group>"; };
+		D7B8ACAE1B8AD03800037A41 /* Lenormand 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lenormand 9.png"; sourceTree = "<group>"; };
+		D7B8ACD31B8AD07900037A41 /* Lenormand.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lenormand.sqlite3; sourceTree = "<group>"; };
 		D7B9706A1B81895A007583EC /* Tarotvn_Ver1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tarotvn_Ver1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7B9706E1B81895A007583EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7B9706F1B81895A007583EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -141,7 +214,6 @@
 		D7B970C11B81A1EB007583EC /* URUZ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = URUZ.png; sourceTree = "<group>"; };
 		D7B970C21B81A1EB007583EC /* WUNJO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WUNJO.png; sourceTree = "<group>"; };
 		D7B970C31B81A1EB007583EC /* WYRD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WYRD.png; sourceTree = "<group>"; };
-		D7B970E41B81A230007583EC /* Lenormand.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lenormand.sqlite3; sourceTree = "<group>"; };
 		D7B970E51B81A230007583EC /* RiderWaiteTarot.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = RiderWaiteTarot.sqlite3; sourceTree = "<group>"; };
 		D7B970E61B81A230007583EC /* RunesChart.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = RunesChart.sqlite3; sourceTree = "<group>"; };
 		D7B970E71B81A230007583EC /* TheClowCard.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = TheClowCard.sqlite3; sourceTree = "<group>"; };
@@ -213,6 +285,50 @@
 				69645DCF856037693864E26A /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		D7B8AC8A1B8AD03800037A41 /* Hình Lenormand (36 lá) PNG */ = {
+			isa = PBXGroup;
+			children = (
+				D7B8AC8B1B8AD03800037A41 /* Lenormand 1.png */,
+				D7B8AC8C1B8AD03800037A41 /* Lenormand 10.png */,
+				D7B8AC8D1B8AD03800037A41 /* Lenormand 11.png */,
+				D7B8AC8E1B8AD03800037A41 /* Lenormand 12.png */,
+				D7B8AC8F1B8AD03800037A41 /* Lenormand 13.png */,
+				D7B8AC901B8AD03800037A41 /* Lenormand 14.png */,
+				D7B8AC911B8AD03800037A41 /* Lenormand 15.png */,
+				D7B8AC921B8AD03800037A41 /* Lenormand 16.png */,
+				D7B8AC931B8AD03800037A41 /* Lenormand 17.png */,
+				D7B8AC941B8AD03800037A41 /* Lenormand 18.png */,
+				D7B8AC951B8AD03800037A41 /* Lenormand 19.png */,
+				D7B8AC961B8AD03800037A41 /* Lenormand 2.png */,
+				D7B8AC971B8AD03800037A41 /* Lenormand 20.png */,
+				D7B8AC981B8AD03800037A41 /* Lenormand 21.png */,
+				D7B8AC991B8AD03800037A41 /* Lenormand 22.png */,
+				D7B8AC9A1B8AD03800037A41 /* Lenormand 23.png */,
+				D7B8AC9B1B8AD03800037A41 /* Lenormand 24.png */,
+				D7B8AC9C1B8AD03800037A41 /* Lenormand 25.png */,
+				D7B8AC9D1B8AD03800037A41 /* Lenormand 26.png */,
+				D7B8AC9E1B8AD03800037A41 /* Lenormand 27.png */,
+				D7B8AC9F1B8AD03800037A41 /* Lenormand 28.png */,
+				D7B8ACA01B8AD03800037A41 /* Lenormand 29.png */,
+				D7B8ACA11B8AD03800037A41 /* Lenormand 3.png */,
+				D7B8ACA21B8AD03800037A41 /* lenormand 30.png */,
+				D7B8ACA31B8AD03800037A41 /* Lenormand 31.png */,
+				D7B8ACA41B8AD03800037A41 /* Lenormand 32.png */,
+				D7B8ACA51B8AD03800037A41 /* Lenormand 33.png */,
+				D7B8ACA61B8AD03800037A41 /* Lenormand 34.png */,
+				D7B8ACA71B8AD03800037A41 /* Lenormand 35.png */,
+				D7B8ACA81B8AD03800037A41 /* Lenormand 36.png */,
+				D7B8ACA91B8AD03800037A41 /* Lenormand 4.png */,
+				D7B8ACAA1B8AD03800037A41 /* Lenormand 5.png */,
+				D7B8ACAB1B8AD03800037A41 /* Lenormand 6.png */,
+				D7B8ACAC1B8AD03800037A41 /* Lenormand 7.png */,
+				D7B8ACAD1B8AD03800037A41 /* Lenormand 8.png */,
+				D7B8ACAE1B8AD03800037A41 /* Lenormand 9.png */,
+			);
+			name = "Hình Lenormand (36 lá) PNG";
+			path = "Tarotvn_Ver1/Hình Lenormand (36 lá) PNG";
 			sourceTree = "<group>";
 		};
 		D7B970611B81895A007583EC = {
@@ -308,6 +424,7 @@
 				D7B971051B81A8B5007583EC /* BookTarot.swift */,
 				D7B971071B81A8CF007583EC /* TarotCard.swift */,
 				D7B971121B81AB4A007583EC /* DatabaseManager.swift */,
+				D7B8AC8A1B8AD03800037A41 /* Hình Lenormand (36 lá) PNG */,
 				D7B970E31B81A219007583EC /* FeaturedBooks */,
 				D7B970AA1B81A1EB007583EC /* Rune PNG */,
 				D7B9709F1B81A183007583EC /* ProgressHUB */,
@@ -360,7 +477,7 @@
 		D7B970E31B81A219007583EC /* FeaturedBooks */ = {
 			isa = PBXGroup;
 			children = (
-				D7B970E41B81A230007583EC /* Lenormand.sqlite3 */,
+				D7B8ACD31B8AD07900037A41 /* Lenormand.sqlite3 */,
 				D7B970E51B81A230007583EC /* RiderWaiteTarot.sqlite3 */,
 				D7B970E61B81A230007583EC /* RunesChart.sqlite3 */,
 				D7B970E71B81A230007583EC /* TheClowCard.sqlite3 */,
@@ -491,38 +608,74 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7B970CF1B81A1EB007583EC /* EOLH.png in Resources */,
+				D7B8ACC31B8AD03800037A41 /* Lenormand 28.png in Resources */,
+				D7B8ACCE1B8AD03800037A41 /* Lenormand 5.png in Resources */,
+				D7B8ACB11B8AD03800037A41 /* Lenormand 11.png in Resources */,
 				D72ACB671B88907E000AFA2C /* CustomSubview.xib in Resources */,
 				D7B970D71B81A1EB007583EC /* LAGAZ.png in Resources */,
+				D7B8ACD41B8AD07900037A41 /* Lenormand.sqlite3 in Resources */,
 				D7B970CC1B81A1EB007583EC /* DAEG.png in Resources */,
+				D7B8ACB01B8AD03800037A41 /* Lenormand 10.png in Resources */,
 				D7B970751B81895A007583EC /* Main.storyboard in Resources */,
+				D7B8ACBD1B8AD03800037A41 /* Lenormand 22.png in Resources */,
+				D7B8ACC61B8AD03800037A41 /* lenormand 30.png in Resources */,
 				D7B970D31B81A1EB007583EC /* ING.png in Resources */,
 				D7B970E01B81A1EB007583EC /* URUZ.png in Resources */,
+				D7B8ACC01B8AD03800037A41 /* Lenormand 25.png in Resources */,
+				D7B8ACC11B8AD03800037A41 /* Lenormand 26.png in Resources */,
+				D7B8ACB81B8AD03800037A41 /* Lenormand 18.png in Resources */,
+				D7B8ACC41B8AD03800037A41 /* Lenormand 29.png in Resources */,
+				D7B8ACB51B8AD03800037A41 /* Lenormand 15.png in Resources */,
+				D7B8ACCB1B8AD03800037A41 /* Lenormand 35.png in Resources */,
+				D7B8ACBE1B8AD03800037A41 /* Lenormand 23.png in Resources */,
 				D7B970D11B81A1EB007583EC /* GIFU.png in Resources */,
+				D7B8ACC81B8AD03800037A41 /* Lenormand 32.png in Resources */,
+				D7B8ACCF1B8AD03800037A41 /* Lenormand 6.png in Resources */,
 				D7B970DD1B81A1EB007583EC /* SIGEL.png in Resources */,
 				D7B970D81B81A1EB007583EC /* MANNAZ.png in Resources */,
 				D7B970D61B81A1EB007583EC /* KENAZ.png in Resources */,
+				D7B8ACB41B8AD03800037A41 /* Lenormand 14.png in Resources */,
+				D7B8ACD01B8AD03800037A41 /* Lenormand 7.png in Resources */,
 				D7B970DE1B81A1EB007583EC /* THURISAZ.png in Resources */,
 				D7B970DA1B81A1EB007583EC /* OTHEL.png in Resources */,
+				D7B8ACB21B8AD03800037A41 /* Lenormand 12.png in Resources */,
 				D7B970CD1B81A1EB007583EC /* EHWAZ.png in Resources */,
 				D7B970DF1B81A1EB007583EC /* TIR.png in Resources */,
+				D7B8ACB91B8AD03800037A41 /* Lenormand 19.png in Resources */,
 				D7B970CA1B81A1EB007583EC /* ANSUZ.png in Resources */,
+				D7B8ACC51B8AD03800037A41 /* Lenormand 3.png in Resources */,
 				D7B970D91B81A1EB007583EC /* NIED.png in Resources */,
+				D7B8ACD21B8AD03800037A41 /* Lenormand 9.png in Resources */,
 				D7B970DC1B81A1EB007583EC /* RAIDHO.png in Resources */,
+				D7B8ACBB1B8AD03800037A41 /* Lenormand 20.png in Resources */,
+				D7B8ACC21B8AD03800037A41 /* Lenormand 27.png in Resources */,
 				D7B9707A1B81895A007583EC /* LaunchScreen.xib in Resources */,
 				D7B970E91B81A230007583EC /* RiderWaiteTarot.sqlite3 in Resources */,
+				D7B8ACCA1B8AD03800037A41 /* Lenormand 34.png in Resources */,
+				D7B8ACB71B8AD03800037A41 /* Lenormand 17.png in Resources */,
 				D7B970E11B81A1EB007583EC /* WUNJO.png in Resources */,
-				D7B970E81B81A230007583EC /* Lenormand.sqlite3 in Resources */,
+				D7B8ACD11B8AD03800037A41 /* Lenormand 8.png in Resources */,
 				D7B970CE1B81A1EB007583EC /* EIHWAZ.png in Resources */,
 				D7B970EB1B81A230007583EC /* TheClowCard.sqlite3 in Resources */,
 				D7B970EA1B81A230007583EC /* RunesChart.sqlite3 in Resources */,
 				D7B970DB1B81A1EB007583EC /* PERDHRO.png in Resources */,
 				D7B970E21B81A1EB007583EC /* WYRD.png in Resources */,
 				D7B970D01B81A1EB007583EC /* FEHU.png in Resources */,
+				D7B8ACBC1B8AD03800037A41 /* Lenormand 21.png in Resources */,
+				D7B8ACB31B8AD03800037A41 /* Lenormand 13.png in Resources */,
+				D7B8ACC91B8AD03800037A41 /* Lenormand 33.png in Resources */,
 				D7B970CB1B81A1EB007583EC /* BEORC.png in Resources */,
 				D7B970D21B81A1EB007583EC /* HAGALL.png in Resources */,
+				D7B8ACCD1B8AD03800037A41 /* Lenormand 4.png in Resources */,
 				D7B970D51B81A1EB007583EC /* JERA.png in Resources */,
+				D7B8ACCC1B8AD03800037A41 /* Lenormand 36.png in Resources */,
+				D7B8ACBA1B8AD03800037A41 /* Lenormand 2.png in Resources */,
+				D7B8ACAF1B8AD03800037A41 /* Lenormand 1.png in Resources */,
 				D7B970771B81895A007583EC /* Images.xcassets in Resources */,
 				D7B970D41B81A1EB007583EC /* ISA.png in Resources */,
+				D7B8ACB61B8AD03800037A41 /* Lenormand 16.png in Resources */,
+				D7B8ACBF1B8AD03800037A41 /* Lenormand 24.png in Resources */,
+				D7B8ACC71B8AD03800037A41 /* Lenormand 31.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -162,9 +162,18 @@ class FeaturedBooksTableViewController: UITableViewController {
             
             self.performSegueWithIdentifier("pushFeaturedRunes", sender: nil)
         }
-        
-        else {
+        else if  name == "Lenormand Card" {
+    
+            self.performSegueWithIdentifier("pushFeaturedRunes", sender: nil)
+        }
+        else if  name == "The Clow Card" {
             
+            self.performSegueWithIdentifier("pushFeaturedRunes", sender: nil)
+        }
+
+    
+        else {
+    
             self.performSegueWithIdentifier("pushFeaturedTarot", sender: nil)
         }
     }
