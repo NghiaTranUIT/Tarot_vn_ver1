@@ -103,6 +103,7 @@ class ListTarotCardTableViewController: UITableViewController, UISearchBarDelega
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
         if(searchActive) {
+           
             return filtered.count
         }
         return arrCard.count;

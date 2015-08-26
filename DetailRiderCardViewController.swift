@@ -70,13 +70,13 @@ class DetailRiderCardViewController: UIViewController {
         case 0:
             myDescription.text = card.keyDetail
         case 1:
-            myDescription.text = card.forwardCard
+            myDescription.text = card.information
             
         case 2:
-            myDescription.text = card.reverseCard
+            myDescription.text = card.forwardCard
             
         case 3:
-            myDescription.text = card.information
+            myDescription.text = card.reverseCard
         default:
             break;
         }

@@ -9,6 +9,141 @@
 /* Begin PBXBuildFile section */
 		75545E27B43684F1F2572294 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02AAB82BE6D180135A45E768 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		D72ACB671B88907E000AFA2C /* CustomSubview.xib in Resources */ = {isa = PBXBuildFile; fileRef = D72ACB661B88907E000AFA2C /* CustomSubview.xib */; };
+		D78B25631B8B37EF00262156 /* 0 - fool.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25151B8B37EF00262156 /* 0 - fool.png */; };
+		D78B25641B8B37EF00262156 /* 1 - magician.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25161B8B37EF00262156 /* 1 - magician.png */; };
+		D78B25651B8B37EF00262156 /* 10 - wheel_of_fortune.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25171B8B37EF00262156 /* 10 - wheel_of_fortune.png */; };
+		D78B25661B8B37EF00262156 /* 11 - justice.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25181B8B37EF00262156 /* 11 - justice.png */; };
+		D78B25671B8B37EF00262156 /* 12 - hanged_man.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25191B8B37EF00262156 /* 12 - hanged_man.png */; };
+		D78B25681B8B37EF00262156 /* 13 - death.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B251A1B8B37EF00262156 /* 13 - death.png */; };
+		D78B25691B8B37EF00262156 /* 14 - temperance.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B251B1B8B37EF00262156 /* 14 - temperance.png */; };
+		D78B256A1B8B37EF00262156 /* 15 - devil.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B251C1B8B37EF00262156 /* 15 - devil.png */; };
+		D78B256B1B8B37EF00262156 /* 16 - tower.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B251D1B8B37EF00262156 /* 16 - tower.png */; };
+		D78B256C1B8B37EF00262156 /* 17 - star.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B251E1B8B37EF00262156 /* 17 - star.png */; };
+		D78B256D1B8B37EF00262156 /* 18 - moon.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B251F1B8B37EF00262156 /* 18 - moon.png */; };
+		D78B256E1B8B37EF00262156 /* 19 - sun.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25201B8B37EF00262156 /* 19 - sun.png */; };
+		D78B256F1B8B37EF00262156 /* 2 - high_priestess.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25211B8B37EF00262156 /* 2 - high_priestess.png */; };
+		D78B25701B8B37EF00262156 /* 20 - judgement.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25221B8B37EF00262156 /* 20 - judgement.png */; };
+		D78B25711B8B37EF00262156 /* world.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25231B8B37EF00262156 /* world.png */; };
+		D78B25721B8B37EF00262156 /* 3 - empress.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25241B8B37EF00262156 /* 3 - empress.png */; };
+		D78B25731B8B37EF00262156 /* 4 - emperor.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25251B8B37EF00262156 /* 4 - emperor.png */; };
+		D78B25741B8B37EF00262156 /* 5 - hierophant.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25261B8B37EF00262156 /* 5 - hierophant.png */; };
+		D78B25751B8B37EF00262156 /* 6 - lovers.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25271B8B37EF00262156 /* 6 - lovers.png */; };
+		D78B25761B8B37EF00262156 /* 7 - chariot.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25281B8B37EF00262156 /* 7 - chariot.png */; };
+		D78B25771B8B37EF00262156 /* 8 - strength.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25291B8B37EF00262156 /* 8 - strength.png */; };
+		D78B25781B8B37EF00262156 /* 9 - hermit.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B252A1B8B37EF00262156 /* 9 - hermit.png */; };
+		D78B25791B8B37EF00262156 /* cups01.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B252B1B8B37EF00262156 /* cups01.png */; };
+		D78B257A1B8B37EF00262156 /* cups02.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B252C1B8B37EF00262156 /* cups02.png */; };
+		D78B257B1B8B37EF00262156 /* cups03.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B252D1B8B37EF00262156 /* cups03.png */; };
+		D78B257C1B8B37EF00262156 /* cups04.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B252E1B8B37EF00262156 /* cups04.png */; };
+		D78B257D1B8B37EF00262156 /* cups05.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B252F1B8B37EF00262156 /* cups05.png */; };
+		D78B257E1B8B37EF00262156 /* cups06.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25301B8B37EF00262156 /* cups06.png */; };
+		D78B257F1B8B37EF00262156 /* cups07.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25311B8B37EF00262156 /* cups07.png */; };
+		D78B25801B8B37EF00262156 /* cups08.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25321B8B37EF00262156 /* cups08.png */; };
+		D78B25811B8B37EF00262156 /* cups09.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25331B8B37EF00262156 /* cups09.png */; };
+		D78B25821B8B37EF00262156 /* cups10.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25341B8B37EF00262156 /* cups10.png */; };
+		D78B25831B8B37EF00262156 /* cups11.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25351B8B37EF00262156 /* cups11.png */; };
+		D78B25841B8B37EF00262156 /* cups12.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25361B8B37EF00262156 /* cups12.png */; };
+		D78B25851B8B37EF00262156 /* cups13.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25371B8B37EF00262156 /* cups13.png */; };
+		D78B25861B8B37EF00262156 /* cups14.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25381B8B37EF00262156 /* cups14.png */; };
+		D78B25871B8B37EF00262156 /* pents01.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25391B8B37EF00262156 /* pents01.png */; };
+		D78B25881B8B37EF00262156 /* pents02.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B253A1B8B37EF00262156 /* pents02.png */; };
+		D78B25891B8B37EF00262156 /* pents03.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B253B1B8B37EF00262156 /* pents03.png */; };
+		D78B258A1B8B37EF00262156 /* pents04.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B253C1B8B37EF00262156 /* pents04.png */; };
+		D78B258B1B8B37EF00262156 /* pents05.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B253D1B8B37EF00262156 /* pents05.png */; };
+		D78B258C1B8B37EF00262156 /* pents06.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B253E1B8B37EF00262156 /* pents06.png */; };
+		D78B258D1B8B37EF00262156 /* pents07.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B253F1B8B37EF00262156 /* pents07.png */; };
+		D78B258E1B8B37EF00262156 /* pents08.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25401B8B37EF00262156 /* pents08.png */; };
+		D78B258F1B8B37EF00262156 /* pents09.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25411B8B37EF00262156 /* pents09.png */; };
+		D78B25901B8B37EF00262156 /* pents10.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25421B8B37EF00262156 /* pents10.png */; };
+		D78B25911B8B37EF00262156 /* pents11.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25431B8B37EF00262156 /* pents11.png */; };
+		D78B25921B8B37EF00262156 /* pents12.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25441B8B37EF00262156 /* pents12.png */; };
+		D78B25931B8B37EF00262156 /* pents13.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25451B8B37EF00262156 /* pents13.png */; };
+		D78B25941B8B37EF00262156 /* pents14.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25461B8B37EF00262156 /* pents14.png */; };
+		D78B25951B8B37EF00262156 /* swords01.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25471B8B37EF00262156 /* swords01.png */; };
+		D78B25961B8B37EF00262156 /* swords02.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25481B8B37EF00262156 /* swords02.png */; };
+		D78B25971B8B37EF00262156 /* swords03.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25491B8B37EF00262156 /* swords03.png */; };
+		D78B25981B8B37EF00262156 /* swords04.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B254A1B8B37EF00262156 /* swords04.png */; };
+		D78B25991B8B37EF00262156 /* swords05.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B254B1B8B37EF00262156 /* swords05.png */; };
+		D78B259A1B8B37EF00262156 /* swords06.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B254C1B8B37EF00262156 /* swords06.png */; };
+		D78B259B1B8B37EF00262156 /* swords07.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B254D1B8B37EF00262156 /* swords07.png */; };
+		D78B259C1B8B37EF00262156 /* swords08.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B254E1B8B37EF00262156 /* swords08.png */; };
+		D78B259D1B8B37EF00262156 /* swords09.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B254F1B8B37EF00262156 /* swords09.png */; };
+		D78B259E1B8B37EF00262156 /* swords10.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25501B8B37EF00262156 /* swords10.png */; };
+		D78B259F1B8B37EF00262156 /* swords11.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25511B8B37EF00262156 /* swords11.png */; };
+		D78B25A01B8B37EF00262156 /* swords12.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25521B8B37EF00262156 /* swords12.png */; };
+		D78B25A11B8B37EF00262156 /* swords13.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25531B8B37EF00262156 /* swords13.png */; };
+		D78B25A21B8B37EF00262156 /* swords14.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25541B8B37EF00262156 /* swords14.png */; };
+		D78B25A31B8B37EF00262156 /* wands01.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25551B8B37EF00262156 /* wands01.png */; };
+		D78B25A41B8B37EF00262156 /* wands02.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25561B8B37EF00262156 /* wands02.png */; };
+		D78B25A51B8B37EF00262156 /* wands03.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25571B8B37EF00262156 /* wands03.png */; };
+		D78B25A61B8B37EF00262156 /* wands04.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25581B8B37EF00262156 /* wands04.png */; };
+		D78B25A71B8B37EF00262156 /* wands05.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25591B8B37EF00262156 /* wands05.png */; };
+		D78B25A81B8B37EF00262156 /* wands06.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B255A1B8B37EF00262156 /* wands06.png */; };
+		D78B25A91B8B37EF00262156 /* wands07.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B255B1B8B37EF00262156 /* wands07.png */; };
+		D78B25AA1B8B37EF00262156 /* wands08.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B255C1B8B37EF00262156 /* wands08.png */; };
+		D78B25AB1B8B37EF00262156 /* wands09.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B255D1B8B37EF00262156 /* wands09.png */; };
+		D78B25AC1B8B37EF00262156 /* wands10.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B255E1B8B37EF00262156 /* wands10.png */; };
+		D78B25AD1B8B37EF00262156 /* wands11.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B255F1B8B37EF00262156 /* wands11.png */; };
+		D78B25AE1B8B37EF00262156 /* wands12.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25601B8B37EF00262156 /* wands12.png */; };
+		D78B25AF1B8B37EF00262156 /* wands13.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25611B8B37EF00262156 /* wands13.png */; };
+		D78B25B01B8B37EF00262156 /* wands14.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25621B8B37EF00262156 /* wands14.png */; };
+		D78B25E61B8B381F00262156 /* The Arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25B21B8B381F00262156 /* The Arrow.png */; };
+		D78B25E71B8B381F00262156 /* The Big.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25B31B8B381F00262156 /* The Big.png */; };
+		D78B25E81B8B381F00262156 /* The Bubbles.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25B41B8B381F00262156 /* The Bubbles.png */; };
+		D78B25E91B8B381F00262156 /* The Change.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25B51B8B381F00262156 /* The Change.png */; };
+		D78B25EA1B8B381F00262156 /* The Cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25B61B8B381F00262156 /* The Cloud.png */; };
+		D78B25EB1B8B381F00262156 /* The Create.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25B71B8B381F00262156 /* The Create.png */; };
+		D78B25EC1B8B381F00262156 /* The Dark.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25B81B8B381F00262156 /* The Dark.png */; };
+		D78B25ED1B8B381F00262156 /* The Dash.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25B91B8B381F00262156 /* The Dash.png */; };
+		D78B25EE1B8B381F00262156 /* The Dream.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25BA1B8B381F00262156 /* The Dream.png */; };
+		D78B25EF1B8B381F00262156 /* The Earthy.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25BB1B8B381F00262156 /* The Earthy.png */; };
+		D78B25F01B8B381F00262156 /* The Erase.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25BC1B8B381F00262156 /* The Erase.png */; };
+		D78B25F11B8B381F00262156 /* The Fight.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25BD1B8B381F00262156 /* The Fight.png */; };
+		D78B25F21B8B381F00262156 /* The Firey.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25BE1B8B381F00262156 /* The Firey.png */; };
+		D78B25F31B8B381F00262156 /* The Float.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25BF1B8B381F00262156 /* The Float.png */; };
+		D78B25F41B8B381F00262156 /* The Flower.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25C01B8B381F00262156 /* The Flower.png */; };
+		D78B25F51B8B381F00262156 /* The Fly.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25C11B8B381F00262156 /* The Fly.png */; };
+		D78B25F61B8B381F00262156 /* The Freeze.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25C21B8B381F00262156 /* The Freeze.png */; };
+		D78B25F71B8B381F00262156 /* The Glow.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25C31B8B381F00262156 /* The Glow.png */; };
+		D78B25F81B8B381F00262156 /* The Illusion.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25C41B8B381F00262156 /* The Illusion.png */; };
+		D78B25F91B8B381F00262156 /* The Jump.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25C51B8B381F00262156 /* The Jump.png */; };
+		D78B25FA1B8B381F00262156 /* The Libra.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25C61B8B381F00262156 /* The Libra.png */; };
+		D78B25FB1B8B381F00262156 /* The Light.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25C71B8B381F00262156 /* The Light.png */; };
+		D78B25FC1B8B381F00262156 /* The Little.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25C81B8B381F00262156 /* The Little.png */; };
+		D78B25FD1B8B381F00262156 /* The Lock.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25C91B8B381F00262156 /* The Lock.png */; };
+		D78B25FE1B8B381F00262156 /* The Loop.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25CA1B8B381F00262156 /* The Loop.png */; };
+		D78B25FF1B8B381F00262156 /* The Maze.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25CB1B8B381F00262156 /* The Maze.png */; };
+		D78B26001B8B381F00262156 /* The Mirror.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25CC1B8B381F00262156 /* The Mirror.png */; };
+		D78B26011B8B381F00262156 /* The Mist.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25CD1B8B381F00262156 /* The Mist.png */; };
+		D78B26021B8B381F00262156 /* The Move.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25CE1B8B381F00262156 /* The Move.png */; };
+		D78B26031B8B381F00262156 /* The Power.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25CF1B8B381F00262156 /* The Power.png */; };
+		D78B26041B8B381F00262156 /* The Rain.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25D01B8B381F00262156 /* The Rain.png */; };
+		D78B26051B8B381F00262156 /* The Return.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25D11B8B381F00262156 /* The Return.png */; };
+		D78B26061B8B381F00262156 /* The Sand.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25D21B8B381F00262156 /* The Sand.png */; };
+		D78B26071B8B381F00262156 /* The Shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25D31B8B381F00262156 /* The Shadow.png */; };
+		D78B26081B8B381F00262156 /* The Shield.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25D41B8B381F00262156 /* The Shield.png */; };
+		D78B26091B8B381F00262156 /* The Shot.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25D51B8B381F00262156 /* The Shot.png */; };
+		D78B260A1B8B381F00262156 /* The Silent.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25D61B8B381F00262156 /* The Silent.png */; };
+		D78B260B1B8B381F00262156 /* The Sleep.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25D71B8B381F00262156 /* The Sleep.png */; };
+		D78B260C1B8B381F00262156 /* The Snow.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25D81B8B381F00262156 /* The Snow.png */; };
+		D78B260D1B8B381F00262156 /* The Song.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25D91B8B381F00262156 /* The Song.png */; };
+		D78B260E1B8B381F00262156 /* The Storm.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25DA1B8B381F00262156 /* The Storm.png */; };
+		D78B260F1B8B381F00262156 /* The Sweet.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25DB1B8B381F00262156 /* The Sweet.png */; };
+		D78B26101B8B381F00262156 /* The Sword.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25DC1B8B381F00262156 /* The Sword.png */; };
+		D78B26111B8B381F00262156 /* The Through.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25DD1B8B381F00262156 /* The Through.png */; };
+		D78B26121B8B381F00262156 /* The Thunder.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25DE1B8B381F00262156 /* The Thunder.png */; };
+		D78B26131B8B381F00262156 /* The Time.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25DF1B8B381F00262156 /* The Time.png */; };
+		D78B26141B8B381F00262156 /* The Twin.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25E01B8B381F00262156 /* The Twin.png */; };
+		D78B26151B8B381F00262156 /* The Voice.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25E11B8B381F00262156 /* The Voice.png */; };
+		D78B26161B8B381F00262156 /* The Watery.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25E21B8B381F00262156 /* The Watery.png */; };
+		D78B26171B8B381F00262156 /* The Wave.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25E31B8B381F00262156 /* The Wave.png */; };
+		D78B26181B8B381F00262156 /* The Windy.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25E41B8B381F00262156 /* The Windy.png */; };
+		D78B26191B8B381F00262156 /* The Wood.png in Resources */ = {isa = PBXBuildFile; fileRef = D78B25E51B8B381F00262156 /* The Wood.png */; };
+		D78B266A1B8D5FCE00262156 /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D78B26691B8D5FCE00262156 /* TTTAttributedLabel.m */; };
+		D78B26701B8D9C8800262156 /* RunesChart.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = D78B266C1B8D9C8800262156 /* RunesChart.sqlite3 */; };
+		D78B267C1B8DA82C00262156 /* Lenormand.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = D78B26791B8DA82C00262156 /* Lenormand.sqlite3 */; };
+		D78B267E1B8DA82C00262156 /* TheClowCard.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = D78B267B1B8DA82C00262156 /* TheClowCard.sqlite3 */; };
+		D78B26861B8DABB000262156 /* RiderWaiteTarot.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = D78B26851B8DABB000262156 /* RiderWaiteTarot.sqlite3 */; };
 		D7B8ACAF1B8AD03800037A41 /* Lenormand 1.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B8AC8B1B8AD03800037A41 /* Lenormand 1.png */; };
 		D7B8ACB01B8AD03800037A41 /* Lenormand 10.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B8AC8C1B8AD03800037A41 /* Lenormand 10.png */; };
 		D7B8ACB11B8AD03800037A41 /* Lenormand 11.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B8AC8D1B8AD03800037A41 /* Lenormand 11.png */; };
@@ -45,7 +180,6 @@
 		D7B8ACD01B8AD03800037A41 /* Lenormand 7.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B8ACAC1B8AD03800037A41 /* Lenormand 7.png */; };
 		D7B8ACD11B8AD03800037A41 /* Lenormand 8.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B8ACAD1B8AD03800037A41 /* Lenormand 8.png */; };
 		D7B8ACD21B8AD03800037A41 /* Lenormand 9.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B8ACAE1B8AD03800037A41 /* Lenormand 9.png */; };
-		D7B8ACD41B8AD07900037A41 /* Lenormand.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = D7B8ACD31B8AD07900037A41 /* Lenormand.sqlite3 */; };
 		D7B970701B81895A007583EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B9706F1B81895A007583EC /* AppDelegate.swift */; };
 		D7B970721B81895A007583EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B970711B81895A007583EC /* ViewController.swift */; };
 		D7B970751B81895A007583EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7B970731B81895A007583EC /* Main.storyboard */; };
@@ -84,9 +218,6 @@
 		D7B970E01B81A1EB007583EC /* URUZ.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B970C11B81A1EB007583EC /* URUZ.png */; };
 		D7B970E11B81A1EB007583EC /* WUNJO.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B970C21B81A1EB007583EC /* WUNJO.png */; };
 		D7B970E21B81A1EB007583EC /* WYRD.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B970C31B81A1EB007583EC /* WYRD.png */; };
-		D7B970E91B81A230007583EC /* RiderWaiteTarot.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = D7B970E51B81A230007583EC /* RiderWaiteTarot.sqlite3 */; };
-		D7B970EA1B81A230007583EC /* RunesChart.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = D7B970E61B81A230007583EC /* RunesChart.sqlite3 */; };
-		D7B970EB1B81A230007583EC /* TheClowCard.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = D7B970E71B81A230007583EC /* TheClowCard.sqlite3 */; };
 		D7B970ED1B81A2A6007583EC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B970EC1B81A2A6007583EC /* AudioToolbox.framework */; };
 		D7B970EF1B81A2B1007583EC /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B970EE1B81A2B1007583EC /* CFNetwork.framework */; };
 		D7B970F11B81A2BE007583EC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B970F01B81A2BE007583EC /* CoreGraphics.framework */; };
@@ -132,6 +263,142 @@
 		69645DCF856037693864E26A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		6CE7A9D63106457C81250A86 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D72ACB661B88907E000AFA2C /* CustomSubview.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomSubview.xib; sourceTree = "<group>"; };
+		D78B25151B8B37EF00262156 /* 0 - fool.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "0 - fool.png"; sourceTree = "<group>"; };
+		D78B25161B8B37EF00262156 /* 1 - magician.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1 - magician.png"; sourceTree = "<group>"; };
+		D78B25171B8B37EF00262156 /* 10 - wheel_of_fortune.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "10 - wheel_of_fortune.png"; sourceTree = "<group>"; };
+		D78B25181B8B37EF00262156 /* 11 - justice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "11 - justice.png"; sourceTree = "<group>"; };
+		D78B25191B8B37EF00262156 /* 12 - hanged_man.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "12 - hanged_man.png"; sourceTree = "<group>"; };
+		D78B251A1B8B37EF00262156 /* 13 - death.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "13 - death.png"; sourceTree = "<group>"; };
+		D78B251B1B8B37EF00262156 /* 14 - temperance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "14 - temperance.png"; sourceTree = "<group>"; };
+		D78B251C1B8B37EF00262156 /* 15 - devil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "15 - devil.png"; sourceTree = "<group>"; };
+		D78B251D1B8B37EF00262156 /* 16 - tower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "16 - tower.png"; sourceTree = "<group>"; };
+		D78B251E1B8B37EF00262156 /* 17 - star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "17 - star.png"; sourceTree = "<group>"; };
+		D78B251F1B8B37EF00262156 /* 18 - moon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "18 - moon.png"; sourceTree = "<group>"; };
+		D78B25201B8B37EF00262156 /* 19 - sun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "19 - sun.png"; sourceTree = "<group>"; };
+		D78B25211B8B37EF00262156 /* 2 - high_priestess.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2 - high_priestess.png"; sourceTree = "<group>"; };
+		D78B25221B8B37EF00262156 /* 20 - judgement.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "20 - judgement.png"; sourceTree = "<group>"; };
+		D78B25231B8B37EF00262156 /* world.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = world.png; sourceTree = "<group>"; };
+		D78B25241B8B37EF00262156 /* 3 - empress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3 - empress.png"; sourceTree = "<group>"; };
+		D78B25251B8B37EF00262156 /* 4 - emperor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "4 - emperor.png"; sourceTree = "<group>"; };
+		D78B25261B8B37EF00262156 /* 5 - hierophant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "5 - hierophant.png"; sourceTree = "<group>"; };
+		D78B25271B8B37EF00262156 /* 6 - lovers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "6 - lovers.png"; sourceTree = "<group>"; };
+		D78B25281B8B37EF00262156 /* 7 - chariot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "7 - chariot.png"; sourceTree = "<group>"; };
+		D78B25291B8B37EF00262156 /* 8 - strength.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "8 - strength.png"; sourceTree = "<group>"; };
+		D78B252A1B8B37EF00262156 /* 9 - hermit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "9 - hermit.png"; sourceTree = "<group>"; };
+		D78B252B1B8B37EF00262156 /* cups01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cups01.png; sourceTree = "<group>"; };
+		D78B252C1B8B37EF00262156 /* cups02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cups02.png; sourceTree = "<group>"; };
+		D78B252D1B8B37EF00262156 /* cups03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cups03.png; sourceTree = "<group>"; };
+		D78B252E1B8B37EF00262156 /* cups04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cups04.png; sourceTree = "<group>"; };
+		D78B252F1B8B37EF00262156 /* cups05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cups05.png; sourceTree = "<group>"; };
+		D78B25301B8B37EF00262156 /* cups06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cups06.png; sourceTree = "<group>"; };
+		D78B25311B8B37EF00262156 /* cups07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cups07.png; sourceTree = "<group>"; };
+		D78B25321B8B37EF00262156 /* cups08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cups08.png; sourceTree = "<group>"; };
+		D78B25331B8B37EF00262156 /* cups09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cups09.png; sourceTree = "<group>"; };
+		D78B25341B8B37EF00262156 /* cups10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cups10.png; sourceTree = "<group>"; };
+		D78B25351B8B37EF00262156 /* cups11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cups11.png; sourceTree = "<group>"; };
+		D78B25361B8B37EF00262156 /* cups12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cups12.png; sourceTree = "<group>"; };
+		D78B25371B8B37EF00262156 /* cups13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cups13.png; sourceTree = "<group>"; };
+		D78B25381B8B37EF00262156 /* cups14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cups14.png; sourceTree = "<group>"; };
+		D78B25391B8B37EF00262156 /* pents01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pents01.png; sourceTree = "<group>"; };
+		D78B253A1B8B37EF00262156 /* pents02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pents02.png; sourceTree = "<group>"; };
+		D78B253B1B8B37EF00262156 /* pents03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pents03.png; sourceTree = "<group>"; };
+		D78B253C1B8B37EF00262156 /* pents04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pents04.png; sourceTree = "<group>"; };
+		D78B253D1B8B37EF00262156 /* pents05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pents05.png; sourceTree = "<group>"; };
+		D78B253E1B8B37EF00262156 /* pents06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pents06.png; sourceTree = "<group>"; };
+		D78B253F1B8B37EF00262156 /* pents07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pents07.png; sourceTree = "<group>"; };
+		D78B25401B8B37EF00262156 /* pents08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pents08.png; sourceTree = "<group>"; };
+		D78B25411B8B37EF00262156 /* pents09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pents09.png; sourceTree = "<group>"; };
+		D78B25421B8B37EF00262156 /* pents10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pents10.png; sourceTree = "<group>"; };
+		D78B25431B8B37EF00262156 /* pents11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pents11.png; sourceTree = "<group>"; };
+		D78B25441B8B37EF00262156 /* pents12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pents12.png; sourceTree = "<group>"; };
+		D78B25451B8B37EF00262156 /* pents13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pents13.png; sourceTree = "<group>"; };
+		D78B25461B8B37EF00262156 /* pents14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pents14.png; sourceTree = "<group>"; };
+		D78B25471B8B37EF00262156 /* swords01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swords01.png; sourceTree = "<group>"; };
+		D78B25481B8B37EF00262156 /* swords02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swords02.png; sourceTree = "<group>"; };
+		D78B25491B8B37EF00262156 /* swords03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swords03.png; sourceTree = "<group>"; };
+		D78B254A1B8B37EF00262156 /* swords04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swords04.png; sourceTree = "<group>"; };
+		D78B254B1B8B37EF00262156 /* swords05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swords05.png; sourceTree = "<group>"; };
+		D78B254C1B8B37EF00262156 /* swords06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swords06.png; sourceTree = "<group>"; };
+		D78B254D1B8B37EF00262156 /* swords07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swords07.png; sourceTree = "<group>"; };
+		D78B254E1B8B37EF00262156 /* swords08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swords08.png; sourceTree = "<group>"; };
+		D78B254F1B8B37EF00262156 /* swords09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swords09.png; sourceTree = "<group>"; };
+		D78B25501B8B37EF00262156 /* swords10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swords10.png; sourceTree = "<group>"; };
+		D78B25511B8B37EF00262156 /* swords11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swords11.png; sourceTree = "<group>"; };
+		D78B25521B8B37EF00262156 /* swords12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swords12.png; sourceTree = "<group>"; };
+		D78B25531B8B37EF00262156 /* swords13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swords13.png; sourceTree = "<group>"; };
+		D78B25541B8B37EF00262156 /* swords14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swords14.png; sourceTree = "<group>"; };
+		D78B25551B8B37EF00262156 /* wands01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wands01.png; sourceTree = "<group>"; };
+		D78B25561B8B37EF00262156 /* wands02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wands02.png; sourceTree = "<group>"; };
+		D78B25571B8B37EF00262156 /* wands03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wands03.png; sourceTree = "<group>"; };
+		D78B25581B8B37EF00262156 /* wands04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wands04.png; sourceTree = "<group>"; };
+		D78B25591B8B37EF00262156 /* wands05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wands05.png; sourceTree = "<group>"; };
+		D78B255A1B8B37EF00262156 /* wands06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wands06.png; sourceTree = "<group>"; };
+		D78B255B1B8B37EF00262156 /* wands07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wands07.png; sourceTree = "<group>"; };
+		D78B255C1B8B37EF00262156 /* wands08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wands08.png; sourceTree = "<group>"; };
+		D78B255D1B8B37EF00262156 /* wands09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wands09.png; sourceTree = "<group>"; };
+		D78B255E1B8B37EF00262156 /* wands10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wands10.png; sourceTree = "<group>"; };
+		D78B255F1B8B37EF00262156 /* wands11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wands11.png; sourceTree = "<group>"; };
+		D78B25601B8B37EF00262156 /* wands12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wands12.png; sourceTree = "<group>"; };
+		D78B25611B8B37EF00262156 /* wands13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wands13.png; sourceTree = "<group>"; };
+		D78B25621B8B37EF00262156 /* wands14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wands14.png; sourceTree = "<group>"; };
+		D78B25B21B8B381F00262156 /* The Arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Arrow.png"; sourceTree = "<group>"; };
+		D78B25B31B8B381F00262156 /* The Big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Big.png"; sourceTree = "<group>"; };
+		D78B25B41B8B381F00262156 /* The Bubbles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Bubbles.png"; sourceTree = "<group>"; };
+		D78B25B51B8B381F00262156 /* The Change.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Change.png"; sourceTree = "<group>"; };
+		D78B25B61B8B381F00262156 /* The Cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Cloud.png"; sourceTree = "<group>"; };
+		D78B25B71B8B381F00262156 /* The Create.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Create.png"; sourceTree = "<group>"; };
+		D78B25B81B8B381F00262156 /* The Dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Dark.png"; sourceTree = "<group>"; };
+		D78B25B91B8B381F00262156 /* The Dash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Dash.png"; sourceTree = "<group>"; };
+		D78B25BA1B8B381F00262156 /* The Dream.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Dream.png"; sourceTree = "<group>"; };
+		D78B25BB1B8B381F00262156 /* The Earthy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Earthy.png"; sourceTree = "<group>"; };
+		D78B25BC1B8B381F00262156 /* The Erase.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Erase.png"; sourceTree = "<group>"; };
+		D78B25BD1B8B381F00262156 /* The Fight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Fight.png"; sourceTree = "<group>"; };
+		D78B25BE1B8B381F00262156 /* The Firey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Firey.png"; sourceTree = "<group>"; };
+		D78B25BF1B8B381F00262156 /* The Float.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Float.png"; sourceTree = "<group>"; };
+		D78B25C01B8B381F00262156 /* The Flower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Flower.png"; sourceTree = "<group>"; };
+		D78B25C11B8B381F00262156 /* The Fly.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Fly.png"; sourceTree = "<group>"; };
+		D78B25C21B8B381F00262156 /* The Freeze.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Freeze.png"; sourceTree = "<group>"; };
+		D78B25C31B8B381F00262156 /* The Glow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Glow.png"; sourceTree = "<group>"; };
+		D78B25C41B8B381F00262156 /* The Illusion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Illusion.png"; sourceTree = "<group>"; };
+		D78B25C51B8B381F00262156 /* The Jump.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Jump.png"; sourceTree = "<group>"; };
+		D78B25C61B8B381F00262156 /* The Libra.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Libra.png"; sourceTree = "<group>"; };
+		D78B25C71B8B381F00262156 /* The Light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Light.png"; sourceTree = "<group>"; };
+		D78B25C81B8B381F00262156 /* The Little.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Little.png"; sourceTree = "<group>"; };
+		D78B25C91B8B381F00262156 /* The Lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Lock.png"; sourceTree = "<group>"; };
+		D78B25CA1B8B381F00262156 /* The Loop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Loop.png"; sourceTree = "<group>"; };
+		D78B25CB1B8B381F00262156 /* The Maze.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Maze.png"; sourceTree = "<group>"; };
+		D78B25CC1B8B381F00262156 /* The Mirror.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Mirror.png"; sourceTree = "<group>"; };
+		D78B25CD1B8B381F00262156 /* The Mist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Mist.png"; sourceTree = "<group>"; };
+		D78B25CE1B8B381F00262156 /* The Move.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Move.png"; sourceTree = "<group>"; };
+		D78B25CF1B8B381F00262156 /* The Power.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Power.png"; sourceTree = "<group>"; };
+		D78B25D01B8B381F00262156 /* The Rain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Rain.png"; sourceTree = "<group>"; };
+		D78B25D11B8B381F00262156 /* The Return.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Return.png"; sourceTree = "<group>"; };
+		D78B25D21B8B381F00262156 /* The Sand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Sand.png"; sourceTree = "<group>"; };
+		D78B25D31B8B381F00262156 /* The Shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Shadow.png"; sourceTree = "<group>"; };
+		D78B25D41B8B381F00262156 /* The Shield.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Shield.png"; sourceTree = "<group>"; };
+		D78B25D51B8B381F00262156 /* The Shot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Shot.png"; sourceTree = "<group>"; };
+		D78B25D61B8B381F00262156 /* The Silent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Silent.png"; sourceTree = "<group>"; };
+		D78B25D71B8B381F00262156 /* The Sleep.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Sleep.png"; sourceTree = "<group>"; };
+		D78B25D81B8B381F00262156 /* The Snow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Snow.png"; sourceTree = "<group>"; };
+		D78B25D91B8B381F00262156 /* The Song.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Song.png"; sourceTree = "<group>"; };
+		D78B25DA1B8B381F00262156 /* The Storm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Storm.png"; sourceTree = "<group>"; };
+		D78B25DB1B8B381F00262156 /* The Sweet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Sweet.png"; sourceTree = "<group>"; };
+		D78B25DC1B8B381F00262156 /* The Sword.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Sword.png"; sourceTree = "<group>"; };
+		D78B25DD1B8B381F00262156 /* The Through.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Through.png"; sourceTree = "<group>"; };
+		D78B25DE1B8B381F00262156 /* The Thunder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Thunder.png"; sourceTree = "<group>"; };
+		D78B25DF1B8B381F00262156 /* The Time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Time.png"; sourceTree = "<group>"; };
+		D78B25E01B8B381F00262156 /* The Twin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Twin.png"; sourceTree = "<group>"; };
+		D78B25E11B8B381F00262156 /* The Voice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Voice.png"; sourceTree = "<group>"; };
+		D78B25E21B8B381F00262156 /* The Watery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Watery.png"; sourceTree = "<group>"; };
+		D78B25E31B8B381F00262156 /* The Wave.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Wave.png"; sourceTree = "<group>"; };
+		D78B25E41B8B381F00262156 /* The Windy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Windy.png"; sourceTree = "<group>"; };
+		D78B25E51B8B381F00262156 /* The Wood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Wood.png"; sourceTree = "<group>"; };
+		D78B26681B8D5FCE00262156 /* TTTAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTAttributedLabel.h; sourceTree = "<group>"; };
+		D78B26691B8D5FCE00262156 /* TTTAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTAttributedLabel.m; sourceTree = "<group>"; };
+		D78B266C1B8D9C8800262156 /* RunesChart.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = RunesChart.sqlite3; sourceTree = "<group>"; };
+		D78B26791B8DA82C00262156 /* Lenormand.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lenormand.sqlite3; sourceTree = "<group>"; };
+		D78B267B1B8DA82C00262156 /* TheClowCard.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = TheClowCard.sqlite3; sourceTree = "<group>"; };
+		D78B26851B8DABB000262156 /* RiderWaiteTarot.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = RiderWaiteTarot.sqlite3; sourceTree = "<group>"; };
 		D7B8AC8B1B8AD03800037A41 /* Lenormand 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lenormand 1.png"; sourceTree = "<group>"; };
 		D7B8AC8C1B8AD03800037A41 /* Lenormand 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lenormand 10.png"; sourceTree = "<group>"; };
 		D7B8AC8D1B8AD03800037A41 /* Lenormand 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lenormand 11.png"; sourceTree = "<group>"; };
@@ -168,7 +435,6 @@
 		D7B8ACAC1B8AD03800037A41 /* Lenormand 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lenormand 7.png"; sourceTree = "<group>"; };
 		D7B8ACAD1B8AD03800037A41 /* Lenormand 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lenormand 8.png"; sourceTree = "<group>"; };
 		D7B8ACAE1B8AD03800037A41 /* Lenormand 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lenormand 9.png"; sourceTree = "<group>"; };
-		D7B8ACD31B8AD07900037A41 /* Lenormand.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lenormand.sqlite3; sourceTree = "<group>"; };
 		D7B9706A1B81895A007583EC /* Tarotvn_Ver1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tarotvn_Ver1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7B9706E1B81895A007583EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7B9706F1B81895A007583EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -214,9 +480,6 @@
 		D7B970C11B81A1EB007583EC /* URUZ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = URUZ.png; sourceTree = "<group>"; };
 		D7B970C21B81A1EB007583EC /* WUNJO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WUNJO.png; sourceTree = "<group>"; };
 		D7B970C31B81A1EB007583EC /* WYRD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WYRD.png; sourceTree = "<group>"; };
-		D7B970E51B81A230007583EC /* RiderWaiteTarot.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = RiderWaiteTarot.sqlite3; sourceTree = "<group>"; };
-		D7B970E61B81A230007583EC /* RunesChart.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = RunesChart.sqlite3; sourceTree = "<group>"; };
-		D7B970E71B81A230007583EC /* TheClowCard.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = TheClowCard.sqlite3; sourceTree = "<group>"; };
 		D7B970EC1B81A2A6007583EC /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		D7B970EE1B81A2B1007583EC /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		D7B970F01B81A2BE007583EC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -287,6 +550,160 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D78B25141B8B37EF00262156 /* Hình Rider Waite */ = {
+			isa = PBXGroup;
+			children = (
+				D78B25151B8B37EF00262156 /* 0 - fool.png */,
+				D78B25161B8B37EF00262156 /* 1 - magician.png */,
+				D78B25171B8B37EF00262156 /* 10 - wheel_of_fortune.png */,
+				D78B25181B8B37EF00262156 /* 11 - justice.png */,
+				D78B25191B8B37EF00262156 /* 12 - hanged_man.png */,
+				D78B251A1B8B37EF00262156 /* 13 - death.png */,
+				D78B251B1B8B37EF00262156 /* 14 - temperance.png */,
+				D78B251C1B8B37EF00262156 /* 15 - devil.png */,
+				D78B251D1B8B37EF00262156 /* 16 - tower.png */,
+				D78B251E1B8B37EF00262156 /* 17 - star.png */,
+				D78B251F1B8B37EF00262156 /* 18 - moon.png */,
+				D78B25201B8B37EF00262156 /* 19 - sun.png */,
+				D78B25211B8B37EF00262156 /* 2 - high_priestess.png */,
+				D78B25221B8B37EF00262156 /* 20 - judgement.png */,
+				D78B25231B8B37EF00262156 /* world.png */,
+				D78B25241B8B37EF00262156 /* 3 - empress.png */,
+				D78B25251B8B37EF00262156 /* 4 - emperor.png */,
+				D78B25261B8B37EF00262156 /* 5 - hierophant.png */,
+				D78B25271B8B37EF00262156 /* 6 - lovers.png */,
+				D78B25281B8B37EF00262156 /* 7 - chariot.png */,
+				D78B25291B8B37EF00262156 /* 8 - strength.png */,
+				D78B252A1B8B37EF00262156 /* 9 - hermit.png */,
+				D78B252B1B8B37EF00262156 /* cups01.png */,
+				D78B252C1B8B37EF00262156 /* cups02.png */,
+				D78B252D1B8B37EF00262156 /* cups03.png */,
+				D78B252E1B8B37EF00262156 /* cups04.png */,
+				D78B252F1B8B37EF00262156 /* cups05.png */,
+				D78B25301B8B37EF00262156 /* cups06.png */,
+				D78B25311B8B37EF00262156 /* cups07.png */,
+				D78B25321B8B37EF00262156 /* cups08.png */,
+				D78B25331B8B37EF00262156 /* cups09.png */,
+				D78B25341B8B37EF00262156 /* cups10.png */,
+				D78B25351B8B37EF00262156 /* cups11.png */,
+				D78B25361B8B37EF00262156 /* cups12.png */,
+				D78B25371B8B37EF00262156 /* cups13.png */,
+				D78B25381B8B37EF00262156 /* cups14.png */,
+				D78B25391B8B37EF00262156 /* pents01.png */,
+				D78B253A1B8B37EF00262156 /* pents02.png */,
+				D78B253B1B8B37EF00262156 /* pents03.png */,
+				D78B253C1B8B37EF00262156 /* pents04.png */,
+				D78B253D1B8B37EF00262156 /* pents05.png */,
+				D78B253E1B8B37EF00262156 /* pents06.png */,
+				D78B253F1B8B37EF00262156 /* pents07.png */,
+				D78B25401B8B37EF00262156 /* pents08.png */,
+				D78B25411B8B37EF00262156 /* pents09.png */,
+				D78B25421B8B37EF00262156 /* pents10.png */,
+				D78B25431B8B37EF00262156 /* pents11.png */,
+				D78B25441B8B37EF00262156 /* pents12.png */,
+				D78B25451B8B37EF00262156 /* pents13.png */,
+				D78B25461B8B37EF00262156 /* pents14.png */,
+				D78B25471B8B37EF00262156 /* swords01.png */,
+				D78B25481B8B37EF00262156 /* swords02.png */,
+				D78B25491B8B37EF00262156 /* swords03.png */,
+				D78B254A1B8B37EF00262156 /* swords04.png */,
+				D78B254B1B8B37EF00262156 /* swords05.png */,
+				D78B254C1B8B37EF00262156 /* swords06.png */,
+				D78B254D1B8B37EF00262156 /* swords07.png */,
+				D78B254E1B8B37EF00262156 /* swords08.png */,
+				D78B254F1B8B37EF00262156 /* swords09.png */,
+				D78B25501B8B37EF00262156 /* swords10.png */,
+				D78B25511B8B37EF00262156 /* swords11.png */,
+				D78B25521B8B37EF00262156 /* swords12.png */,
+				D78B25531B8B37EF00262156 /* swords13.png */,
+				D78B25541B8B37EF00262156 /* swords14.png */,
+				D78B25551B8B37EF00262156 /* wands01.png */,
+				D78B25561B8B37EF00262156 /* wands02.png */,
+				D78B25571B8B37EF00262156 /* wands03.png */,
+				D78B25581B8B37EF00262156 /* wands04.png */,
+				D78B25591B8B37EF00262156 /* wands05.png */,
+				D78B255A1B8B37EF00262156 /* wands06.png */,
+				D78B255B1B8B37EF00262156 /* wands07.png */,
+				D78B255C1B8B37EF00262156 /* wands08.png */,
+				D78B255D1B8B37EF00262156 /* wands09.png */,
+				D78B255E1B8B37EF00262156 /* wands10.png */,
+				D78B255F1B8B37EF00262156 /* wands11.png */,
+				D78B25601B8B37EF00262156 /* wands12.png */,
+				D78B25611B8B37EF00262156 /* wands13.png */,
+				D78B25621B8B37EF00262156 /* wands14.png */,
+			);
+			name = "Hình Rider Waite";
+			path = "Tarotvn_Ver1/Hình Rider Waite";
+			sourceTree = "<group>";
+		};
+		D78B25B11B8B381F00262156 /* Clow Cards PNG */ = {
+			isa = PBXGroup;
+			children = (
+				D78B25B21B8B381F00262156 /* The Arrow.png */,
+				D78B25B31B8B381F00262156 /* The Big.png */,
+				D78B25B41B8B381F00262156 /* The Bubbles.png */,
+				D78B25B51B8B381F00262156 /* The Change.png */,
+				D78B25B61B8B381F00262156 /* The Cloud.png */,
+				D78B25B71B8B381F00262156 /* The Create.png */,
+				D78B25B81B8B381F00262156 /* The Dark.png */,
+				D78B25B91B8B381F00262156 /* The Dash.png */,
+				D78B25BA1B8B381F00262156 /* The Dream.png */,
+				D78B25BB1B8B381F00262156 /* The Earthy.png */,
+				D78B25BC1B8B381F00262156 /* The Erase.png */,
+				D78B25BD1B8B381F00262156 /* The Fight.png */,
+				D78B25BE1B8B381F00262156 /* The Firey.png */,
+				D78B25BF1B8B381F00262156 /* The Float.png */,
+				D78B25C01B8B381F00262156 /* The Flower.png */,
+				D78B25C11B8B381F00262156 /* The Fly.png */,
+				D78B25C21B8B381F00262156 /* The Freeze.png */,
+				D78B25C31B8B381F00262156 /* The Glow.png */,
+				D78B25C41B8B381F00262156 /* The Illusion.png */,
+				D78B25C51B8B381F00262156 /* The Jump.png */,
+				D78B25C61B8B381F00262156 /* The Libra.png */,
+				D78B25C71B8B381F00262156 /* The Light.png */,
+				D78B25C81B8B381F00262156 /* The Little.png */,
+				D78B25C91B8B381F00262156 /* The Lock.png */,
+				D78B25CA1B8B381F00262156 /* The Loop.png */,
+				D78B25CB1B8B381F00262156 /* The Maze.png */,
+				D78B25CC1B8B381F00262156 /* The Mirror.png */,
+				D78B25CD1B8B381F00262156 /* The Mist.png */,
+				D78B25CE1B8B381F00262156 /* The Move.png */,
+				D78B25CF1B8B381F00262156 /* The Power.png */,
+				D78B25D01B8B381F00262156 /* The Rain.png */,
+				D78B25D11B8B381F00262156 /* The Return.png */,
+				D78B25D21B8B381F00262156 /* The Sand.png */,
+				D78B25D31B8B381F00262156 /* The Shadow.png */,
+				D78B25D41B8B381F00262156 /* The Shield.png */,
+				D78B25D51B8B381F00262156 /* The Shot.png */,
+				D78B25D61B8B381F00262156 /* The Silent.png */,
+				D78B25D71B8B381F00262156 /* The Sleep.png */,
+				D78B25D81B8B381F00262156 /* The Snow.png */,
+				D78B25D91B8B381F00262156 /* The Song.png */,
+				D78B25DA1B8B381F00262156 /* The Storm.png */,
+				D78B25DB1B8B381F00262156 /* The Sweet.png */,
+				D78B25DC1B8B381F00262156 /* The Sword.png */,
+				D78B25DD1B8B381F00262156 /* The Through.png */,
+				D78B25DE1B8B381F00262156 /* The Thunder.png */,
+				D78B25DF1B8B381F00262156 /* The Time.png */,
+				D78B25E01B8B381F00262156 /* The Twin.png */,
+				D78B25E11B8B381F00262156 /* The Voice.png */,
+				D78B25E21B8B381F00262156 /* The Watery.png */,
+				D78B25E31B8B381F00262156 /* The Wave.png */,
+				D78B25E41B8B381F00262156 /* The Windy.png */,
+				D78B25E51B8B381F00262156 /* The Wood.png */,
+			);
+			path = "Clow Cards PNG";
+			sourceTree = "<group>";
+		};
+		D78B26671B8D5FB700262156 /* TTTAtributedLabel */ = {
+			isa = PBXGroup;
+			children = (
+				D78B26681B8D5FCE00262156 /* TTTAttributedLabel.h */,
+				D78B26691B8D5FCE00262156 /* TTTAttributedLabel.m */,
+			);
+			name = TTTAtributedLabel;
+			sourceTree = "<group>";
+		};
 		D7B8AC8A1B8AD03800037A41 /* Hình Lenormand (36 lá) PNG */ = {
 			isa = PBXGroup;
 			children = (
@@ -334,6 +751,7 @@
 		D7B970611B81895A007583EC = {
 			isa = PBXGroup;
 			children = (
+				D78B26671B8D5FB700262156 /* TTTAtributedLabel */,
 				D7B9706C1B81895A007583EC /* Tarotvn_Ver1 */,
 				D7B970821B81895A007583EC /* Tarotvn_Ver1Tests */,
 				D7B9706B1B81895A007583EC /* Products */,
@@ -424,6 +842,8 @@
 				D7B971051B81A8B5007583EC /* BookTarot.swift */,
 				D7B971071B81A8CF007583EC /* TarotCard.swift */,
 				D7B971121B81AB4A007583EC /* DatabaseManager.swift */,
+				D78B25B11B8B381F00262156 /* Clow Cards PNG */,
+				D78B25141B8B37EF00262156 /* Hình Rider Waite */,
 				D7B8AC8A1B8AD03800037A41 /* Hình Lenormand (36 lá) PNG */,
 				D7B970E31B81A219007583EC /* FeaturedBooks */,
 				D7B970AA1B81A1EB007583EC /* Rune PNG */,
@@ -477,10 +897,10 @@
 		D7B970E31B81A219007583EC /* FeaturedBooks */ = {
 			isa = PBXGroup;
 			children = (
-				D7B8ACD31B8AD07900037A41 /* Lenormand.sqlite3 */,
-				D7B970E51B81A230007583EC /* RiderWaiteTarot.sqlite3 */,
-				D7B970E61B81A230007583EC /* RunesChart.sqlite3 */,
-				D7B970E71B81A230007583EC /* TheClowCard.sqlite3 */,
+				D78B266C1B8D9C8800262156 /* RunesChart.sqlite3 */,
+				D78B26851B8DABB000262156 /* RiderWaiteTarot.sqlite3 */,
+				D78B26791B8DA82C00262156 /* Lenormand.sqlite3 */,
+				D78B267B1B8DA82C00262156 /* TheClowCard.sqlite3 */,
 			);
 			name = FeaturedBooks;
 			sourceTree = "<group>";
@@ -607,75 +1027,205 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D78B26101B8B381F00262156 /* The Sword.png in Resources */,
+				D78B25F21B8B381F00262156 /* The Firey.png in Resources */,
+				D78B256B1B8B37EF00262156 /* 16 - tower.png in Resources */,
+				D78B25AE1B8B37EF00262156 /* wands12.png in Resources */,
+				D78B267E1B8DA82C00262156 /* TheClowCard.sqlite3 in Resources */,
 				D7B970CF1B81A1EB007583EC /* EOLH.png in Resources */,
 				D7B8ACC31B8AD03800037A41 /* Lenormand 28.png in Resources */,
+				D78B25F41B8B381F00262156 /* The Flower.png in Resources */,
+				D78B256F1B8B37EF00262156 /* 2 - high_priestess.png in Resources */,
 				D7B8ACCE1B8AD03800037A41 /* Lenormand 5.png in Resources */,
+				D78B25AA1B8B37EF00262156 /* wands08.png in Resources */,
+				D78B25F81B8B381F00262156 /* The Illusion.png in Resources */,
+				D78B26061B8B381F00262156 /* The Sand.png in Resources */,
+				D78B25721B8B37EF00262156 /* 3 - empress.png in Resources */,
 				D7B8ACB11B8AD03800037A41 /* Lenormand 11.png in Resources */,
+				D78B25891B8B37EF00262156 /* pents03.png in Resources */,
+				D78B25681B8B37EF00262156 /* 13 - death.png in Resources */,
 				D72ACB671B88907E000AFA2C /* CustomSubview.xib in Resources */,
+				D78B26031B8B381F00262156 /* The Power.png in Resources */,
+				D78B259D1B8B37EF00262156 /* swords09.png in Resources */,
 				D7B970D71B81A1EB007583EC /* LAGAZ.png in Resources */,
-				D7B8ACD41B8AD07900037A41 /* Lenormand.sqlite3 in Resources */,
+				D78B25EE1B8B381F00262156 /* The Dream.png in Resources */,
+				D78B25631B8B37EF00262156 /* 0 - fool.png in Resources */,
+				D78B25801B8B37EF00262156 /* cups08.png in Resources */,
+				D78B25A71B8B37EF00262156 /* wands05.png in Resources */,
+				D78B25851B8B37EF00262156 /* cups13.png in Resources */,
+				D78B25701B8B37EF00262156 /* 20 - judgement.png in Resources */,
 				D7B970CC1B81A1EB007583EC /* DAEG.png in Resources */,
 				D7B8ACB01B8AD03800037A41 /* Lenormand 10.png in Resources */,
 				D7B970751B81895A007583EC /* Main.storyboard in Resources */,
+				D78B26141B8B381F00262156 /* The Twin.png in Resources */,
 				D7B8ACBD1B8AD03800037A41 /* Lenormand 22.png in Resources */,
+				D78B25A21B8B37EF00262156 /* swords14.png in Resources */,
+				D78B25A31B8B37EF00262156 /* wands01.png in Resources */,
+				D78B260D1B8B381F00262156 /* The Song.png in Resources */,
+				D78B25971B8B37EF00262156 /* swords03.png in Resources */,
+				D78B25641B8B37EF00262156 /* 1 - magician.png in Resources */,
+				D78B256D1B8B37EF00262156 /* 18 - moon.png in Resources */,
 				D7B8ACC61B8AD03800037A41 /* lenormand 30.png in Resources */,
 				D7B970D31B81A1EB007583EC /* ING.png in Resources */,
 				D7B970E01B81A1EB007583EC /* URUZ.png in Resources */,
+				D78B258C1B8B37EF00262156 /* pents06.png in Resources */,
 				D7B8ACC01B8AD03800037A41 /* Lenormand 25.png in Resources */,
 				D7B8ACC11B8AD03800037A41 /* Lenormand 26.png in Resources */,
 				D7B8ACB81B8AD03800037A41 /* Lenormand 18.png in Resources */,
 				D7B8ACC41B8AD03800037A41 /* Lenormand 29.png in Resources */,
+				D78B25F91B8B381F00262156 /* The Jump.png in Resources */,
+				D78B25AC1B8B37EF00262156 /* wands10.png in Resources */,
 				D7B8ACB51B8AD03800037A41 /* Lenormand 15.png in Resources */,
+				D78B25E91B8B381F00262156 /* The Change.png in Resources */,
+				D78B260B1B8B381F00262156 /* The Sleep.png in Resources */,
+				D78B25A11B8B37EF00262156 /* swords13.png in Resources */,
 				D7B8ACCB1B8AD03800037A41 /* Lenormand 35.png in Resources */,
+				D78B25EC1B8B381F00262156 /* The Dark.png in Resources */,
 				D7B8ACBE1B8AD03800037A41 /* Lenormand 23.png in Resources */,
+				D78B25A41B8B37EF00262156 /* wands02.png in Resources */,
+				D78B257D1B8B37EF00262156 /* cups05.png in Resources */,
 				D7B970D11B81A1EB007583EC /* GIFU.png in Resources */,
+				D78B25781B8B37EF00262156 /* 9 - hermit.png in Resources */,
+				D78B258B1B8B37EF00262156 /* pents05.png in Resources */,
+				D78B25ED1B8B381F00262156 /* The Dash.png in Resources */,
+				D78B26041B8B381F00262156 /* The Rain.png in Resources */,
+				D78B25AF1B8B37EF00262156 /* wands13.png in Resources */,
 				D7B8ACC81B8AD03800037A41 /* Lenormand 32.png in Resources */,
 				D7B8ACCF1B8AD03800037A41 /* Lenormand 6.png in Resources */,
+				D78B25FF1B8B381F00262156 /* The Maze.png in Resources */,
 				D7B970DD1B81A1EB007583EC /* SIGEL.png in Resources */,
+				D78B25711B8B37EF00262156 /* world.png in Resources */,
 				D7B970D81B81A1EB007583EC /* MANNAZ.png in Resources */,
+				D78B26191B8B381F00262156 /* The Wood.png in Resources */,
+				D78B26171B8B381F00262156 /* The Wave.png in Resources */,
+				D78B256C1B8B37EF00262156 /* 17 - star.png in Resources */,
 				D7B970D61B81A1EB007583EC /* KENAZ.png in Resources */,
+				D78B25731B8B37EF00262156 /* 4 - emperor.png in Resources */,
+				D78B25811B8B37EF00262156 /* cups09.png in Resources */,
 				D7B8ACB41B8AD03800037A41 /* Lenormand 14.png in Resources */,
+				D78B25981B8B37EF00262156 /* swords04.png in Resources */,
+				D78B25A51B8B37EF00262156 /* wands03.png in Resources */,
+				D78B25751B8B37EF00262156 /* 6 - lovers.png in Resources */,
+				D78B25901B8B37EF00262156 /* pents10.png in Resources */,
+				D78B26161B8B381F00262156 /* The Watery.png in Resources */,
+				D78B25B01B8B37EF00262156 /* wands14.png in Resources */,
+				D78B26011B8B381F00262156 /* The Mist.png in Resources */,
 				D7B8ACD01B8AD03800037A41 /* Lenormand 7.png in Resources */,
+				D78B258F1B8B37EF00262156 /* pents09.png in Resources */,
+				D78B25861B8B37EF00262156 /* cups14.png in Resources */,
+				D78B25761B8B37EF00262156 /* 7 - chariot.png in Resources */,
 				D7B970DE1B81A1EB007583EC /* THURISAZ.png in Resources */,
+				D78B26001B8B381F00262156 /* The Mirror.png in Resources */,
 				D7B970DA1B81A1EB007583EC /* OTHEL.png in Resources */,
+				D78B25741B8B37EF00262156 /* 5 - hierophant.png in Resources */,
 				D7B8ACB21B8AD03800037A41 /* Lenormand 12.png in Resources */,
 				D7B970CD1B81A1EB007583EC /* EHWAZ.png in Resources */,
+				D78B259C1B8B37EF00262156 /* swords08.png in Resources */,
 				D7B970DF1B81A1EB007583EC /* TIR.png in Resources */,
+				D78B259E1B8B37EF00262156 /* swords10.png in Resources */,
+				D78B25FA1B8B381F00262156 /* The Libra.png in Resources */,
+				D78B25EF1B8B381F00262156 /* The Earthy.png in Resources */,
+				D78B26151B8B381F00262156 /* The Voice.png in Resources */,
 				D7B8ACB91B8AD03800037A41 /* Lenormand 19.png in Resources */,
+				D78B25E61B8B381F00262156 /* The Arrow.png in Resources */,
 				D7B970CA1B81A1EB007583EC /* ANSUZ.png in Resources */,
 				D7B8ACC51B8AD03800037A41 /* Lenormand 3.png in Resources */,
+				D78B267C1B8DA82C00262156 /* Lenormand.sqlite3 in Resources */,
+				D78B257E1B8B37EF00262156 /* cups06.png in Resources */,
 				D7B970D91B81A1EB007583EC /* NIED.png in Resources */,
+				D78B257F1B8B37EF00262156 /* cups07.png in Resources */,
 				D7B8ACD21B8AD03800037A41 /* Lenormand 9.png in Resources */,
 				D7B970DC1B81A1EB007583EC /* RAIDHO.png in Resources */,
+				D78B260E1B8B381F00262156 /* The Storm.png in Resources */,
+				D78B258A1B8B37EF00262156 /* pents04.png in Resources */,
+				D78B256A1B8B37EF00262156 /* 15 - devil.png in Resources */,
+				D78B25A81B8B37EF00262156 /* wands06.png in Resources */,
+				D78B25961B8B37EF00262156 /* swords02.png in Resources */,
+				D78B25F11B8B381F00262156 /* The Fight.png in Resources */,
 				D7B8ACBB1B8AD03800037A41 /* Lenormand 20.png in Resources */,
+				D78B257B1B8B37EF00262156 /* cups03.png in Resources */,
 				D7B8ACC21B8AD03800037A41 /* Lenormand 27.png in Resources */,
+				D78B260F1B8B381F00262156 /* The Sweet.png in Resources */,
+				D78B25F31B8B381F00262156 /* The Float.png in Resources */,
+				D78B259A1B8B37EF00262156 /* swords06.png in Resources */,
 				D7B9707A1B81895A007583EC /* LaunchScreen.xib in Resources */,
-				D7B970E91B81A230007583EC /* RiderWaiteTarot.sqlite3 in Resources */,
+				D78B25821B8B37EF00262156 /* cups10.png in Resources */,
+				D78B260A1B8B381F00262156 /* The Silent.png in Resources */,
 				D7B8ACCA1B8AD03800037A41 /* Lenormand 34.png in Resources */,
+				D78B25E71B8B381F00262156 /* The Big.png in Resources */,
+				D78B25921B8B37EF00262156 /* pents12.png in Resources */,
 				D7B8ACB71B8AD03800037A41 /* Lenormand 17.png in Resources */,
+				D78B26081B8B381F00262156 /* The Shield.png in Resources */,
+				D78B25A61B8B37EF00262156 /* wands04.png in Resources */,
+				D78B26051B8B381F00262156 /* The Return.png in Resources */,
+				D78B25A01B8B37EF00262156 /* swords12.png in Resources */,
+				D78B25931B8B37EF00262156 /* pents13.png in Resources */,
 				D7B970E11B81A1EB007583EC /* WUNJO.png in Resources */,
 				D7B8ACD11B8AD03800037A41 /* Lenormand 8.png in Resources */,
+				D78B26071B8B381F00262156 /* The Shadow.png in Resources */,
+				D78B260C1B8B381F00262156 /* The Snow.png in Resources */,
+				D78B25EB1B8B381F00262156 /* The Create.png in Resources */,
 				D7B970CE1B81A1EB007583EC /* EIHWAZ.png in Resources */,
-				D7B970EB1B81A230007583EC /* TheClowCard.sqlite3 in Resources */,
-				D7B970EA1B81A230007583EC /* RunesChart.sqlite3 in Resources */,
+				D78B26861B8DABB000262156 /* RiderWaiteTarot.sqlite3 in Resources */,
+				D78B26131B8B381F00262156 /* The Time.png in Resources */,
+				D78B25A91B8B37EF00262156 /* wands07.png in Resources */,
+				D78B25691B8B37EF00262156 /* 14 - temperance.png in Resources */,
+				D78B25651B8B37EF00262156 /* 10 - wheel_of_fortune.png in Resources */,
 				D7B970DB1B81A1EB007583EC /* PERDHRO.png in Resources */,
 				D7B970E21B81A1EB007583EC /* WYRD.png in Resources */,
 				D7B970D01B81A1EB007583EC /* FEHU.png in Resources */,
+				D78B25FE1B8B381F00262156 /* The Loop.png in Resources */,
 				D7B8ACBC1B8AD03800037A41 /* Lenormand 21.png in Resources */,
+				D78B25951B8B37EF00262156 /* swords01.png in Resources */,
+				D78B25791B8B37EF00262156 /* cups01.png in Resources */,
+				D78B26111B8B381F00262156 /* The Through.png in Resources */,
 				D7B8ACB31B8AD03800037A41 /* Lenormand 13.png in Resources */,
+				D78B25831B8B37EF00262156 /* cups11.png in Resources */,
+				D78B26021B8B381F00262156 /* The Move.png in Resources */,
+				D78B257C1B8B37EF00262156 /* cups04.png in Resources */,
+				D78B25FB1B8B381F00262156 /* The Light.png in Resources */,
+				D78B25F01B8B381F00262156 /* The Erase.png in Resources */,
 				D7B8ACC91B8AD03800037A41 /* Lenormand 33.png in Resources */,
 				D7B970CB1B81A1EB007583EC /* BEORC.png in Resources */,
+				D78B25841B8B37EF00262156 /* cups12.png in Resources */,
+				D78B25F71B8B381F00262156 /* The Glow.png in Resources */,
+				D78B26121B8B381F00262156 /* The Thunder.png in Resources */,
+				D78B259F1B8B37EF00262156 /* swords11.png in Resources */,
 				D7B970D21B81A1EB007583EC /* HAGALL.png in Resources */,
 				D7B8ACCD1B8AD03800037A41 /* Lenormand 4.png in Resources */,
+				D78B25FD1B8B381F00262156 /* The Lock.png in Resources */,
+				D78B25881B8B37EF00262156 /* pents02.png in Resources */,
+				D78B26181B8B381F00262156 /* The Windy.png in Resources */,
+				D78B26091B8B381F00262156 /* The Shot.png in Resources */,
 				D7B970D51B81A1EB007583EC /* JERA.png in Resources */,
 				D7B8ACCC1B8AD03800037A41 /* Lenormand 36.png in Resources */,
+				D78B25FC1B8B381F00262156 /* The Little.png in Resources */,
+				D78B25AB1B8B37EF00262156 /* wands09.png in Resources */,
+				D78B25771B8B37EF00262156 /* 8 - strength.png in Resources */,
+				D78B26701B8D9C8800262156 /* RunesChart.sqlite3 in Resources */,
+				D78B25AD1B8B37EF00262156 /* wands11.png in Resources */,
 				D7B8ACBA1B8AD03800037A41 /* Lenormand 2.png in Resources */,
+				D78B25E81B8B381F00262156 /* The Bubbles.png in Resources */,
 				D7B8ACAF1B8AD03800037A41 /* Lenormand 1.png in Resources */,
+				D78B256E1B8B37EF00262156 /* 19 - sun.png in Resources */,
+				D78B25EA1B8B381F00262156 /* The Cloud.png in Resources */,
+				D78B25F61B8B381F00262156 /* The Freeze.png in Resources */,
+				D78B25661B8B37EF00262156 /* 11 - justice.png in Resources */,
+				D78B257A1B8B37EF00262156 /* cups02.png in Resources */,
+				D78B25671B8B37EF00262156 /* 12 - hanged_man.png in Resources */,
 				D7B970771B81895A007583EC /* Images.xcassets in Resources */,
+				D78B258E1B8B37EF00262156 /* pents08.png in Resources */,
 				D7B970D41B81A1EB007583EC /* ISA.png in Resources */,
+				D78B25911B8B37EF00262156 /* pents11.png in Resources */,
 				D7B8ACB61B8AD03800037A41 /* Lenormand 16.png in Resources */,
 				D7B8ACBF1B8AD03800037A41 /* Lenormand 24.png in Resources */,
+				D78B25F51B8B381F00262156 /* The Fly.png in Resources */,
+				D78B259B1B8B37EF00262156 /* swords07.png in Resources */,
 				D7B8ACC71B8AD03800037A41 /* Lenormand 31.png in Resources */,
+				D78B25871B8B37EF00262156 /* pents01.png in Resources */,
+				D78B25941B8B37EF00262156 /* pents14.png in Resources */,
+				D78B25991B8B37EF00262156 /* swords05.png in Resources */,
+				D78B258D1B8B37EF00262156 /* pents07.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -766,6 +1316,7 @@
 				D7B970931B818DA8007583EC /* SWRevealViewController.m in Sources */,
 				D7B971221B81FC5A007583EC /* RunesStoneTableViewCell.swift in Sources */,
 				D7C9CC451B864C9E00C90985 /* DetailHelpingScreenViewController.swift in Sources */,
+				D78B266A1B8D5FCE00262156 /* TTTAttributedLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,9 +10,9 @@ import UIKit
 
 class AboutTableViewController: UITableViewController {
     
-    var arrAboutList: [String] = ["Tarot.vn", "Mystic House", "Witchita Coffee", "Liên Hệ"]
+    var arrAboutList: [String] = ["Tarot.vn", "Mystic House", "Witchita Coffee"]
     var selectedName: String!
-    var arrAboutListImange : [String] = ["Tarotvn icon 100 copy.png","Mystichouse icon 100 copy.png", "Wichita icon 100 copy.png", "Customer Support Filled-100.png"]
+    var arrAboutListImange : [String] = ["Tarotvn icon 100 copy.png","Mystichouse icon 100 copy.png", "Wichita icon 100 copy.png"]
     
     
     @IBOutlet weak var menuButton: UIBarButtonItem!

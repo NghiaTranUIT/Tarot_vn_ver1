@@ -33,8 +33,7 @@ class ListRunesStoneTableViewController: UITableViewController, UISearchBarDeleg
         super.viewDidLoad()
         
         arrCard = []
-        //myTableView.dataSource = self
-        myTableView.delegate = self
+        
         
         mySearch.delegate = self
         
@@ -111,6 +110,11 @@ class ListRunesStoneTableViewController: UITableViewController, UISearchBarDeleg
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
+        if(searchActive) {
+            
+            return filtered.count
+        }
+
         return arrCard.count
     }
     

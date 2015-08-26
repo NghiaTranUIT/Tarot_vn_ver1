@@ -148,7 +148,7 @@ class StoredBooksTableViewController: UITableViewController {
     func onCreatedNotification()
     {
         arrlist = []
-        MBProgressHUD.showHUDAddedTo(self.view, animated: true)
+        MBProgressHUD.showHUDAddedTo(self.tableView, animated: true)
         
         var query = PFQuery(className: "DataBook")
         let userDefault = NSUserDefaults.standardUserDefaults()
@@ -175,7 +175,7 @@ class StoredBooksTableViewController: UITableViewController {
             
             self.tableView.reloadData()
             
-            MBProgressHUD.hideHUDForView(self.view, animated: true)
+            MBProgressHUD.hideHUDForView(self.tableView, animated: true)
         }
         
         //self.tableView.reloadData()
@@ -234,7 +234,7 @@ class StoredBooksTableViewController: UITableViewController {
                 
                 
                 ///
-                var myHUb:MBProgressHUD =  MBProgressHUD.showHUDAddedTo(UIApplication.sharedApplication().keyWindow, animated: true)
+                var myHUb:MBProgressHUD =  MBProgressHUD.showHUDAddedTo(self.tableView, animated: true)
                 myHUb.labelText = "Đang Tải..."
                 myHUb.dimBackground = true;
                 
