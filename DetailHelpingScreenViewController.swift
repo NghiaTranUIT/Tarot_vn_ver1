@@ -76,6 +76,8 @@ class DetailHelpingScreenViewController: UIViewController, TTTAttributedLabelDel
             label1.addLinkToURL(NSURL(string: "http://facebook.com/WichitaCoffee")!, withRange: range1)
             
             
+            
+            
             var text1: String = "Wichita Coffee (Wichita Coffee and Tea House) là chuỗi cửa hàng đồ uống tổ chức xem Tarot chuyên nghiệp duy nhất trên cả nước hiện nay. Tại quán cà phê này, dịch vụ xem Tarot được tổ chức liên tục hàng ngày từ sáng đến tối với hơn 10 reader giàu kinh nghiệm và có uy tín trong cộng đồng Tarot Việt Nam. Wichita hỗ trợ hệ thống đa dạng dành cho việc đặt lịch hẹn xem Tarot và lấy phản hồi, nhận xét của khách hàng. Hiện tại, tỷ lệ khách hàng hài lòng với dịch vụ xem Tarot tại quán này lên đến trên 95%. Bên cạnh đó, Wichita Coffee and Tea House cũng là địa điểm tổ chức các khóa học Tarot do Tarot.vn bảo trợ."
             
             var text2: String = ""
@@ -88,8 +90,67 @@ class DetailHelpingScreenViewController: UIViewController, TTTAttributedLabelDel
         // Do any additional setup after loading the view.
     }
     
-    func attributedLabel(label: TTTAttributedLabel!, didSelectLinkWithURL url: NSURL!) {
-        UIApplication.sharedApplication().openURL(url)
+    func attributedLabel(label: TTTAttributedLabel!, didSelectLinkWithURL url: NSURL!)
+    {
+        
+        if nameOfHelping == "Tarot.vn" {
+            
+                UIApplication.sharedApplication().openURL(url)
+          
+            
+        }else if nameOfHelping == "Mystic House" {
+            
+            if url.absoluteString == "http://mystichouse.vn"{
+                
+                
+                 UIApplication.sharedApplication().openURL(url)
+                
+            }else{
+                
+                var urlApp: NSURL = NSURL(string: "fb://profile/454186987948994")!
+                var urlWeb: NSURL = NSURL(string: "http://facebook.com/SG.Mystic.House")!
+                
+                if UIApplication.sharedApplication().canOpenURL(urlApp){
+                    
+                    UIApplication.sharedApplication().openURL(urlApp)
+                }
+                    
+                else {
+                    
+                    UIApplication.sharedApplication().openURL(urlWeb)
+                }
+ 
+                
+            }
+            
+            
+            
+            
+            
+        }else{
+            
+            if url.absoluteString == "http://wichita.vn"{
+                
+                 UIApplication.sharedApplication().openURL(url)
+                
+            }else{
+                
+                var urlApp: NSURL = NSURL(string: "fb://profile/598291676967768")!
+                var urlWeb: NSURL = NSURL(string: "http://facebook.com/WichitaCoffee")!
+                
+                if UIApplication.sharedApplication().canOpenURL(urlApp){
+                    
+                    UIApplication.sharedApplication().openURL(urlApp)
+                }
+                    
+                else{
+                    
+                    UIApplication.sharedApplication().openURL(urlWeb)
+                }
+  
+            }
+        }
+       
     }
     
     override func didReceiveMemoryWarning() {

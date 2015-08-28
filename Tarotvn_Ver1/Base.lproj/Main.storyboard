@@ -295,6 +295,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="vpZ-VV-UDr">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StoredBooks" id="63X-uL-OXP">
                                 <autoresizingMask key="autoresizingMask"/>
@@ -315,6 +321,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="menuButton" destination="DHt-4y-Iul" id="tn6-Fr-WO7"/>
+                        <outlet property="mySearch" destination="vpZ-VV-UDr" id="UcM-ju-fH1"/>
                         <outlet property="myTableview" destination="Dqr-1d-IVz" id="wMB-Vw-isj"/>
                     </connections>
                 </tableViewController>
@@ -919,7 +926,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="OLE-iY-irD"/>
-        <segue reference="qtn-d6-k3d"/>
         <segue reference="6Il-YU-CgJ"/>
+        <segue reference="Dme-Gf-VaD"/>
     </inferredMetricsTieBreakers>
 </document>

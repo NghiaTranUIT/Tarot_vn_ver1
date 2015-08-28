@@ -167,7 +167,7 @@
 		D7B8ACC31B8AD03800037A41 /* Lenormand 28.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B8AC9F1B8AD03800037A41 /* Lenormand 28.png */; };
 		D7B8ACC41B8AD03800037A41 /* Lenormand 29.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B8ACA01B8AD03800037A41 /* Lenormand 29.png */; };
 		D7B8ACC51B8AD03800037A41 /* Lenormand 3.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B8ACA11B8AD03800037A41 /* Lenormand 3.png */; };
-		D7B8ACC61B8AD03800037A41 /* lenormand 30.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B8ACA21B8AD03800037A41 /* lenormand 30.png */; };
+		D7B8ACC61B8AD03800037A41 /* Lenormand.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B8ACA21B8AD03800037A41 /* Lenormand.png */; };
 		D7B8ACC71B8AD03800037A41 /* Lenormand 31.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B8ACA31B8AD03800037A41 /* Lenormand 31.png */; };
 		D7B8ACC81B8AD03800037A41 /* Lenormand 32.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B8ACA41B8AD03800037A41 /* Lenormand 32.png */; };
 		D7B8ACC91B8AD03800037A41 /* Lenormand 33.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B8ACA51B8AD03800037A41 /* Lenormand 33.png */; };
@@ -422,7 +422,7 @@
 		D7B8AC9F1B8AD03800037A41 /* Lenormand 28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lenormand 28.png"; sourceTree = "<group>"; };
 		D7B8ACA01B8AD03800037A41 /* Lenormand 29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lenormand 29.png"; sourceTree = "<group>"; };
 		D7B8ACA11B8AD03800037A41 /* Lenormand 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lenormand 3.png"; sourceTree = "<group>"; };
-		D7B8ACA21B8AD03800037A41 /* lenormand 30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lenormand 30.png"; sourceTree = "<group>"; };
+		D7B8ACA21B8AD03800037A41 /* Lenormand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lenormand.png; sourceTree = "<group>"; };
 		D7B8ACA31B8AD03800037A41 /* Lenormand 31.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lenormand 31.png"; sourceTree = "<group>"; };
 		D7B8ACA41B8AD03800037A41 /* Lenormand 32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lenormand 32.png"; sourceTree = "<group>"; };
 		D7B8ACA51B8AD03800037A41 /* Lenormand 33.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lenormand 33.png"; sourceTree = "<group>"; };
@@ -730,7 +730,7 @@
 				D7B8AC9F1B8AD03800037A41 /* Lenormand 28.png */,
 				D7B8ACA01B8AD03800037A41 /* Lenormand 29.png */,
 				D7B8ACA11B8AD03800037A41 /* Lenormand 3.png */,
-				D7B8ACA21B8AD03800037A41 /* lenormand 30.png */,
+				D7B8ACA21B8AD03800037A41 /* Lenormand.png */,
 				D7B8ACA31B8AD03800037A41 /* Lenormand 31.png */,
 				D7B8ACA41B8AD03800037A41 /* Lenormand 32.png */,
 				D7B8ACA51B8AD03800037A41 /* Lenormand 33.png */,
@@ -1065,7 +1065,7 @@
 				D78B25971B8B37EF00262156 /* swords03.png in Resources */,
 				D78B25641B8B37EF00262156 /* 1 - magician.png in Resources */,
 				D78B256D1B8B37EF00262156 /* 18 - moon.png in Resources */,
-				D7B8ACC61B8AD03800037A41 /* lenormand 30.png in Resources */,
+				D7B8ACC61B8AD03800037A41 /* Lenormand.png in Resources */,
 				D7B970D31B81A1EB007583EC /* ING.png in Resources */,
 				D7B970E01B81A1EB007583EC /* URUZ.png in Resources */,
 				D78B258C1B8B37EF00262156 /* pents06.png in Resources */,

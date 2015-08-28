@@ -112,7 +112,23 @@ class DownloadedBooksTableViewController: UITableViewController {
             
             self.performSegueWithIdentifier("pushDetailRunes", sender: nil)
             
-        }else{
+        }
+        else if arrDownloadedFileDislay[indexPathOfDownloadedList] == "Rider Waite Tarot"{
+            
+            self.performSegueWithIdentifier("pushDetailRunes", sender: nil)
+            
+        }
+        else if arrDownloadedFileDislay[indexPathOfDownloadedList] == "Lenormand Card"{
+            
+            self.performSegueWithIdentifier("pushDetailRunes", sender: nil)
+            
+        }
+        else if arrDownloadedFileDislay[indexPathOfDownloadedList] == "The Clow Card"{
+            
+            self.performSegueWithIdentifier("pushDetailRunes", sender: nil)
+            
+        }
+        else{
         
             self.performSegueWithIdentifier("pushDetailCard", sender: nil);
        }
@@ -150,43 +166,53 @@ class DownloadedBooksTableViewController: UITableViewController {
     
     // Override to support editing the table view.
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            //self.tableView.reloadData()
-            let userDefault = NSUserDefaults.standardUserDefaults()
-            if let arrFileNameDownloaded: AnyObject = userDefault.objectForKey("fileDownload"){
+        
+        if indexPath.row > 3 {
+            
+            if editingStyle == .Delete {
+                // Delete the row from the data source
+                //self.tableView.reloadData()
+                let userDefault = NSUserDefaults.standardUserDefaults()
+                if let arrFileNameDownloaded: AnyObject = userDefault.objectForKey("fileDownload"){
+                    
+                    var readArray: [NSString] = arrFileNameDownloaded as! [NSString]
+                    readArray.removeAtIndex(indexPath.row)
+                    userDefault.setObject(readArray, forKey: "fileDownload")
+                }
                 
-                var readArray: [NSString] = arrFileNameDownloaded as! [NSString]
-                readArray.removeAtIndex(indexPath.row)
-                userDefault.setObject(readArray, forKey: "fileDownload")
-            }
-            
-            if let arrFileNameDownloadedDislay: AnyObject = userDefault.objectForKey("fileDownloadDislay"){
+                if let arrFileNameDownloadedDislay: AnyObject = userDefault.objectForKey("fileDownloadDislay"){
+                    
+                    var readArrayDislay: [NSString] = arrFileNameDownloadedDislay as! [NSString]
+                    readArrayDislay.removeAtIndex(indexPath.row)
+                    userDefault.setObject(readArrayDislay, forKey: "fileDownloadDislay")
+                }
                 
-                var readArrayDislay: [NSString] = arrFileNameDownloadedDislay as! [NSString]
-                readArrayDislay.removeAtIndex(indexPath.row)
-                userDefault.setObject(readArrayDislay, forKey: "fileDownloadDislay")
+                
+                
+                
+                removeData(arrDownloadedFile[indexPath.row] as String)
+                removeData(arrDownloadedFileDislay[indexPath.row] as String)
+                
+                arrDownloadedFile .removeAtIndex(indexPath.row)
+                arrDownloadedFileDislay.removeAtIndex(indexPath.row)
+                tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+                
+                
+                ///add notification
+                
+                let newCreatedNotification = NSNotification(name: "reloadListBooks", object: nil)
+                NSNotificationCenter.defaultCenter().postNotification(newCreatedNotification)
+                ///
+                
+                
+            } else if editingStyle == .Insert {
+                // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
             }
-            
-            
-            removeData(arrDownloadedFile[indexPath.row] as String)
-            removeData(arrDownloadedFileDislay[indexPath.row] as String)
-            
-            arrDownloadedFile .removeAtIndex(indexPath.row)
-            arrDownloadedFileDislay.removeAtIndex(indexPath.row)
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-            
-            ///add notification
-            
-            let newCreatedNotification = NSNotification(name: "reloadListBooks", object: nil)
-            NSNotificationCenter.defaultCenter().postNotification(newCreatedNotification)
-            ///
-            
-            
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }
+        
     }
+    
+    
     func removeData(itemName: String){
         
         var fileManager: NSFileManager = NSFileManager.defaultManager()

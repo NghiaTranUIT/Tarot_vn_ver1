@@ -10,22 +10,24 @@ import UIKit
 import Parse
 import Refresher
 
-class StoredBooksTableViewController: UITableViewController {
+class StoredBooksTableViewController: UITableViewController, UISearchBarDelegate {
     
+    @IBOutlet weak var mySearch: UISearchBar!
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
     @IBOutlet var myTableview: UITableView!
     var arrlist: [AnyObject]!
+    var arrlistFiltered: [AnyObject]!
+    var searchActive: Bool!
     var selected: PFObject!
     var arrFeaturedBook: [String] = ["Rider Waite Tarot","Lenormand Card","Runes","The Clow Card"]
     var arrFeaturedBookFullName: [String] = ["RiderWaiteTarot.sqlite3", "Lenormand.sqlite3", "RunesChart.sqlite3", "TheClowCard.sqlite3"]
     let userDefault = NSUserDefaults.standardUserDefaults()
     
-    
-
     override func viewDidLoad() {
        
         super.viewDidLoad()
+        mySearch.delegate = self
         
         self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
         self.navigationController?.navigationBar.barTintColor = UIColor.blackColor()
@@ -52,6 +54,7 @@ class StoredBooksTableViewController: UITableViewController {
                         query.whereKey("fullName", notContainedIn: readArray)
                         
                     }
+                    
                     ///add to dislay
                     if let arrFileNameDownloadedDislay: AnyObject = self.userDefault.objectForKey("fileDownloadDislay")
                     {
@@ -135,15 +138,78 @@ class StoredBooksTableViewController: UITableViewController {
         }
         
         
-                }
-        //
-//        if let arrFileNameDownloadedShowUp: AnyObject = userDefault.objectForKey("fileDownloadShowUp")
-//        {
-//            var readArrayDislay: [NSString] = arrFileNameDownloadedShowUp as! [NSString]
-//            query.whereKey("name", notContainedIn: readArrayDislay)
-//        }
-
+        }
+    
+    func searchBar(mySearch: UISearchBar, textDidChange searchText: String) {
         
+        // Add a where clause if there is a search criteria
+        if mySearch.text !=  nil {
+            
+            
+            searchActive = true
+            var arrFileNameDownloadedDislay: AnyObject = userDefault.objectForKey("fileDownloadDislay")!
+            var readArrayDislay: [NSString] = arrFileNameDownloadedDislay as! [NSString]
+            var queryFiltered = PFQuery(className: "DataBook")
+            queryFiltered.whereKeyExists("name")
+            queryFiltered.whereKey("name", matchesRegex: searchText, modifiers: "i")
+            queryFiltered.whereKey("name", notContainedIn: readArrayDislay)
+            
+            
+            
+            
+            // Order the results
+            queryFiltered.orderByAscending("name")
+            
+            queryFiltered.findObjectsInBackgroundWithBlock {(objects: [AnyObject]?, error: NSError?) -> Void in
+                if error == nil {
+                    
+                    self.arrlistFiltered = objects!
+                    
+                }
+                
+                self.tableView.reloadData()
+                
+            }
+            
+        }else{
+            
+            searchActive = false
+            arrlist = []
+            MBProgressHUD.showHUDAddedTo(self.tableView, animated: true)
+            
+            var query = PFQuery(className: "DataBook")
+            let userDefault = NSUserDefaults.standardUserDefaults()
+            
+            if let arrFileNameDownloaded: AnyObject = userDefault.objectForKey("fileDownload")
+            {
+                var readArray: [NSString] = arrFileNameDownloaded as! [NSString]
+                query.whereKey("fullName", notContainedIn: readArray)
+            }
+            
+            ///add to dislay
+            if let arrFileNameDownloadedDislay: AnyObject = userDefault.objectForKey("fileDownloadDislay")
+            {
+                var readArrayDislay: [NSString] = arrFileNameDownloadedDislay as! [NSString]
+                query.whereKey("name", notContainedIn: readArrayDislay)
+            }
+            
+            
+            query.findObjectsInBackgroundWithBlock {(objects: [AnyObject]?, error: NSError?) -> Void in
+                if error == nil {
+                    
+                    self.arrlist = objects
+                }
+                
+                self.tableView.reloadData()
+                
+                MBProgressHUD.hideHUDForView(self.tableView, animated: true)
+            }
+            
+            self.tableView.reloadData()
+        }
+    }
+   
+
     
     func onCreatedNotification()
     {
@@ -178,7 +244,7 @@ class StoredBooksTableViewController: UITableViewController {
             MBProgressHUD.hideHUDForView(self.tableView, animated: true)
         }
         
-        //self.tableView.reloadData()
+        self.tableView.reloadData()
     }
     
     
@@ -196,25 +262,53 @@ class StoredBooksTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete method implementation.
-        // Return the number of rows in the section.
-        return arrlist.count
+       
+        if ((searchActive) != nil){
+            
+            return arrlistFiltered.count
+        }
+            
+        else{
+            
+            return arrlist.count
+            
+        }
     }
-    
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("StoredBooks", forIndexPath: indexPath) as! UITableViewCell
         
-        var nameBook: PFObject = arrlist[indexPath.row] as! PFObject
         
-        // Configure the cell...
-        cell.textLabel?.text =  nameBook["name"] as? String
-        
-        
+        if (searchActive != nil) {
+            var nameBookFiltered: PFObject = arrlistFiltered[indexPath.row] as! PFObject
+            
+            cell.textLabel?.text = nameBookFiltered["name"] as? String
+            
+        }else{
+           
+            
+            var nameBook: PFObject = arrlist[indexPath.row] as! PFObject
+            
+            // Configure the cell...
+            cell.textLabel?.text =  nameBook["name"] as? String
+
+            
+        }
+ 
+    
         return cell
     }
     
+    
+    override func viewWillDisappear(animated: Bool) {
+        mySearch.resignFirstResponder()
+        
+        searchActive = nil
+        myTableview.reloadData()
+    }
+    
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
         
         let alert = UIAlertController(title: "Thông Báo", message: "Bạn Có Muốn Tải Sách Không?", preferredStyle: UIAlertControllerStyle.Alert)
         //alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.Default, handler: nil))
@@ -226,10 +320,21 @@ class StoredBooksTableViewController: UITableViewController {
             case .Default:
                 println("default")
                 
-                self.selected = self.arrlist[indexPath.row] as! PFObject
+                if self.searchActive != nil{
+                    
+                    self.selected = self.arrlistFiltered[indexPath.row] as! PFObject
+
+                    
+                }else{
+                    self.selected = self.arrlist[indexPath.row] as! PFObject
+
+                    
+                }
+                
                 let daBook: PFFile = self.selected["file"] as! PFFile
                 let daBookName: String = self.selected["fullName"] as! String
                 let daBookNameDislay: String = self.selected["name"] as! String
+                let indexPathParse: Int = self.selected["indexPath"] as! Int
                 var checkValidation = NSFileManager.defaultManager()
                 
                 
@@ -252,8 +357,17 @@ class StoredBooksTableViewController: UITableViewController {
                     
                     if (checkValidation.fileExistsAtPath(databasePath))
                     {
+                        if self.searchActive != nil{
+                            
+                            self.arrlistFiltered.removeAtIndex(indexPath.row)
+                       
+                        }else{
+                            
+                            self.arrlist.removeAtIndex(indexPath.row)
+
+                            
+                        }
                         
-                        self.arrlist.removeAtIndex(indexPath.row)
                         tableView.reloadData()
                         
                         let userDefault = NSUserDefaults.standardUserDefaults()
