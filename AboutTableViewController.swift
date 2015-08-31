@@ -12,14 +12,15 @@ class AboutTableViewController: UITableViewController {
     
     var arrAboutList: [String] = ["Tarot.vn", "Mystic House", "Witchita Coffee"]
     var selectedName: String!
-    var arrAboutListImange : [String] = ["Tarotvn icon 100 copy.png","Mystichouse icon 100 copy.png", "Wichita icon 100 copy.png"]
+    var arrAboutListImange : [String] = ["Tarotvn icon 100.png","Mystichouse icon 100.png", "Wichita icon 100.png"]
     
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
-        self.navigationController?.navigationBar.barTintColor = UIColor.blackColor()
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 77/255, green: 118/255, blue: 78/255, alpha: 1.0)
+        
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         self.navigationController?.navigationBar.barStyle = UIBarStyle.Black
         self.navigationController?.navigationBar.translucent = false
@@ -64,6 +65,7 @@ class AboutTableViewController: UITableViewController {
 
         // Configure the cell...
         cell.lblAbout.text = arrAboutList[indexPath.row]
+        cell.lblAbout.textColor = UIColor(red: 77/255, green: 118/255, blue: 78/255, alpha: 1.0)
         cell.imgAbout.image = UIImage(named: arrAboutListImange[indexPath.row])
         
 

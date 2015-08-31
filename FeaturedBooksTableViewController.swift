@@ -34,7 +34,8 @@ class FeaturedBooksTableViewController: UITableViewController {
         self.revealViewController().rearViewRevealWidth = 238
         
         self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
-        self.navigationController?.navigationBar.barTintColor = UIColor.blackColor()
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 77/255, green: 118/255, blue: 78/255, alpha: 1.0)
+        
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         self.navigationController?.navigationBar.translucent = false
         self.navigationController?.navigationBar.barStyle = UIBarStyle.Black
@@ -140,6 +141,7 @@ class FeaturedBooksTableViewController: UITableViewController {
         cell.textLabel?.text = arrFeaturedBook[indexPath.row]
         cell.textLabel?.font = UIFont(name: "System", size: 17)
         //cell.selectionStyle = .None
+        cell.textLabel?.textColor = UIColor(red: 77/255, green: 118/255, blue: 78/255, alpha: 1.0)
 
         return cell
     }

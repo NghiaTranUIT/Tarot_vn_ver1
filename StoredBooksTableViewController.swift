@@ -30,7 +30,8 @@ class StoredBooksTableViewController: UITableViewController, UISearchBarDelegate
         mySearch.delegate = self
         
         self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
-        self.navigationController?.navigationBar.barTintColor = UIColor.blackColor()
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 77/255, green: 118/255, blue: 78/255, alpha: 1.0)
+        
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         self.navigationController?.navigationBar.barStyle = UIBarStyle.Black
         self.navigationController?.navigationBar.translucent = false
@@ -142,6 +143,10 @@ class StoredBooksTableViewController: UITableViewController, UISearchBarDelegate
     
     func searchBar(mySearch: UISearchBar, textDidChange searchText: String) {
         
+        var textFieldInsideSearchBar = mySearch.valueForKey("searchField") as? UITextField
+        
+        textFieldInsideSearchBar?.textColor = UIColor(red: 77/255, green: 118/255, blue: 78/255, alpha: 1.0)
+        
         // Add a where clause if there is a search criteria
         if mySearch.text !=  nil {
             
@@ -175,6 +180,7 @@ class StoredBooksTableViewController: UITableViewController, UISearchBarDelegate
             
             searchActive = false
             arrlist = []
+           // mySearch.resignFirstResponder()
             MBProgressHUD.showHUDAddedTo(self.tableView, animated: true)
             
             var query = PFQuery(className: "DataBook")
@@ -283,6 +289,7 @@ class StoredBooksTableViewController: UITableViewController, UISearchBarDelegate
             var nameBookFiltered: PFObject = arrlistFiltered[indexPath.row] as! PFObject
             
             cell.textLabel?.text = nameBookFiltered["name"] as? String
+            cell.textLabel?.textColor = UIColor(red: 77/255, green: 118/255, blue: 78/255, alpha: 1.0)
             
         }else{
            
@@ -291,7 +298,7 @@ class StoredBooksTableViewController: UITableViewController, UISearchBarDelegate
             
             // Configure the cell...
             cell.textLabel?.text =  nameBook["name"] as? String
-
+            cell.textLabel?.textColor = UIColor(red: 77/255, green: 118/255, blue: 78/255, alpha: 1.0)
             
         }
  
@@ -334,7 +341,7 @@ class StoredBooksTableViewController: UITableViewController, UISearchBarDelegate
                 let daBook: PFFile = self.selected["file"] as! PFFile
                 let daBookName: String = self.selected["fullName"] as! String
                 let daBookNameDislay: String = self.selected["name"] as! String
-                let indexPathParse: Int = self.selected["indexPath"] as! Int
+              //  let indexPathParse: Int = self.selected["indexPath"] as! Int
                 var checkValidation = NSFileManager.defaultManager()
                 
                 

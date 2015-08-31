@@ -22,7 +22,8 @@ class DownloadedBooksTableViewController: UITableViewController {
         super.viewDidLoad()
         
         self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
-        self.navigationController?.navigationBar.barTintColor = UIColor.blackColor()
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 77/255, green: 118/255, blue: 78/255, alpha: 1.0)
+        
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         self.navigationController?.navigationBar.barStyle = UIBarStyle.Black
         self.navigationController?.navigationBar.translucent = false
@@ -97,7 +98,7 @@ class DownloadedBooksTableViewController: UITableViewController {
 
         // Configure the cell...
         cell.textLabel?.text = arrDownloadedFileDislay[indexPath.row] as String
-
+        cell.textLabel?.textColor = UIColor(red: 77/255, green: 118/255, blue: 78/255, alpha: 1.0)
         return cell
     }
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {

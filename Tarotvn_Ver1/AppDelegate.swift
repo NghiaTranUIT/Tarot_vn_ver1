@@ -10,6 +10,8 @@ import UIKit
 import Parse
 import Bolts
 
+var reachability: Reachability?
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

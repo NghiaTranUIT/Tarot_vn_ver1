@@ -30,7 +30,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" sectionIndexMinimumDisplayRowCount="4" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ArX-Hf-k9b">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.30196078431372547" green="0.46274509803921571" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="sectionIndexBackgroundColor" red="0.94117647059999998" green="0.94901960780000005" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                         <sections>
                             <tableViewSection id="AbC-iZ-IUL">
@@ -51,7 +51,7 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="App icon 180" translatesAutoresizingMaskIntoConstraints="NO" id="31x-9M-5II">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tarotvn icon 100 vn" translatesAutoresizingMaskIntoConstraints="NO" id="31x-9M-5II">
                                                     <rect key="frame" x="12" y="2" width="50" height="50"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="50" id="IU8-OI-ruF"/>
@@ -59,7 +59,7 @@
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="backgroundColor" red="0.30196078431372547" green="0.46274509803921571" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstItem="31x-9M-5II" firstAttribute="leading" secondItem="Cw5-Ua-1TK" secondAttribute="leading" constant="12" id="Fj7-EN-gve"/>
                                                 <constraint firstItem="H2P-VN-Z69" firstAttribute="leading" secondItem="31x-9M-5II" secondAttribute="trailing" constant="7" id="LRG-LV-nex"/>
@@ -67,7 +67,7 @@
                                                 <constraint firstItem="H2P-VN-Z69" firstAttribute="top" secondItem="Cw5-Ua-1TK" secondAttribute="top" constant="17" id="gFu-Xc-WWe"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.94117647058823528" green="0.94901960784313721" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.30196078431372547" green="0.46274509803921571" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="Rz9-uD-653">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -103,7 +103,7 @@
                                                 <constraint firstItem="GgK-gm-3ce" firstAttribute="top" secondItem="aAS-BL-tbj" secondAttribute="top" constant="22" id="lVk-UC-kpY"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.30196078431372547" green="0.46274509803921571" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FeturedCell" rowHeight="60" id="mHc-dq-HZw">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -135,7 +135,7 @@
                                                 <constraint firstItem="bge-rR-iw1" firstAttribute="leading" secondItem="R4t-Jy-YbV" secondAttribute="trailing" constant="18" id="qGu-BZ-pt7"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.30196078431372547" green="0.46274509803921571" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StoreCell" rowHeight="60" id="qfK-Cl-XRn">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -167,14 +167,14 @@
                                                 <constraint firstItem="7iK-VZ-93l" firstAttribute="top" secondItem="y2T-Nj-Sre" secondAttribute="top" constant="22" id="kB9-zK-mwo"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.30196078431372547" green="0.46274509803921571" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DownloadedCell" rowHeight="60" id="yxx-di-5eR">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yxx-di-5eR" id="DaB-pD-YIz">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" highlightedImage="Save" translatesAutoresizingMaskIntoConstraints="NO" id="qhX-vI-7Vb">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="qhX-vI-7Vb">
                                                     <rect key="frame" x="18" y="18" width="35" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="35" id="QQ6-H9-0nU"/>
@@ -199,7 +199,7 @@
                                                 <constraint firstItem="qhX-vI-7Vb" firstAttribute="top" secondItem="DaB-pD-YIz" secondAttribute="top" constant="18" id="vaq-Zb-Sna"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.30196078431372547" green="0.46274509803921571" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AboutCell" rowHeight="60" id="Cy6-s0-vFm">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -233,7 +233,7 @@
                                                 <constraint firstItem="yQJ-cP-iFo" firstAttribute="leading" secondItem="sKs-ON-5Td" secondAttribute="trailing" constant="18" id="ber-pn-VtU"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.30196078431372547" green="0.46274509803921571" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -244,11 +244,12 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BbI-6n-tpC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="192" y="666"/>
+            <point key="canvasLocation" x="179" y="660"/>
         </scene>
         <!--Sách Cơ Bản-->
         <scene sceneID="KkV-rp-2aZ">
@@ -298,7 +299,7 @@
                         <searchBar key="tableHeaderView" contentMode="redraw" id="vpZ-VV-UDr">
                             <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="barTintColor" red="0.30196078431372547" green="0.46274509803921571" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
                             <textInputTraits key="textInputTraits"/>
                         </searchBar>
                         <prototypes>
@@ -438,7 +439,7 @@
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                            <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="barTintColor" red="0.30196078431372547" green="0.46274509803921571" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
                             <textInputTraits key="textInputTraits"/>
                         </searchBar>
                         <prototypes>
@@ -663,7 +664,7 @@
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                            <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="barTintColor" red="0.30196078431372547" green="0.46274509803921571" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
                             <textInputTraits key="textInputTraits"/>
                         </searchBar>
                         <prototypes>
@@ -725,7 +726,7 @@
                                     <segment title="Xuôi"/>
                                     <segment title="Ngược"/>
                                 </segments>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.30196078431372547" green="0.46274509803921571" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="mySelection:" destination="k8E-c0-QNb" eventType="valueChanged" id="tgA-Gl-eSy"/>
                                 </connections>
@@ -919,14 +920,13 @@
         <image name="3" width="50" height="50"/>
         <image name="4" width="50" height="50"/>
         <image name="6" width="50" height="50"/>
-        <image name="App icon 180" width="60" height="60"/>
         <image name="Create New Filled-50" width="25" height="25"/>
         <image name="Menu Filled-50" width="25" height="25"/>
-        <image name="Save" width="60" height="60"/>
+        <image name="Tarotvn icon 100 vn" width="100" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="OLE-iY-irD"/>
-        <segue reference="6Il-YU-CgJ"/>
         <segue reference="Dme-Gf-VaD"/>
+        <segue reference="c9t-va-Sfw"/>
+        <segue reference="OLE-iY-irD"/>
     </inferredMetricsTieBreakers>
 </document>

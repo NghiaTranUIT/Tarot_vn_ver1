@@ -75,6 +75,10 @@ class ListRunesStoneTableViewController: UITableViewController, UISearchBarDeleg
     
     func searchBar(mySearch: UISearchBar, textDidChange searchText: String) {
         
+        var textFieldInsideSearchBar = mySearch.valueForKey("searchField") as? UITextField
+        
+        textFieldInsideSearchBar?.textColor = UIColor(red: 77/255, green: 118/255, blue: 78/255, alpha: 1.0)
+        
         if searchText.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) > 0
         {
             searchActive = true;
@@ -87,7 +91,7 @@ class ListRunesStoneTableViewController: UITableViewController, UISearchBarDeleg
             
         {
             searchActive = false;
-            
+           // mySearch.resignFirstResponder()
             myTableView.reloadData();
         }
     }
@@ -186,11 +190,13 @@ class ListRunesStoneTableViewController: UITableViewController, UISearchBarDeleg
             
             // cell.textLabel?.text = filtered[indexPath.row].nameCard
             cell.lblRunes.text = filtered[indexPath.row].nameCard
+             cell.lblRunes.textColor = UIColor(red: 77/255, green: 118/255, blue: 78/255, alpha: 1.0)
             cell.imgRunes.image = UIImage(named: filtered[indexPath.row].images)
             
         } else {
             let card = arrCard[indexPath.row] as TarotCard
             cell.lblRunes.text = card.nameCard
+            cell.lblRunes.textColor = UIColor(red: 77/255, green: 118/255, blue: 78/255, alpha: 1.0)
             cell.imgRunes.image = UIImage(named: card.images)
         }
         

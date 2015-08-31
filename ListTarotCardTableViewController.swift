@@ -68,6 +68,10 @@ class ListTarotCardTableViewController: UITableViewController, UISearchBarDelega
     
     func searchBar(mySearch: UISearchBar, textDidChange searchText: String) {
         
+        var textFieldInsideSearchBar = mySearch.valueForKey("searchField") as? UITextField
+        
+        textFieldInsideSearchBar?.textColor = UIColor(red: 77/255, green: 118/255, blue: 78/255, alpha: 1.0)
+        
         if searchText.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) > 0
         {
             searchActive = true;
@@ -80,6 +84,7 @@ class ListTarotCardTableViewController: UITableViewController, UISearchBarDelega
             
         {
             searchActive = false;
+           // mySearch.resignFirstResponder()
             
             myTableView.reloadData();
         }
@@ -163,10 +168,12 @@ class ListTarotCardTableViewController: UITableViewController, UISearchBarDelega
         if(searchActive){
             
             cell.textLabel?.text = filtered[indexPath.row].nameCard
+            cell.textLabel?.textColor = UIColor(red: 77/255, green: 118/255, blue: 78/255, alpha: 1.0)
             
         } else {
             let card = arrCard[indexPath.row] as TarotCard
             cell.textLabel?.text = card.nameCard
+            cell.textLabel?.textColor = UIColor(red: 77/255, green: 118/255, blue: 78/255, alpha: 1.0)
         }
         
 

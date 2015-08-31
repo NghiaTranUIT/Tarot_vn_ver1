@@ -238,6 +238,7 @@
 		D7B9711E1B81F284007583EC /* DetailRiderCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B9711D1B81F284007583EC /* DetailRiderCardViewController.swift */; };
 		D7B971201B81F29C007583EC /* DeatailGeneralCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B9711F1B81F29C007583EC /* DeatailGeneralCardViewController.swift */; };
 		D7B971221B81FC5A007583EC /* RunesStoneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B971211B81FC5A007583EC /* RunesStoneTableViewCell.swift */; };
+		D7C4190B1B92FE87000A2E06 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = D7C4190A1B92FE87000A2E06 /* Reachability.m */; };
 		D7C9CC451B864C9E00C90985 /* DetailHelpingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C9CC441B864C9E00C90985 /* DetailHelpingScreenViewController.swift */; };
 		D7C9CC471B86F91100C90985 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C9CC461B86F91100C90985 /* HomeViewController.swift */; };
 		D7C9CC491B87262500C90985 /* AboutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C9CC481B87262500C90985 /* AboutTableViewCell.swift */; };
@@ -500,6 +501,8 @@
 		D7B9711D1B81F284007583EC /* DetailRiderCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailRiderCardViewController.swift; path = ../DetailRiderCardViewController.swift; sourceTree = "<group>"; };
 		D7B9711F1B81F29C007583EC /* DeatailGeneralCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeatailGeneralCardViewController.swift; path = ../DeatailGeneralCardViewController.swift; sourceTree = "<group>"; };
 		D7B971211B81FC5A007583EC /* RunesStoneTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RunesStoneTableViewCell.swift; path = ../RunesStoneTableViewCell.swift; sourceTree = "<group>"; };
+		D7C419091B92FE87000A2E06 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		D7C4190A1B92FE87000A2E06 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		D7C9CC441B864C9E00C90985 /* DetailHelpingScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailHelpingScreenViewController.swift; path = ../DetailHelpingScreenViewController.swift; sourceTree = "<group>"; };
 		D7C9CC461B86F91100C90985 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ../HomeViewController.swift; sourceTree = "<group>"; };
 		D7C9CC481B87262500C90985 /* AboutTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutTableViewCell.swift; path = ../AboutTableViewCell.swift; sourceTree = "<group>"; };
@@ -751,6 +754,7 @@
 		D7B970611B81895A007583EC = {
 			isa = PBXGroup;
 			children = (
+				D7C419081B92FE5E000A2E06 /* Reachability */,
 				D78B26671B8D5FB700262156 /* TTTAtributedLabel */,
 				D7B9706C1B81895A007583EC /* Tarotvn_Ver1 */,
 				D7B970821B81895A007583EC /* Tarotvn_Ver1Tests */,
@@ -923,6 +927,15 @@
 			);
 			name = Framework;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		D7C419081B92FE5E000A2E06 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				D7C419091B92FE87000A2E06 /* Reachability.h */,
+				D7C4190A1B92FE87000A2E06 /* Reachability.m */,
+			);
+			name = Reachability;
 			sourceTree = "<group>";
 		};
 		D7C9CC6D1B8860AC00C90985 /* AminatorForPullToRefresh */ = {
@@ -1316,6 +1329,7 @@
 				D7B970931B818DA8007583EC /* SWRevealViewController.m in Sources */,
 				D7B971221B81FC5A007583EC /* RunesStoneTableViewCell.swift in Sources */,
 				D7C9CC451B864C9E00C90985 /* DetailHelpingScreenViewController.swift in Sources */,
+				D7C4190B1B92FE87000A2E06 /* Reachability.m in Sources */,
 				D78B266A1B8D5FCE00262156 /* TTTAttributedLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
