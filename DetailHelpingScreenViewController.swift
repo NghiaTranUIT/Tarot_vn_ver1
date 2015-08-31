@@ -29,9 +29,9 @@ class DetailHelpingScreenViewController: UIViewController, TTTAttributedLabelDel
             var range : NSRange = str.rangeOfString("http://tarot.vn")
             label.addLinkToURL(NSURL(string: "http://tarot.vn")!, withRange: range)
             
-            var str1 : NSString = "Facebook Group: TarotVietNam"
+            var str1 : NSString = "Facebook: /groups/TarotVietNam"
             label1.text = str1 as String
-            var range1 : NSRange = str1.rangeOfString("TarotVietNam")
+            var range1 : NSRange = str1.rangeOfString("/groups/TarotVietNam")
             label1.addLinkToURL(NSURL(string: "https://facebook.com/groups/TarotVietNam")!, withRange: range1)
            
             

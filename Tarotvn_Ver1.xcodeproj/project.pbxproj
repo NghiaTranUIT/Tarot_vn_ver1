@@ -242,7 +242,6 @@
 		D7C9CC451B864C9E00C90985 /* DetailHelpingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C9CC441B864C9E00C90985 /* DetailHelpingScreenViewController.swift */; };
 		D7C9CC471B86F91100C90985 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C9CC461B86F91100C90985 /* HomeViewController.swift */; };
 		D7C9CC491B87262500C90985 /* AboutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C9CC481B87262500C90985 /* AboutTableViewCell.swift */; };
-		D7C9CC4B1B8733F100C90985 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C9CC4A1B8733F100C90985 /* Reachability.swift */; };
 		D7C9CC4D1B8837E300C90985 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C9CC4C1B8837E300C90985 /* RootViewController.swift */; };
 		D7C9CC691B8860A500C90985 /* BeatAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C9CC651B8860A500C90985 /* BeatAnimator.swift */; };
 		D7C9CC6A1B8860A500C90985 /* CustomSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C9CC661B8860A500C90985 /* CustomSubview.swift */; };
@@ -506,7 +505,6 @@
 		D7C9CC441B864C9E00C90985 /* DetailHelpingScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailHelpingScreenViewController.swift; path = ../DetailHelpingScreenViewController.swift; sourceTree = "<group>"; };
 		D7C9CC461B86F91100C90985 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ../HomeViewController.swift; sourceTree = "<group>"; };
 		D7C9CC481B87262500C90985 /* AboutTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutTableViewCell.swift; path = ../AboutTableViewCell.swift; sourceTree = "<group>"; };
-		D7C9CC4A1B8733F100C90985 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		D7C9CC4C1B8837E300C90985 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		D7C9CC651B8860A500C90985 /* BeatAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeatAnimator.swift; sourceTree = "<group>"; };
 		D7C9CC661B8860A500C90985 /* CustomSubview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSubview.swift; sourceTree = "<group>"; };
@@ -781,7 +779,6 @@
 				D7B9709E1B819F0A007583EC /* Tarotvn */,
 				D7B9708F1B818D45007583EC /* SWRevealViewController */,
 				D7B9706F1B81895A007583EC /* AppDelegate.swift */,
-				D7C9CC4A1B8733F100C90985 /* Reachability.swift */,
 				D7B971211B81FC5A007583EC /* RunesStoneTableViewCell.swift */,
 				D7B970941B818E8F007583EC /* MenuController.swift */,
 				D7C9CC481B87262500C90985 /* AboutTableViewCell.swift */,
@@ -1322,7 +1319,6 @@
 				D7B970991B8196B3007583EC /* StoredBooksTableViewController.swift in Sources */,
 				D7B970701B81895A007583EC /* AppDelegate.swift in Sources */,
 				D7C9CC4D1B8837E300C90985 /* RootViewController.swift in Sources */,
-				D7C9CC4B1B8733F100C90985 /* Reachability.swift in Sources */,
 				D7B971201B81F29C007583EC /* DeatailGeneralCardViewController.swift in Sources */,
 				D7B9709B1B8196D1007583EC /* DownloadedBooksTableViewController.swift in Sources */,
 				D7B971081B81A8CF007583EC /* TarotCard.swift in Sources */,

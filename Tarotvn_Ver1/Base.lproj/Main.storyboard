@@ -42,7 +42,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tarot.vn" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H2P-VN-Z69">
-                                                    <rect key="frame" x="69" y="17" width="175" height="27"/>
+                                                    <rect key="frame" x="69" y="15" width="175" height="27"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="175" id="kkk-gC-l2b"/>
                                                         <constraint firstAttribute="height" constant="27" id="xhG-2N-wfr"/>
@@ -52,7 +52,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tarotvn icon 100 vn" translatesAutoresizingMaskIntoConstraints="NO" id="31x-9M-5II">
-                                                    <rect key="frame" x="12" y="2" width="50" height="50"/>
+                                                    <rect key="frame" x="12" y="0.0" width="50" height="50"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="50" id="IU8-OI-ruF"/>
                                                         <constraint firstAttribute="height" constant="50" id="xrd-Ds-qhN"/>
@@ -63,8 +63,8 @@
                                             <constraints>
                                                 <constraint firstItem="31x-9M-5II" firstAttribute="leading" secondItem="Cw5-Ua-1TK" secondAttribute="leading" constant="12" id="Fj7-EN-gve"/>
                                                 <constraint firstItem="H2P-VN-Z69" firstAttribute="leading" secondItem="31x-9M-5II" secondAttribute="trailing" constant="7" id="LRG-LV-nex"/>
-                                                <constraint firstItem="31x-9M-5II" firstAttribute="top" secondItem="Cw5-Ua-1TK" secondAttribute="top" constant="2" id="ak0-l8-Sfz"/>
-                                                <constraint firstItem="H2P-VN-Z69" firstAttribute="top" secondItem="Cw5-Ua-1TK" secondAttribute="top" constant="17" id="gFu-Xc-WWe"/>
+                                                <constraint firstItem="31x-9M-5II" firstAttribute="top" secondItem="Cw5-Ua-1TK" secondAttribute="top" id="ak0-l8-Sfz"/>
+                                                <constraint firstItem="H2P-VN-Z69" firstAttribute="top" secondItem="Cw5-Ua-1TK" secondAttribute="top" constant="15" id="gFu-Xc-WWe"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.30196078431372547" green="0.46274509803921571" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
@@ -214,7 +214,7 @@
                                                         <constraint firstAttribute="height" constant="35" id="AwO-3U-zZ5"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trợ Giúp" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yQJ-cP-iFo">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Liên Kết" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yQJ-cP-iFo">
                                                     <rect key="frame" x="71" y="22" width="175" height="27"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="27" id="rGp-qH-lM5"/>
@@ -456,7 +456,7 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CaJ-Ci-G5v">
-                                            <rect key="frame" x="163" y="60" width="42" height="20.5"/>
+                                            <rect key="frame" x="118" y="60" width="42" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -480,7 +480,7 @@
                                         <constraint firstItem="CaJ-Ci-G5v" firstAttribute="centerY" secondItem="SfO-0Z-VUF" secondAttribute="centerY" constant="-21" id="d3N-rT-I49"/>
                                         <constraint firstAttribute="bottom" secondItem="CaJ-Ci-G5v" secondAttribute="bottom" constant="24.5" id="dXL-a8-BS5"/>
                                         <constraint firstItem="CaJ-Ci-G5v" firstAttribute="top" secondItem="yBs-Sb-rL1" secondAttribute="top" constant="22" id="gV5-AS-leo"/>
-                                        <constraint firstItem="CaJ-Ci-G5v" firstAttribute="leading" secondItem="SfO-0Z-VUF" secondAttribute="trailing" constant="60" id="ijA-qj-OT6"/>
+                                        <constraint firstItem="CaJ-Ci-G5v" firstAttribute="leading" secondItem="SfO-0Z-VUF" secondAttribute="trailing" constant="15" id="ijA-qj-OT6"/>
                                         <constraint firstAttribute="trailing" secondItem="CaJ-Ci-G5v" secondAttribute="trailing" constant="354" id="j2a-sP-WN0"/>
                                         <constraint firstAttribute="centerY" secondItem="CaJ-Ci-G5v" secondAttribute="centerY" constant="25" id="xKq-Qh-V0N"/>
                                         <constraint firstItem="CaJ-Ci-G5v" firstAttribute="leading" secondItem="SfO-0Z-VUF" secondAttribute="trailing" constant="23" id="z9C-yI-QMu"/>

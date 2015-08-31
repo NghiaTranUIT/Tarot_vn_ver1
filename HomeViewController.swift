@@ -11,35 +11,48 @@ import WebKit
 
 class HomeViewController: UIViewController, UIWebViewDelegate {
     
+    var isConnection: Bool!
+    var isOnceTimeProcess: Bool = true
+    
+    var myHUb: MBProgressHUD!
+    
     @IBOutlet weak var containerView: UIWebView!
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
     @IBAction func refreshButton(sender: AnyObject) {
         
-        myHUb =  MBProgressHUD.showHUDAddedTo(self.containerView, animated: true)
-        myHUb.labelText = "Đang Tải..."
-        myHUb.dimBackground = true
         
-        // Do any additional setup after loading the view.
-        var url = NSURL(string: "http://tarot.vn")
-        var req = NSURLRequest(URL:url!)
+            
+           if isConnection == true{
+            
+            myHUb =  MBProgressHUD.showHUDAddedTo(self.containerView, animated: true)
+            myHUb.labelText = "Đang Tải..."
+            
+           // myHUb.dimBackground = true
+            
+            // Do any additional setup after loading the view.
+            
+           
+               
+                var url = NSURL(string: "http://tarot.vn")
+                var req = NSURLRequest(URL:url!)
+                self.containerView!.loadRequest(req)
         
-        self.containerView!.loadRequest(req)
-        
-        
+         
+
+            
+        }else{
+            
+            var alert = UIAlertView(title: "No Internet Connection", message: "Make sure your device is connected to the internet.", delegate: nil, cancelButtonTitle: "OK")
+            alert.show()
+            
+        }
+ 
     }
-    var myHUb: MBProgressHUD!
+                
     
-//    var webView: WKWebView?
-//    
-//    override func loadView() {
-//        super.loadView()
-//        
-//        self.webView = WKWebView()
-//
-//        self.view = self.webView!
-//    }
+    
     
    
     override func viewDidLoad() {
@@ -51,34 +64,15 @@ class HomeViewController: UIViewController, UIWebViewDelegate {
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         self.navigationController?.navigationBar.barStyle = UIBarStyle.Black
         self.navigationController?.navigationBar.translucent = false
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "reachabilityStatusChanged", name: "ReachStatusChanged", object: nil)
+        
+        self.reachabilityStatusChanged()
+
 
          containerView.delegate = self
         
-        if Reachability.isConnectedToNetwork() == true {
-            
-            myHUb =  MBProgressHUD.showHUDAddedTo(self.containerView, animated: true)
-            myHUb.labelText = "Đang Tải..."
-            myHUb.dimBackground = true
-            
-            // Do any additional setup after loading the view.
-            var url = NSURL(string: "http://tarot.vn")
-            var req = NSURLRequest(URL:url!)
-            
-            self.containerView!.loadRequest(req)
 
-            
-            println("Internet connection OK")
-        } else {
-            println("Internet connection FAILED")
-            var alert = UIAlertView(title: "No Internet Connection", message: "Make sure your device is connected to the internet.", delegate: nil, cancelButtonTitle: "OK")
-            alert.show()
-        }
-      
-       
-        
-
-        
-        ///
 
         if self.revealViewController() != nil {
             
@@ -93,13 +87,15 @@ class HomeViewController: UIViewController, UIWebViewDelegate {
         var url = NSURL(string: "http://tarot.vn")
         var req = NSURLRequest(URL:url!)
        
-        self.containerView!.loadRequest(req)
-        
-        
-    }
+      
+            self.containerView!.loadRequest(req)
+
+       }
+   
     func webViewDidFinishLoad(webView: UIWebView) {
         
          myHUb.hide(true, afterDelay: 0)
+        isOnceTimeProcess == true
     }
 
     override func didReceiveMemoryWarning() {
@@ -107,6 +103,60 @@ class HomeViewController: UIViewController, UIWebViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    func reachabilityStatusChanged(){
+        
+        if reachablityStatus == KNOTREACHABLE{
+            
+            println("Internet connection FAILED")
+            var alert = UIAlertView(title: "No Internet Connection", message: "Make sure your device is connected to the internet.", delegate: nil, cancelButtonTitle: "OK")
+            alert.show()
+            
+           isConnection = false
+
+            
+        }else if reachablityStatus == KREACHABLEWITHWIFI{
+            myHUb =  MBProgressHUD.showHUDAddedTo(self.containerView, animated: true)
+            myHUb.labelText = "Đang Tải..."
+            myHUb.dimBackground = true
+            
+            // Do any additional setup after loading the view.
+            var url = NSURL(string: "http://tarot.vn")
+            var req = NSURLRequest(URL:url!)
+            
+            self.containerView!.loadRequest(req)
+            
+            
+            println("Internet connection OK")
+            
+            isConnection = true
+
+            
+            
+        }else if reachablityStatus == KREACHABLEWOTHWLAN{
+            
+            
+            myHUb =  MBProgressHUD.showHUDAddedTo(self.containerView, animated: true)
+            myHUb.labelText = "Đang Tải..."
+            myHUb.dimBackground = true
+            
+            // Do any additional setup after loading the view.
+            var url = NSURL(string: "http://tarot.vn")
+            var req = NSURLRequest(URL:url!)
+            
+            self.containerView!.loadRequest(req)
+            
+            isConnection = true
+            println("Internet connection OK")
+
+        }
+    }
+    
+    deinit{
+        
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: "ReachStatusChanged", object: nil)
+    }
+
 
     /*
     // MARK: - Navigation

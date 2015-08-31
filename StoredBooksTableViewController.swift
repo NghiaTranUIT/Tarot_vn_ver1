@@ -16,6 +16,8 @@ class StoredBooksTableViewController: UITableViewController, UISearchBarDelegate
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
     @IBOutlet var myTableview: UITableView!
+    
+    var isConnection: Bool!
     var arrlist: [AnyObject]!
     var arrlistFiltered: [AnyObject]!
     var searchActive: Bool!
@@ -37,6 +39,11 @@ class StoredBooksTableViewController: UITableViewController, UISearchBarDelegate
         self.navigationController?.navigationBar.translucent = false
         self.view.backgroundColor = UIColor.blackColor()
         self.tableView.backgroundColor = UIColor.whiteColor()
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "reachabilityStatusChanged", name: "ReachStatusChanged", object: nil)
+        
+        self.reachabilityStatusChanged()
+        
         if self.revealViewController() != nil {
             
             menuButton.target = self.revealViewController()
@@ -44,9 +51,14 @@ class StoredBooksTableViewController: UITableViewController, UISearchBarDelegate
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
             self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
         }
-        
+    
+        if isConnection == true{
+            
         if let customSubview = NSBundle.mainBundle().loadNibNamed("CustomSubview", owner: self, options: nil).first as? CustomSubview {
-            myTableview.addPullToRefreshWithAction({
+            
+           
+                
+                myTableview.addPullToRefreshWithAction({
                 NSOperationQueue().addOperationWithBlock {
                     var query = PFQuery(className: "DataBook")
                     if let arrFileNameDownloaded: AnyObject = self.userDefault.objectForKey("fileDownload")
@@ -83,35 +95,56 @@ class StoredBooksTableViewController: UITableViewController, UISearchBarDelegate
                     }
                 }
                 }, withAnimator: customSubview)
+                
+            }
+        }
+            else{
+                
+                var alert = UIAlertView(title: "No Internet Connection", message: "Make sure your device is connected to the internet.", delegate: nil, cancelButtonTitle: "OK")
+                alert.show()
+
+                
+            }
+              arrlist = []
         }
         
-//        userDefault.setObject(arrFeaturedBookFullName, forKey: "fileDownload")
-//        userDefault.setObject(arrFeaturedBook, forKey: "fileDownloadDislay")
+    
+      
         
+    
+    
+    func reachabilityStatusChanged(){
         
-        arrlist = []
-        
-        
-        if Reachability.isConnectedToNetwork() == true {
+        if reachablityStatus == KNOTREACHABLE{
+            
+            println("Internet connection FAILED")
+            var alert = UIAlertView(title: "No Internet Connection", message: "Make sure your device is connected to the internet.", delegate: nil, cancelButtonTitle: "OK")
+            alert.show()
+            
+            isConnection = false
+            
+        }else if reachablityStatus == KREACHABLEWITHWIFI{
+            
+            isConnection = true
             println("Internet connection OK")
             
             MBProgressHUD.showHUDAddedTo(self.tableView, animated: true)
-        
-       var query = PFQuery(className: "DataBook")
-            if let arrFileNameDownloaded: AnyObject = userDefault.objectForKey("fileDownload")
-        {
-            var readArray: [NSString] = arrFileNameDownloaded as! [NSString]
-            query.whereKey("fullName", notContainedIn: readArray)
             
-        }
-        ///add to dislay
-        if let arrFileNameDownloadedDislay: AnyObject = userDefault.objectForKey("fileDownloadDislay")
-        {
-            var readArrayDislay: [NSString] = arrFileNameDownloadedDislay as! [NSString]
-            query.whereKey("name", notContainedIn: readArrayDislay)
-           
-
-        }
+            var query = PFQuery(className: "DataBook")
+            if let arrFileNameDownloaded: AnyObject = userDefault.objectForKey("fileDownload")
+            {
+                var readArray: [NSString] = arrFileNameDownloaded as! [NSString]
+                query.whereKey("fullName", notContainedIn: readArray)
+                
+            }
+            ///add to dislay
+            if let arrFileNameDownloadedDislay: AnyObject = userDefault.objectForKey("fileDownloadDislay")
+            {
+                var readArrayDislay: [NSString] = arrFileNameDownloadedDislay as! [NSString]
+                query.whereKey("name", notContainedIn: readArrayDislay)
+                
+                
+            }
             
             query.findObjectsInBackgroundWithBlock {(objects: [AnyObject]?, error: NSError?) -> Void in
                 if error == nil {
@@ -129,21 +162,58 @@ class StoredBooksTableViewController: UITableViewController, UISearchBarDelegate
             NSNotificationCenter.defaultCenter().addObserver(self, selector: "onCreatedNotification", name: "reloadListBooks" , object: nil)
             
             
+        }else if reachablityStatus == KREACHABLEWOTHWLAN{
+            
+            isConnection = true
+            
+            println("Internet connection OK")
+            
+            MBProgressHUD.showHUDAddedTo(self.tableView, animated: true)
+            
+            var query = PFQuery(className: "DataBook")
+            if let arrFileNameDownloaded: AnyObject = userDefault.objectForKey("fileDownload")
+            {
+                var readArray: [NSString] = arrFileNameDownloaded as! [NSString]
+                query.whereKey("fullName", notContainedIn: readArray)
+                
+            }
+            ///add to dislay
+            if let arrFileNameDownloadedDislay: AnyObject = userDefault.objectForKey("fileDownloadDislay")
+            {
+                var readArrayDislay: [NSString] = arrFileNameDownloadedDislay as! [NSString]
+                query.whereKey("name", notContainedIn: readArrayDislay)
+                
+                
+            }
+            
+            query.findObjectsInBackgroundWithBlock {(objects: [AnyObject]?, error: NSError?) -> Void in
+                if error == nil {
+                    
+                    self.arrlist = objects
+                }
+                
+                self.tableView.reloadData()
+                
+                
+                MBProgressHUD.hideHUDForView(self.tableView, animated: true)
+            }
+            
+            
+            NSNotificationCenter.defaultCenter().addObserver(self, selector: "onCreatedNotification", name: "reloadListBooks" , object: nil)
         }
-
+    }
+    
+    deinit{
         
-        else {
-            println("Internet connection FAILED")
-            var alert = UIAlertView(title: "No Internet Connection", message: "Make sure your device is connected to the internet.", delegate: nil, cancelButtonTitle: "OK")
-            alert.show()
-        }
-        
-        
-        }
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: "ReachStatusChanged", object: nil)
+    }
     
     func searchBar(mySearch: UISearchBar, textDidChange searchText: String) {
         
-        var textFieldInsideSearchBar = mySearch.valueForKey("searchField") as? UITextField
+        if isConnection == true{
+            
+            
+            var textFieldInsideSearchBar = mySearch.valueForKey("searchField") as? UITextField
         
         textFieldInsideSearchBar?.textColor = UIColor(red: 77/255, green: 118/255, blue: 78/255, alpha: 1.0)
         
@@ -213,6 +283,14 @@ class StoredBooksTableViewController: UITableViewController, UISearchBarDelegate
             
             self.tableView.reloadData()
         }
+        }else{
+            
+            var alert = UIAlertView(title: "No Internet Connection", message: "Make sure your device is connected to the internet.", delegate: nil, cancelButtonTitle: "OK")
+            alert.show()
+
+        }
+        
+        
     }
    
 
@@ -316,8 +394,9 @@ class StoredBooksTableViewController: UITableViewController, UISearchBarDelegate
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        
-        let alert = UIAlertController(title: "Thông Báo", message: "Bạn Có Muốn Tải Sách Không?", preferredStyle: UIAlertControllerStyle.Alert)
+        if isConnection == true{
+            
+             let alert = UIAlertController(title: "Thông Báo", message: "Bạn Có Muốn Tải Sách Không?", preferredStyle: UIAlertControllerStyle.Alert)
         //alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.Default, handler: nil))
         
         
@@ -418,7 +497,8 @@ class StoredBooksTableViewController: UITableViewController, UISearchBarDelegate
                     }else {
                         println("file already exitence")
                     }
-                  
+                    
+                    myHUb.labelText = "Kiểm tra mục đã tải"
                     myHUb.hide(true, afterDelay: 0)
                     
                 }
@@ -442,6 +522,15 @@ class StoredBooksTableViewController: UITableViewController, UISearchBarDelegate
         alert.addAction(cancel)
         
         self.presentViewController(alert, animated: true, completion: nil)
+        }
+        
+        else{
+            
+            var alert = UIAlertView(title: "No Internet Connection", message: "Make sure your device is connected to the internet.", delegate: nil, cancelButtonTitle: "OK")
+            alert.show()
+
+        }
+       
         
     }
    
